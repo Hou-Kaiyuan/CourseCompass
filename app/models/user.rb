@@ -6,6 +6,7 @@ class User < ActiveRecord::Base
           u.oauth_token = auth[:credentials][:token]
           u.oauth_expires_at = Time.at(auth[:credentials][:expires_at])
           u.email = auth[:info][:email]
+          u.major = auth[:info][:major]
           u.first_name = auth[:info][:first_name]
           u.last_name = auth[:info][:last_name]
           u.profile_pic = auth[:info][:image]
@@ -22,6 +23,7 @@ class User < ActiveRecord::Base
             :email => user[:email],
             :first_name => user[:first_name],
             :last_name => user[:last_name],
+            :department => user[:department],
             :profile_pic => user[:profile_pic]
           }
         end
