@@ -6,18 +6,67 @@
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
 
-movies = [{:title => 'Aladdin', :rating => 'G', :release_date => '25-Nov-1992'},
-    	  {:title => 'The Terminator', :rating => 'R', :release_date => '26-Oct-1984'},
-    	  {:title => 'When Harry Met Sally', :rating => 'R', :release_date => '21-Jul-1989'},
-      	  {:title => 'The Help', :rating => 'PG-13', :release_date => '10-Aug-2011'},
-      	  {:title => 'Chocolat', :rating => 'PG-13', :release_date => '5-Jan-2001'},
-      	  {:title => 'Amelie', :rating => 'R', :release_date => '25-Apr-2001'},
-      	  {:title => '2001: A Space Odyssey', :rating => 'G', :release_date => '6-Apr-1968'},
-      	  {:title => 'The Incredibles', :rating => 'PG', :release_date => '5-Nov-2004'},
-      	  {:title => 'Raiders of the Lost Ark', :rating => 'PG', :release_date => '12-Jun-1981'},
-      	  {:title => 'Chicken Run', :rating => 'G', :release_date => '21-Jun-2000'},
-  	 ]
+courses = [
+	{ :name => 'COMS4152',
+    :description => 'desp',
+    :offering_term => 2; # 0: fall, 1: spring, 2: both
+    :midterm  => 0, # 0: no midterm, 1: midterm
+    :project => 1, # 0: no project, 1: project
+    :instructor => "Junfeng Yang",
+    :website => "https://www.cs.columbia.edu/~junfeng/23fa-w4152/index.html"
+  },
+  {}
 
-movies.each do |movie|
-  Movie.create!(movie)
+]
+
+courses.each do |course|
+  Course.create!(course)
+end
+
+
+users = [
+  {
+    :provider => "google_oauth2",
+    :uid => "1",
+    :oauth_token => "0",
+    :oauth_expires_at => 9999999999,
+    :email => "test1@columbia.edu",
+    :first_name => "Test",
+    :last_name => "User1",
+    :profile_pic => "https://static.vecteezy.com/system/resources/previews/002/318/271/non_2x/user-profile-icon-free-vector.jpg"
+  },
+  {
+    :provider => "google_oauth2",
+    :uid => "2",
+    :oauth_token => "0",
+    :oauth_expires_at => 9999999999,
+    :email => "test2@columbia.edu",
+    :first_name => "Test",
+    :last_name => "User2",
+    :profile_pic => "https://static.vecteezy.com/system/resources/previews/002/318/271/non_2x/user-profile-icon-free-vector.jpg"
+  },
+  {
+    :provider => "google_oauth2",
+    :uid => "3",
+    :oauth_token => "0",
+    :oauth_expires_at => 9999999999,
+    :email => "test3@columbia.edu",
+    :first_name => "Test",
+    :last_name => "User3",
+    :profile_pic => "https://static.vecteezy.com/system/resources/previews/002/318/271/non_2x/user-profile-icon-free-vector.jpg"
+  },
+  {
+    :provider => "google_oauth2",
+    :uid => "4",
+    :oauth_token => "0",
+    :oauth_expires_at => 9999999999,
+    :email => "test4@columbia.edu",
+    :first_name => "Test",
+    :last_name => "User4",
+    :profile_pic => "https://static.vecteezy.com/system/resources/previews/002/318/271/non_2x/user-profile-icon-free-vector.jpg"
+  }
+]
+
+users.each do |user|
+  User.create!(user)
 end
