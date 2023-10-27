@@ -2,6 +2,11 @@
 
 CourseCompass provides Columbia Students a more personalize course recommendation and career planner. 
 
+
+### TODO
+```
+Iter1: let's create the views for login, display (basic) user info and courses list. 
+```
 ### Name | UNI
 
 ```
