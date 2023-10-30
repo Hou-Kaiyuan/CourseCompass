@@ -10,9 +10,9 @@
 #   expect(page).to have_content(content)
 # end
 
-# Given(/^User not logged in$/) do
-#   visit '/logout'
-# end
+Given(/^User not logged in$/) do
+  visit '/logout'
+end
 
 # Given(/^User logged in$/) do
 #   visit '/mock_login'

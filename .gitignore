@@ -11,3 +11,5 @@ rottenpotatoes/vendor/bundle
 
 coverage/
 .bundle
+*.log
+*.sqlite3

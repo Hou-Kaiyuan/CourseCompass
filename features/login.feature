@@ -14,15 +14,15 @@ Background: course evaluations have been added to database
 Scenario: User will be redirected to login page from all pages if not logged in
     Given User not logged in
 
-    Given I go to CourseCompass home page
+    When I go to CourseCompass home page
     Then I should be on the Login page
     And I should see "Please log in with columbia.edu email"
 
-    Given I go to the Profile page
+    When I go to the Profile page
     Then I should be on the Login page
     And I should see "Please log in with columbia.edu email"
 
-    Given I go to the Recommendation page
+    When I go to the Recommendation page
     Then I should be on the Login page
     And I should see "Please log in with columbia.edu email"
 

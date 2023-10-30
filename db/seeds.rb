@@ -9,7 +9,7 @@
 courses = [
 	{ :name => 'COMS4152',
     :description => 'desp',
-    :offering_term => 2; # 0: fall, 1: spring, 2: both
+    :offering_term => 2, # 0: fall, 1: spring, 2: both
     :midterm  => 0, # 0: no midterm, 1: midterm
     :project => 1, # 0: no project, 1: project
     :instructor => "Junfeng Yang",
