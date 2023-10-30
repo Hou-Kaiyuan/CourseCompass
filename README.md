@@ -5,7 +5,10 @@ CourseCompass provides Columbia Students a more personalize course recommendatio
 
 ### TODO
 ```
-Iter1: let's create the views for login, display (basic) user info and courses list. 
+Iter1: Deploy on Heroku, with user info and courses description page
+Esteeven & Kevin: User page and course page (including view, feature/cucumber, and spec)
+Orr: work on login feature / 3rd party authorization, only allow columbia emails (columbia.edu/ tc.columbia.edu/ barnard.edu)
+Kaiyuan: Proof of concept (PoC) implement recommendation without integration in ruby for iter 1. 
 ```
 ### Name | UNI
 
