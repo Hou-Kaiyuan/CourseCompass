@@ -68,3 +68,47 @@ ruby -v
 ### Setting up (Instructions to run and test the project)
 
 #### 1. Clone repo, install gems and dependencies
+
+```bash
+git clone https://github.com/Hou-Kaiyuan/CourseCompass
+cd CourseCompass
+
+gem update bundler
+
+bundle install
+```
+
+#### 2. Setup db and run tests
+
+```bash
+bundle exec rake db:migrate db:test:prepare db:seed
+bundle exec rspec
+bundle exec cucumber
+```
+For heroku deployment, make sure [Heroku CLI](https://devcenter.heroku.com/articles/heroku-cli) is installed. Then,
+
+```bash
+heroku create
+# You should see heroku in `git remote -v`
+# To remove a previous heroku remote, use `git remote rm heroku`
+git push heroku main
+
+# Initialize the databases
+heroku run rake db:migrate db:seed
+
+# To view any errors, use
+heroku logs
+
+# To use heroku terminal for any debugging or run rake commands, use
+heroku run bash
+```
+
+### Heroku Demo Deployment 
+Keep the deployment on for grading. 
+
+https://course-compass.herokuapp.com/
+
+### GitHub Repo
+
+[https://github.com/Hou-Kaiyuan/CourseCompass](https://github.com/Hou-Kaiyuan/CourseCompass)
+
