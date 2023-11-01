@@ -3,7 +3,7 @@ class CreateMovies < ActiveRecord::Migration
     create_table :movies do |t|
       t.string :title
       t.string :rating
-      t.text :description
+      t.text :course_title
       t.datetime :release_date
       # Add fields that let Rails automatically keep track
       # of when movies are added or modified:
