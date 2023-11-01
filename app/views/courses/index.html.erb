@@ -1,0 +1,19 @@
+<!--  This file is app/views/courses/index.html.erb -->
+<h2>All Courses</h2>
+
+<table class="table table-striped col-md-12" id="courses">
+  <thead>
+    <tr>
+      <th>Course Name</th>
+    </tr>
+  </thead>
+  <tbody>
+    <% @courses.each do |course| %>
+      <tr>
+        <td>
+          <%= course.name %>
+        </td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>

@@ -33,14 +33,15 @@ ActiveRecord::Schema.define(version: 20231030184420) do
   end
 
   create_table "users", force: :cascade do |t|
-    t.string "provider"
-    t.string "uid"
-    t.string "oauth_token"
-    t.string "email"
-    t.string "major"
-    t.string "first_name"
-    t.string "last_name"
-    t.string "profile_pic"
+    t.string  "provider"
+    t.string  "uid"
+    t.string  "oauth_token"
+    t.integer "oauth_expires_at"
+    t.string  "email"
+    t.string  "major"
+    t.string  "first_name"
+    t.string  "last_name"
+    t.string  "profile_pic"
   end
 
 end

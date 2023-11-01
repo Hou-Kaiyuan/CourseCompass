@@ -14,9 +14,7 @@ courses = [
     :project => 1, # 0: no project, 1: project
     :instructor => "Junfeng Yang",
     :website => "https://www.cs.columbia.edu/~junfeng/23fa-w4152/index.html"
-  },
-  {}
-
+  }
 ]
 
 courses.each do |course|
@@ -29,7 +27,6 @@ users = [
     :provider => "google_oauth2",
     :uid => "1",
     :oauth_token => "0",
-    :oauth_expires_at => 9999999999,
     :email => "test1@columbia.edu",
     :major => "Computer Science",
     :first_name => "Test",
@@ -40,7 +37,6 @@ users = [
     :provider => "google_oauth2",
     :uid => "2",
     :oauth_token => "0",
-    :oauth_expires_at => 9999999999,
     :email => "test2@columbia.edu",
     :major => "Computer Science",
     :first_name => "Test",
@@ -51,7 +47,6 @@ users = [
     :provider => "google_oauth2",
     :uid => "3",
     :oauth_token => "0",
-    :oauth_expires_at => 9999999999,
     :email => "test3@columbia.edu",
     :major => "Economics",
     :first_name => "Test",
@@ -62,7 +57,6 @@ users = [
     :provider => "google_oauth2",
     :uid => "4",
     :oauth_token => "0",
-    :oauth_expires_at => 9999999999,
     :email => "test4@columbia.edu",
     :major => "Electrical Engineering",
     :first_name => "Test",

@@ -13,3 +13,4 @@ coverage/
 .bundle
 *.log
 *.sqlite3
+tmp/

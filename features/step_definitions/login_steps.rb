@@ -1,14 +1,8 @@
-# Given(/^I go to (.*) page/) do |page_name|
-#   visit path_to(page_name)
-# end
-
-# Then(/^I should be on the (.*) page/) do |page_name|
-#   expect(page).to have_current_path(path_to(page_name))
-# end
-
-# Then(/^I should see (.*)/) do |content|
-#   expect(page).to have_content(content)
-# end
+Given(/^the following users exist/) do |users_table|
+  users_table.hashes.each do |user|
+    User.create(user)
+  end
+end
 
 Given(/^User not logged in$/) do
   visit '/logout'
