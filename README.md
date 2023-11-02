@@ -3,13 +3,21 @@
 CourseCompass provides Columbia Students a more personalize course recommendation and career planner. 
 
 
-### TODO
+### Iteration 1: Basic page view for courses, seeds and the recommendation methods
 ```
-Iter1: Deploy on Heroku, with user info and courses description page
 Esteeven & Kevin: User page and course page (including view, feature/cucumber, and spec)
 Orr: work on login feature / 3rd party authorization, only allow columbia emails (columbia.edu/ tc.columbia.edu/ barnard.edu)
 Kaiyuan: Proof of concept (PoC) implement recommendation without integration in ruby for iter 1. 
 ```
+
+
+### Note:
+```
+We have a separate login brach but not merged yet, there are some compability issue we need to solve
+In the development folder, we have implement the recommendation method in python, and will implment it later
+```
+
+
 ### Name | UNI
 
 ```
@@ -108,7 +116,7 @@ heroku run bash
 ```
 
 ### Heroku Demo Deployment 
-https://course-compass-bb433aa11641.herokuapp.com/
+https://course-compass.herokuapp.com/
 
 ### GitHub Repo
 
