@@ -14,7 +14,7 @@ Kaiyuan: Proof of concept (PoC) implement recommendation without integration in 
 ### Note:
 ```
 We have a separate login brach but not merged yet, there are some compability issue we need to solve
-In the development folder, we have implement the recommendation method in python, and will implment it later
+In the development folder, we have implement the recommendation method in python, and will implement it later
 ```
 
 
