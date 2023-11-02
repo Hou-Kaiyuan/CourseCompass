@@ -37,7 +37,7 @@ brew install ruby-build
 curl -fsSL https://github.com/rbenv/rbenv-installer/raw/main/bin/rbenv-doctor | bash
 
 # Install Ruby 2.6.6
-rbenv install --verbose 2.6.6
+rbenv install --verbose 2.6.6 (Apple Silicon: RUBY_CFLAGS="-w" rbenv install 2.6.6)
 rbenv global 2.6.6
 
 # Check that ruby version is 2.6.6
