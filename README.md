@@ -91,7 +91,11 @@ For heroku deployment, make sure [Heroku CLI](https://devcenter.heroku.com/artic
 heroku create
 # You should see heroku in `git remote -v`
 # To remove a previous heroku remote, use `git remote rm heroku`
-git push heroku main
+heroku stack:set heroku-20
+
+heroku addons:create heroku-postgresql
+
+git push heroku master
 
 # Initialize the databases
 heroku run rake db:migrate db:seed
