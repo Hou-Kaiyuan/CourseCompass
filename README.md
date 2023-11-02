@@ -108,8 +108,6 @@ heroku run bash
 ```
 
 ### Heroku Demo Deployment 
-Keep the deployment on for grading. 
-
 https://course-compass.herokuapp.com/
 
 ### GitHub Repo
