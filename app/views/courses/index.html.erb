@@ -7,28 +7,28 @@
   <thead>
     <tr>
       <th>Movie Title</th>
-      <th>Rating</th>
-      <th>Release Date</th>
+      <th>Description</th>
+      <th>Offering Term</th>
       <th>More Info</th>
     </tr>
   </thead>
   <tbody>
-    <% @movies.each do |movie| %>
+    <% @courses.each do |course| %>
       <tr>
         <td>
-          <%= movie.title %>
+          <%= course.name %>
         </td>
         <td>
-          <%= movie.rating %>
+          <%= course.description %>
         </td>
         <td>
-          <%= movie.release_date %>
+          <%= course.offering_term %>
         </td>
         <td>
-          <%= link_to "More about #{movie.title}", movie_path(movie) %>
+          <%= link_to "More about #{course.name}", course_path(course)%>
         </td>
       </tr>
     <% end %>
   </tbody>
 </table>
-<%= link_to 'Add new movie', new_movie_path, :class => 'btn btn-primary' %>
+<%= link_to 'Add new movie', new_course_path, :class => 'btn btn-primary' %>
