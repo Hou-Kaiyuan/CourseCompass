@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20231030184420) do
+ActiveRecord::Schema.define(version: 20231102002240) do
 
   create_table "courses", force: :cascade do |t|
     t.string  "name"
@@ -42,6 +42,7 @@ ActiveRecord::Schema.define(version: 20231030184420) do
     t.string  "first_name"
     t.string  "last_name"
     t.string  "profile_pic"
+    t.string  "password_digest"
   end
 
 end

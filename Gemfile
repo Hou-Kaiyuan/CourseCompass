@@ -31,3 +31,4 @@ gem 'uglifier', '>= 2.7.1'
 gem 'jquery-rails'
 
 gem 'mini_racer'
+gem 'bcrypt'

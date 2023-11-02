@@ -6,8 +6,8 @@ Feature: Login
 
  Background:
       Given the following users exist:
-  | uid | first_name | last_name | email               | major | provider      | oauth_token | profile_pic
-  | 1   | Test       | User1     | test1@columbia.edu  | CS    | google_oauth2 | 0           | "https://static.vecteezy.com/system/resources/previews/002/318/271/non_2x/user-profile-icon-free-vector.jpg"
+  | uid | first_name | last_name | email              | major | provider      | oauth_token | profile_pic
+  | 1   | Test       | User1     | user@columbia.edu  | CS    | google_oauth2 | 0           | "https://static.vecteezy.com/system/resources/previews/002/318/271/non_2x/user-profile-icon-free-vector.jpg"
 
   Scenario: Successful login
     When I go to the login page

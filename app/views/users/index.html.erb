@@ -1,0 +1,18 @@
+<h2>All Users</h2>
+
+<table class="table table-striped col-md-12" id="users">
+  <thead>
+    <tr>
+      <th>Email</th>
+    </tr>
+  </thead>
+  <tbody>
+    <% @users.each do |user| %>
+      <tr>
+        <td>
+          <%= user.email %>
+        </td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>

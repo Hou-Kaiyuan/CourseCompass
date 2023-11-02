@@ -31,7 +31,8 @@ users = [
     :major => "Computer Science",
     :first_name => "Test",
     :last_name => "User1",
-    :profile_pic => "https://static.vecteezy.com/system/resources/previews/002/318/271/non_2x/user-profile-icon-free-vector.jpg"
+    :profile_pic => "https://static.vecteezy.com/system/resources/previews/002/318/271/non_2x/user-profile-icon-free-vector.jpg",
+    :password => "111"
   },
   {
     :provider => "google_oauth2",
@@ -41,7 +42,8 @@ users = [
     :major => "Computer Science",
     :first_name => "Test",
     :last_name => "User2",
-    :profile_pic => "https://static.vecteezy.com/system/resources/previews/002/318/271/non_2x/user-profile-icon-free-vector.jpg"
+    :profile_pic => "https://static.vecteezy.com/system/resources/previews/002/318/271/non_2x/user-profile-icon-free-vector.jpg",
+    :password => "222"
   },
   {
     :provider => "google_oauth2",
@@ -51,7 +53,8 @@ users = [
     :major => "Economics",
     :first_name => "Test",
     :last_name => "User3",
-    :profile_pic => "https://static.vecteezy.com/system/resources/previews/002/318/271/non_2x/user-profile-icon-free-vector.jpg"
+    :profile_pic => "https://static.vecteezy.com/system/resources/previews/002/318/271/non_2x/user-profile-icon-free-vector.jpg",
+    :password => "333"
   },
   {
     :provider => "google_oauth2",
@@ -61,7 +64,8 @@ users = [
     :major => "Electrical Engineering",
     :first_name => "Test",
     :last_name => "User4",
-    :profile_pic => "https://static.vecteezy.com/system/resources/previews/002/318/271/non_2x/user-profile-icon-free-vector.jpg"
+    :profile_pic => "https://static.vecteezy.com/system/resources/previews/002/318/271/non_2x/user-profile-icon-free-vector.jpg",
+    :password => "444"
   }
 ]
 
