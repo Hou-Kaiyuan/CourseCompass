@@ -708,3 +708,994 @@ Started GET "/assets/application.self-377610cd7c1509e934744c810e3b4cf672dfbcacac
 
 
 Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 127.0.0.1 at 2023-11-01 21:07:57 -0400
+
+
+Started GET "/courses" for 127.0.0.1 at 2023-11-01 21:29:57 -0400
+Processing by CoursesController#index as HTML
+  [1m[36mCourse Load (3.8ms)[0m  [1mSELECT "courses".* FROM "courses"[0m
+  Rendered courses/index.html.erb within layouts/application (30.7ms)
+  Rendered layouts/_flash.erb (2.2ms)
+Completed 200 OK in 693ms (Views: 647.9ms | ActiveRecord: 4.2ms)
+
+
+Started GET "/courses" for 127.0.0.1 at 2023-11-01 21:32:25 -0400
+Processing by CoursesController#index as HTML
+  [1m[35mCourse Load (3.0ms)[0m  SELECT "courses".* FROM "courses"
+  Rendered courses/index.html.erb within layouts/application (24.7ms)
+  Rendered layouts/_flash.erb (0.2ms)
+Completed 200 OK in 148ms (Views: 142.8ms | ActiveRecord: 3.0ms)
+
+
+Started GET "/courses" for 127.0.0.1 at 2023-11-01 21:36:28 -0400
+Processing by CoursesController#index as HTML
+  [1m[36mCourse Load (2.3ms)[0m  [1mSELECT "courses".* FROM "courses"[0m
+  Rendered courses/index.html.erb within layouts/application (27.1ms)
+  Rendered layouts/_flash.erb (0.8ms)
+Completed 200 OK in 130ms (Views: 127.0ms | ActiveRecord: 2.3ms)
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 127.0.0.1 at 2023-11-01 21:36:29 -0400
+
+
+Started GET "/assets/application.self-377610cd7c1509e934744c810e3b4cf672dfbcacac3274e7d039827e2ae0fcc7.js?body=1" for 127.0.0.1 at 2023-11-01 21:36:29 -0400
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for 127.0.0.1 at 2023-11-01 21:36:29 -0400
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for 127.0.0.1 at 2023-11-01 21:36:29 -0400
+
+
+Started GET "/courses" for 127.0.0.1 at 2023-11-01 21:36:30 -0400
+Processing by CoursesController#index as HTML
+  [1m[35mCourse Load (0.5ms)[0m  SELECT "courses".* FROM "courses"
+  Rendered courses/index.html.erb within layouts/application (3.0ms)
+  Rendered layouts/_flash.erb (0.1ms)
+Completed 200 OK in 15ms (Views: 14.5ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 127.0.0.1 at 2023-11-01 21:36:30 -0400
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for 127.0.0.1 at 2023-11-01 21:36:30 -0400
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for 127.0.0.1 at 2023-11-01 21:36:30 -0400
+
+
+Started GET "/assets/application.self-377610cd7c1509e934744c810e3b4cf672dfbcacac3274e7d039827e2ae0fcc7.js?body=1" for 127.0.0.1 at 2023-11-01 21:36:30 -0400
+
+
+Started GET "/courses" for 127.0.0.1 at 2023-11-01 21:37:45 -0400
+Processing by CoursesController#index as HTML
+  [1m[36mCourse Load (0.4ms)[0m  [1mSELECT "courses".* FROM "courses"[0m
+  Rendered courses/index.html.erb within layouts/application (16.9ms)
+  Rendered layouts/_flash.erb (0.1ms)
+Completed 200 OK in 151ms (Views: 149.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.self-5356ee81df9dd6d7d2746c27148ddc1f2c09a10316ef93e2de64ae06068cabda.css?body=1" for 127.0.0.1 at 2023-11-01 21:37:46 -0400
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for 127.0.0.1 at 2023-11-01 21:37:46 -0400
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for 127.0.0.1 at 2023-11-01 21:37:46 -0400
+
+
+Started GET "/assets/application.self-377610cd7c1509e934744c810e3b4cf672dfbcacac3274e7d039827e2ae0fcc7.js?body=1" for 127.0.0.1 at 2023-11-01 21:37:46 -0400
+
+
+Started GET "/assets/application-5356ee81df9dd6d7d2746c27148ddc1f2c09a10316ef93e2de64ae06068cabda.css" for 127.0.0.1 at 2023-11-01 21:37:46 -0400
+
+
+Started GET "/courses" for 127.0.0.1 at 2023-11-01 21:39:09 -0400
+Processing by CoursesController#index as HTML
+  [1m[35mCourse Load (0.7ms)[0m  SELECT "courses".* FROM "courses"
+  Rendered courses/index.html.erb within layouts/application (3.2ms)
+  Rendered layouts/_flash.erb (0.2ms)
+Completed 200 OK in 53ms (Views: 51.6ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/application.self-58e7e4be28b0fc96ee6be26cd0ae72b6478a52fb8ab562b47251fcda5d499aac.css?body=1" for 127.0.0.1 at 2023-11-01 21:39:09 -0400
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for 127.0.0.1 at 2023-11-01 21:39:09 -0400
+
+
+Started GET "/assets/application.self-377610cd7c1509e934744c810e3b4cf672dfbcacac3274e7d039827e2ae0fcc7.js?body=1" for 127.0.0.1 at 2023-11-01 21:39:09 -0400
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for 127.0.0.1 at 2023-11-01 21:39:09 -0400
+
+
+Started GET "/assets/application-58e7e4be28b0fc96ee6be26cd0ae72b6478a52fb8ab562b47251fcda5d499aac.css" for 127.0.0.1 at 2023-11-01 21:39:09 -0400
+
+
+Started GET "/courses" for 127.0.0.1 at 2023-11-01 21:39:29 -0400
+Processing by CoursesController#index as HTML
+  [1m[36mCourse Load (0.4ms)[0m  [1mSELECT "courses".* FROM "courses"[0m
+  Rendered courses/index.html.erb within layouts/application (4.1ms)
+  Rendered layouts/_flash.erb (0.1ms)
+Completed 200 OK in 38ms (Views: 37.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for 127.0.0.1 at 2023-11-01 21:39:29 -0400
+
+
+Started GET "/assets/application.self-377610cd7c1509e934744c810e3b4cf672dfbcacac3274e7d039827e2ae0fcc7.js?body=1" for 127.0.0.1 at 2023-11-01 21:39:29 -0400
+
+
+Started GET "/assets/application.self-de1b48ed2085175352269fa969ea756d42771b158f4063c9c0830e0f1b9b2a09.css?body=1" for 127.0.0.1 at 2023-11-01 21:39:29 -0400
+
+
+Started GET "/assets/application-de1b48ed2085175352269fa969ea756d42771b158f4063c9c0830e0f1b9b2a09.css" for 127.0.0.1 at 2023-11-01 21:39:29 -0400
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for 127.0.0.1 at 2023-11-01 21:39:29 -0400
+
+
+Started GET "/courses" for 127.0.0.1 at 2023-11-01 21:41:15 -0400
+Processing by CoursesController#index as HTML
+  [1m[35mCourse Load (1.3ms)[0m  SELECT "courses".* FROM "courses"
+  Rendered courses/index.html.erb within layouts/application (3.1ms)
+  Rendered layouts/_flash.erb (0.4ms)
+Completed 200 OK in 32ms (Views: 30.5ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/assets/application.self-de1b48ed2085175352269fa969ea756d42771b158f4063c9c0830e0f1b9b2a09.css?body=1" for 127.0.0.1 at 2023-11-01 21:41:15 -0400
+
+
+Started GET "/assets/application-de1b48ed2085175352269fa969ea756d42771b158f4063c9c0830e0f1b9b2a09.css" for 127.0.0.1 at 2023-11-01 21:41:15 -0400
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for 127.0.0.1 at 2023-11-01 21:41:15 -0400
+
+
+Started GET "/assets/application.self-377610cd7c1509e934744c810e3b4cf672dfbcacac3274e7d039827e2ae0fcc7.js?body=1" for 127.0.0.1 at 2023-11-01 21:41:15 -0400
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for 127.0.0.1 at 2023-11-01 21:41:15 -0400
+
+
+Started GET "/courses" for 127.0.0.1 at 2023-11-01 21:41:23 -0400
+Processing by CoursesController#index as HTML
+  [1m[36mCourse Load (0.3ms)[0m  [1mSELECT "courses".* FROM "courses"[0m
+  Rendered courses/index.html.erb within layouts/application (34.6ms)
+  Rendered layouts/_flash.erb (0.1ms)
+Completed 200 OK in 52ms (Views: 51.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application-de1b48ed2085175352269fa969ea756d42771b158f4063c9c0830e0f1b9b2a09.css" for 127.0.0.1 at 2023-11-01 21:41:23 -0400
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for 127.0.0.1 at 2023-11-01 21:41:23 -0400
+
+
+Started GET "/assets/application.self-de1b48ed2085175352269fa969ea756d42771b158f4063c9c0830e0f1b9b2a09.css?body=1" for 127.0.0.1 at 2023-11-01 21:41:23 -0400
+
+
+Started GET "/assets/application.self-377610cd7c1509e934744c810e3b4cf672dfbcacac3274e7d039827e2ae0fcc7.js?body=1" for 127.0.0.1 at 2023-11-01 21:41:23 -0400
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for 127.0.0.1 at 2023-11-01 21:41:23 -0400
+
+
+Started GET "/courses" for 127.0.0.1 at 2023-11-01 21:41:31 -0400
+Processing by CoursesController#index as HTML
+  [1m[35mCourse Load (0.3ms)[0m  SELECT "courses".* FROM "courses"
+  Rendered courses/index.html.erb within layouts/application (4.2ms)
+  Rendered layouts/_flash.erb (0.1ms)
+Completed 200 OK in 54ms (Views: 52.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.self-e55f4231c5dab54230342e1d3b22271965183fd1dd92e93b9d86b77501e34496.css?body=1" for 127.0.0.1 at 2023-11-01 21:41:31 -0400
+
+
+Started GET "/assets/application-e55f4231c5dab54230342e1d3b22271965183fd1dd92e93b9d86b77501e34496.css" for 127.0.0.1 at 2023-11-01 21:41:32 -0400
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for 127.0.0.1 at 2023-11-01 21:41:32 -0400
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for 127.0.0.1 at 2023-11-01 21:41:32 -0400
+
+
+Started GET "/assets/application.self-377610cd7c1509e934744c810e3b4cf672dfbcacac3274e7d039827e2ae0fcc7.js?body=1" for 127.0.0.1 at 2023-11-01 21:41:32 -0400
+
+
+Started GET "/courses" for 127.0.0.1 at 2023-11-01 21:46:21 -0400
+Processing by CoursesController#index as HTML
+  [1m[36mCourse Load (2.2ms)[0m  [1mSELECT "courses".* FROM "courses"[0m
+  Rendered courses/index.html.erb within layouts/application (11.5ms)
+  Rendered layouts/_flash.erb (0.5ms)
+Completed 200 OK in 63ms (Views: 56.2ms | ActiveRecord: 2.2ms)
+
+
+Started GET "/courses" for 127.0.0.1 at 2023-11-01 21:48:02 -0400
+Processing by CoursesController#index as HTML
+  [1m[35mCourse Load (0.4ms)[0m  SELECT "courses".* FROM "courses"
+  Rendered courses/index.html.erb within layouts/application (2.8ms)
+  Rendered layouts/_flash.erb (0.1ms)
+Completed 200 OK in 35ms (Views: 34.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/courses/5" for 127.0.0.1 at 2023-11-01 21:48:04 -0400
+Processing by CoursesController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mCourse Load (0.3ms)[0m  [1mSELECT  "courses".* FROM "courses" WHERE "courses"."id" = ? LIMIT 1[0m  [["id", 5]]
+  Rendered courses/show.html.erb within layouts/application (14.5ms)
+Completed 500 Internal Server Error in 42ms (ActiveRecord: 0.3ms)
+
+ActionView::Template::Error (undefined method `title' for #<Course:0x00007f81c61f0be0>):
+    1: <!--  app/views/movies/show.html.erb -->
+    2: <h2>Details about <em><%= @course.title %></em></h2>
+    3: 
+    4: <ul id="details">
+    5:   <li>
+  app/views/courses/show.html.erb:2:in `_app_views_courses_show_html_erb__1815345560574360380_70097660975660'
+
+
+  Rendered /Users/kev/.rbenv/versions/2.6.6/lib/ruby/gems/2.6.0/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.5ms)
+  Rendered /Users/kev/.rbenv/versions/2.6.6/lib/ruby/gems/2.6.0/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.7ms)
+  Rendered /Users/kev/.rbenv/versions/2.6.6/lib/ruby/gems/2.6.0/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /Users/kev/.rbenv/versions/2.6.6/lib/ruby/gems/2.6.0/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (35.4ms)
+
+
+Started GET "/courses/5" for 127.0.0.1 at 2023-11-01 21:48:13 -0400
+Processing by CoursesController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[35mCourse Load (0.3ms)[0m  SELECT  "courses".* FROM "courses" WHERE "courses"."id" = ? LIMIT 1  [["id", 5]]
+  Rendered courses/show.html.erb within layouts/application (5.7ms)
+Completed 500 Internal Server Error in 8ms (ActiveRecord: 0.2ms)
+
+ActionView::Template::Error (undefined method `title' for #<Course:0x00007f81c6eaf160>):
+    1: <!--  app/views/movies/show.html.erb -->
+    2: <h2>Details about <em><%= @course.title %></em></h2>
+    3: 
+    4: <ul id="details">
+    5:   <li>
+  app/views/courses/show.html.erb:2:in `_app_views_courses_show_html_erb__1815345560574360380_70097660975660'
+
+
+  Rendered /Users/kev/.rbenv/versions/2.6.6/lib/ruby/gems/2.6.0/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.0ms)
+  Rendered /Users/kev/.rbenv/versions/2.6.6/lib/ruby/gems/2.6.0/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.0ms)
+  Rendered /Users/kev/.rbenv/versions/2.6.6/lib/ruby/gems/2.6.0/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.6ms)
+  Rendered /Users/kev/.rbenv/versions/2.6.6/lib/ruby/gems/2.6.0/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (28.5ms)
+
+
+Started GET "/courses/5" for 127.0.0.1 at 2023-11-01 21:48:15 -0400
+Processing by CoursesController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mCourse Load (0.2ms)[0m  [1mSELECT  "courses".* FROM "courses" WHERE "courses"."id" = ? LIMIT 1[0m  [["id", 5]]
+  Rendered courses/show.html.erb within layouts/application (5.3ms)
+Completed 500 Internal Server Error in 9ms (ActiveRecord: 0.2ms)
+
+ActionView::Template::Error (undefined method `title' for #<Course:0x00007f81c61b02e8>):
+    1: <!--  app/views/movies/show.html.erb -->
+    2: <h2>Details about <em><%= @course.title %></em></h2>
+    3: 
+    4: <ul id="details">
+    5:   <li>
+  app/views/courses/show.html.erb:2:in `_app_views_courses_show_html_erb__1815345560574360380_70097660975660'
+
+
+  Rendered /Users/kev/.rbenv/versions/2.6.6/lib/ruby/gems/2.6.0/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.5ms)
+  Rendered /Users/kev/.rbenv/versions/2.6.6/lib/ruby/gems/2.6.0/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.7ms)
+  Rendered /Users/kev/.rbenv/versions/2.6.6/lib/ruby/gems/2.6.0/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /Users/kev/.rbenv/versions/2.6.6/lib/ruby/gems/2.6.0/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (20.1ms)
+
+
+Started GET "/courses/2" for 127.0.0.1 at 2023-11-01 21:50:06 -0400
+Processing by CoursesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mCourse Load (0.2ms)[0m  SELECT  "courses".* FROM "courses" WHERE "courses"."id" = ? LIMIT 1  [["id", 2]]
+  Rendered courses/show.html.erb within layouts/application (6.5ms)
+Completed 500 Internal Server Error in 12ms (ActiveRecord: 0.2ms)
+
+ActionView::Template::Error (undefined method `description' for #<Course:0x00007f81c63af378>):
+    38: 
+    39: <h3>Description:</h3>
+    40: <p id="description">
+    41:   <%= @course.description %>
+    42: </p>
+    43: 
+    44: <div class="row">
+  app/views/courses/show.html.erb:41:in `_app_views_courses_show_html_erb__1815345560574360380_70097676627600'
+
+
+  Rendered /Users/kev/.rbenv/versions/2.6.6/lib/ruby/gems/2.6.0/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_source.erb (4.4ms)
+  Rendered /Users/kev/.rbenv/versions/2.6.6/lib/ruby/gems/2.6.0/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.3ms)
+  Rendered /Users/kev/.rbenv/versions/2.6.6/lib/ruby/gems/2.6.0/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /Users/kev/.rbenv/versions/2.6.6/lib/ruby/gems/2.6.0/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (26.8ms)
+
+
+Started GET "/courses/2" for 127.0.0.1 at 2023-11-01 21:52:21 -0400
+Processing by CoursesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mCourse Load (1.2ms)[0m  [1mSELECT  "courses".* FROM "courses" WHERE "courses"."id" = ? LIMIT 1[0m  [["id", 2]]
+  Rendered courses/show.html.erb within layouts/application (13.9ms)
+  Rendered layouts/_flash.erb (0.4ms)
+Completed 200 OK in 93ms (Views: 76.2ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/assets/application.self-e55f4231c5dab54230342e1d3b22271965183fd1dd92e93b9d86b77501e34496.css?body=1" for 127.0.0.1 at 2023-11-01 21:52:21 -0400
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for 127.0.0.1 at 2023-11-01 21:52:21 -0400
+
+
+Started GET "/assets/application.self-377610cd7c1509e934744c810e3b4cf672dfbcacac3274e7d039827e2ae0fcc7.js?body=1" for 127.0.0.1 at 2023-11-01 21:52:21 -0400
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for 127.0.0.1 at 2023-11-01 21:52:21 -0400
+
+
+Started GET "/assets/application-e55f4231c5dab54230342e1d3b22271965183fd1dd92e93b9d86b77501e34496.css" for 127.0.0.1 at 2023-11-01 21:52:21 -0400
+
+
+Started GET "/courses/2/edit" for 127.0.0.1 at 2023-11-01 21:52:34 -0400
+Processing by CoursesController#edit as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mCourse Load (0.2ms)[0m  SELECT  "courses".* FROM "courses" WHERE "courses"."id" = ? LIMIT 1  [["id", 2]]
+  Rendered courses/edit.html.erb within layouts/application (48.8ms)
+  Rendered layouts/_flash.erb (0.1ms)
+Completed 200 OK in 76ms (Views: 73.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/courses" for 127.0.0.1 at 2023-11-01 21:52:41 -0400
+Processing by CoursesController#index as HTML
+  [1m[36mCourse Load (0.7ms)[0m  [1mSELECT "courses".* FROM "courses"[0m
+  Rendered courses/index.html.erb within layouts/application (6.1ms)
+  Rendered layouts/_flash.erb (0.1ms)
+Completed 200 OK in 38ms (Views: 36.2ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/courses/6" for 127.0.0.1 at 2023-11-01 21:52:43 -0400
+Processing by CoursesController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[35mCourse Load (0.2ms)[0m  SELECT  "courses".* FROM "courses" WHERE "courses"."id" = ? LIMIT 1  [["id", 6]]
+  Rendered courses/show.html.erb within layouts/application (0.5ms)
+  Rendered layouts/_flash.erb (0.1ms)
+Completed 200 OK in 15ms (Views: 13.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/courses/6/edit" for 127.0.0.1 at 2023-11-01 21:52:45 -0400
+Processing by CoursesController#edit as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mCourse Load (0.2ms)[0m  [1mSELECT  "courses".* FROM "courses" WHERE "courses"."id" = ? LIMIT 1[0m  [["id", 6]]
+  Rendered courses/edit.html.erb within layouts/application (3.7ms)
+  Rendered layouts/_flash.erb (0.1ms)
+Completed 200 OK in 20ms (Views: 19.0ms | ActiveRecord: 0.2ms)
+
+
+Started PUT "/courses/6" for 127.0.0.1 at 2023-11-01 21:52:48 -0400
+Processing by CoursesController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"SvPFOdY7xGHS0V0TpYIVv07wy9nBnZ+UOu8xp8WCfOofJ7HC/N8ASM/hBGSvx8dpKjOGLYSeB325MK6KcVn4TQ==", "course"=>{"course_number"=>"COMS W 3157-002", "course_title"=>"Advanced Programming", "offering_term"=>"Fall 2023", "midterm"=>"0", "project"=>"0", "instructor"=>"Lee, Jae Woo", "time"=>"5:40 PM - 6:55 PM", "days"=>"TR", "website"=>"http://www.columbia.edu/cu/bulletin/uwb/subj/COMS/W3157-20233-002/"}, "commit"=>"Update Course Info", "id"=>"6"}
+  [1m[35mCourse Load (0.2ms)[0m  SELECT  "courses".* FROM "courses" WHERE "courses"."id" = ? LIMIT 1  [["id", 6]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (2.2ms)[0m  UPDATE "courses" SET "project" = ?, "updated_at" = ? WHERE "courses"."id" = ?  [["project", "f"], ["updated_at", "2023-11-02 01:52:48.045323"], ["id", 6]]
+  [1m[36m (2.2ms)[0m  [1mcommit transaction[0m
+Completed 500 Internal Server Error in 28ms (ActiveRecord: 4.7ms)
+
+NoMethodError (undefined method `movie_path' for #<CoursesController:0x00007f81c6cb6890>
+Did you mean?  view_paths):
+  app/controllers/courses_controller.rb:31:in `update'
+
+
+  Rendered /Users/kev/.rbenv/versions/2.6.6/lib/ruby/gems/2.6.0/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_source.erb (3.3ms)
+  Rendered /Users/kev/.rbenv/versions/2.6.6/lib/ruby/gems/2.6.0/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.8ms)
+  Rendered /Users/kev/.rbenv/versions/2.6.6/lib/ruby/gems/2.6.0/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /Users/kev/.rbenv/versions/2.6.6/lib/ruby/gems/2.6.0/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (28.9ms)
+
+
+Started GET "/courses" for 127.0.0.1 at 2023-11-01 21:53:15 -0400
+Processing by CoursesController#index as HTML
+  [1m[35mCourse Load (1.4ms)[0m  SELECT "courses".* FROM "courses"
+  Rendered courses/index.html.erb within layouts/application (4.6ms)
+  Rendered layouts/_flash.erb (0.1ms)
+Completed 200 OK in 36ms (Views: 34.0ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/courses/6" for 127.0.0.1 at 2023-11-01 21:54:07 -0400
+Processing by CoursesController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mCourse Load (0.4ms)[0m  [1mSELECT  "courses".* FROM "courses" WHERE "courses"."id" = ? LIMIT 1[0m  [["id", 6]]
+  Rendered courses/show.html.erb within layouts/application (0.5ms)
+  Rendered layouts/_flash.erb (0.1ms)
+Completed 200 OK in 25ms (Views: 23.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/courses" for 127.0.0.1 at 2023-11-01 21:54:09 -0400
+Processing by CoursesController#index as HTML
+  [1m[35mCourse Load (0.3ms)[0m  SELECT "courses".* FROM "courses"
+  Rendered courses/index.html.erb within layouts/application (3.0ms)
+  Rendered layouts/_flash.erb (0.1ms)
+Completed 200 OK in 24ms (Views: 23.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/courses" for 127.0.0.1 at 2023-11-01 21:54:11 -0400
+Processing by CoursesController#index as HTML
+  [1m[36mCourse Load (0.5ms)[0m  [1mSELECT "courses".* FROM "courses"[0m
+  Rendered courses/index.html.erb within layouts/application (48.2ms)
+  Rendered layouts/_flash.erb (0.1ms)
+Completed 200 OK in 66ms (Views: 65.1ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/courses/5" for 127.0.0.1 at 2023-11-01 21:54:58 -0400
+Processing by CoursesController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[35mCourse Load (0.3ms)[0m  SELECT  "courses".* FROM "courses" WHERE "courses"."id" = ? LIMIT 1  [["id", 5]]
+  Rendered courses/show.html.erb within layouts/application (0.6ms)
+  Rendered layouts/_flash.erb (0.1ms)
+Completed 200 OK in 32ms (Views: 30.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/courses" for 127.0.0.1 at 2023-11-01 21:55:08 -0400
+Processing by CoursesController#index as HTML
+  [1m[36mCourse Load (0.4ms)[0m  [1mSELECT "courses".* FROM "courses"[0m
+  Rendered courses/index.html.erb within layouts/application (2.4ms)
+  Rendered layouts/_flash.erb (0.1ms)
+Completed 200 OK in 33ms (Views: 32.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/courses/5" for 127.0.0.1 at 2023-11-01 21:57:15 -0400
+Processing by CoursesController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[35mCourse Load (0.2ms)[0m  SELECT  "courses".* FROM "courses" WHERE "courses"."id" = ? LIMIT 1  [["id", 5]]
+  Rendered courses/show.html.erb within layouts/application (0.7ms)
+  Rendered layouts/_flash.erb (0.2ms)
+Completed 200 OK in 28ms (Views: 27.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/courses" for 127.0.0.1 at 2023-11-01 21:57:16 -0400
+Processing by CoursesController#index as HTML
+  [1m[36mCourse Load (0.4ms)[0m  [1mSELECT "courses".* FROM "courses"[0m
+  Rendered courses/index.html.erb within layouts/application (2.6ms)
+  Rendered layouts/_flash.erb (0.0ms)
+Completed 200 OK in 16ms (Views: 15.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/courses/2" for 127.0.0.1 at 2023-11-01 21:57:21 -0400
+Processing by CoursesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mCourse Load (0.3ms)[0m  SELECT  "courses".* FROM "courses" WHERE "courses"."id" = ? LIMIT 1  [["id", 2]]
+  Rendered courses/show.html.erb within layouts/application (0.4ms)
+  Rendered layouts/_flash.erb (0.1ms)
+Completed 200 OK in 15ms (Views: 14.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/courses" for 127.0.0.1 at 2023-11-01 21:57:33 -0400
+Processing by CoursesController#index as HTML
+  [1m[36mCourse Load (1.0ms)[0m  [1mSELECT "courses".* FROM "courses"[0m
+  Rendered courses/index.html.erb within layouts/application (218.2ms)
+  Rendered layouts/_flash.erb (0.2ms)
+Completed 200 OK in 492ms (Views: 481.1ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/courses" for 127.0.0.1 at 2023-11-01 22:05:32 -0400
+Processing by CoursesController#index as HTML
+  [1m[35mCourse Load (2.1ms)[0m  SELECT "courses".* FROM "courses"
+  Rendered courses/index.html.erb within layouts/application (6.6ms)
+  Rendered layouts/_flash.erb (0.1ms)
+Completed 200 OK in 42ms (Views: 38.9ms | ActiveRecord: 2.1ms)
+
+
+Started GET "/courses/1" for 127.0.0.1 at 2023-11-01 22:05:36 -0400
+Processing by CoursesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mCourse Load (0.3ms)[0m  [1mSELECT  "courses".* FROM "courses" WHERE "courses"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered courses/show.html.erb within layouts/application (1.2ms)
+  Rendered layouts/_flash.erb (0.1ms)
+Completed 200 OK in 18ms (Views: 16.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/courses" for 127.0.0.1 at 2023-11-01 22:05:39 -0400
+Processing by CoursesController#index as HTML
+  [1m[35mCourse Load (0.7ms)[0m  SELECT "courses".* FROM "courses"
+  Rendered courses/index.html.erb within layouts/application (3.9ms)
+  Rendered layouts/_flash.erb (0.1ms)
+Completed 200 OK in 41ms (Views: 40.3ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/courses/1/edit" for 127.0.0.1 at 2023-11-01 22:05:41 -0400
+Processing by CoursesController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mCourse Load (0.2ms)[0m  [1mSELECT  "courses".* FROM "courses" WHERE "courses"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered courses/edit.html.erb within layouts/application (6.4ms)
+  Rendered layouts/_flash.erb (0.2ms)
+Completed 200 OK in 32ms (Views: 30.6ms | ActiveRecord: 0.2ms)
+
+
+Started DELETE "/courses/1" for 127.0.0.1 at 2023-11-01 22:05:48 -0400
+Processing by CoursesController#destroy as HTML
+  Parameters: {"authenticity_token"=>"iDdcWOIDm0r/03AXNmkzoyzIJ6s1+RR1aQ/dSGBbjELd4yijyOdfY+LjKWA8LOF1SAtqX3D6jJzq0EJl1IAI5Q==", "id"=>"1"}
+  [1m[35mCourse Load (0.2ms)[0m  SELECT  "courses".* FROM "courses" WHERE "courses"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (2.3ms)[0m  DELETE FROM "courses" WHERE "courses"."id" = ?  [["id", 1]]
+  [1m[36m (3.1ms)[0m  [1mcommit transaction[0m
+Completed 500 Internal Server Error in 35ms (ActiveRecord: 5.8ms)
+
+NameError (undefined local variable or method `movies_path' for #<CoursesController:0x00007f81c46d89e8>):
+  app/controllers/courses_controller.rb:38:in `destroy'
+
+
+  Rendered /Users/kev/.rbenv/versions/2.6.6/lib/ruby/gems/2.6.0/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.8ms)
+  Rendered /Users/kev/.rbenv/versions/2.6.6/lib/ruby/gems/2.6.0/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.5ms)
+  Rendered /Users/kev/.rbenv/versions/2.6.6/lib/ruby/gems/2.6.0/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.6ms)
+  Rendered /Users/kev/.rbenv/versions/2.6.6/lib/ruby/gems/2.6.0/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (36.1ms)
+
+
+Started DELETE "/courses/1" for 127.0.0.1 at 2023-11-01 22:07:42 -0400
+Processing by CoursesController#destroy as HTML
+  Parameters: {"authenticity_token"=>"iDdcWOIDm0r/03AXNmkzoyzIJ6s1+RR1aQ/dSGBbjELd4yijyOdfY+LjKWA8LOF1SAtqX3D6jJzq0EJl1IAI5Q==", "id"=>"1"}
+  [1m[35mCourse Load (1.4ms)[0m  SELECT  "courses".* FROM "courses" WHERE "courses"."id" = ? LIMIT 1  [["id", 1]]
+Completed 404 Not Found in 11ms (ActiveRecord: 2.4ms)
+
+ActiveRecord::RecordNotFound (Couldn't find Course with 'id'=1):
+  app/controllers/courses_controller.rb:35:in `destroy'
+
+
+  Rendered /Users/kev/.rbenv/versions/2.6.6/lib/ruby/gems/2.6.0/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.7ms)
+  Rendered /Users/kev/.rbenv/versions/2.6.6/lib/ruby/gems/2.6.0/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.3ms)
+  Rendered /Users/kev/.rbenv/versions/2.6.6/lib/ruby/gems/2.6.0/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /Users/kev/.rbenv/versions/2.6.6/lib/ruby/gems/2.6.0/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (32.7ms)
+
+
+Started DELETE "/courses/1" for 127.0.0.1 at 2023-11-01 22:10:08 -0400
+Processing by CoursesController#destroy as HTML
+  Parameters: {"authenticity_token"=>"iDdcWOIDm0r/03AXNmkzoyzIJ6s1+RR1aQ/dSGBbjELd4yijyOdfY+LjKWA8LOF1SAtqX3D6jJzq0EJl1IAI5Q==", "id"=>"1"}
+  [1m[36mCourse Load (0.2ms)[0m  [1mSELECT  "courses".* FROM "courses" WHERE "courses"."id" = ? LIMIT 1[0m  [["id", 1]]
+Completed 404 Not Found in 3ms (ActiveRecord: 0.2ms)
+
+ActiveRecord::RecordNotFound (Couldn't find Course with 'id'=1):
+  app/controllers/courses_controller.rb:35:in `destroy'
+
+
+  Rendered /Users/kev/.rbenv/versions/2.6.6/lib/ruby/gems/2.6.0/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_source.erb (4.6ms)
+  Rendered /Users/kev/.rbenv/versions/2.6.6/lib/ruby/gems/2.6.0/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.5ms)
+  Rendered /Users/kev/.rbenv/versions/2.6.6/lib/ruby/gems/2.6.0/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.9ms)
+  Rendered /Users/kev/.rbenv/versions/2.6.6/lib/ruby/gems/2.6.0/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (37.0ms)
+
+
+Started GET "/courses" for 127.0.0.1 at 2023-11-01 22:15:14 -0400
+Processing by CoursesController#index as HTML
+  [1m[35mCourse Load (0.6ms)[0m  SELECT "courses".* FROM "courses"
+  Rendered courses/index.html.erb within layouts/application (12.5ms)
+  Rendered layouts/_flash.erb (0.2ms)
+Completed 200 OK in 57ms (Views: 54.5ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/courses/7" for 127.0.0.1 at 2023-11-01 22:15:18 -0400
+Processing by CoursesController#show as HTML
+  Parameters: {"id"=>"7"}
+  [1m[36mCourse Load (0.2ms)[0m  [1mSELECT  "courses".* FROM "courses" WHERE "courses"."id" = ? LIMIT 1[0m  [["id", 7]]
+  Rendered courses/show.html.erb within layouts/application (0.5ms)
+  Rendered layouts/_flash.erb (0.1ms)
+Completed 200 OK in 19ms (Views: 17.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/courses/show.3" for 127.0.0.1 at 2023-11-01 22:15:38 -0400
+Processing by CoursesController#show as 
+  Parameters: {"id"=>"show"}
+  [1m[35mCourse Load (1.7ms)[0m  SELECT  "courses".* FROM "courses" WHERE "courses"."id" = ? LIMIT 1  [["id", 0]]
+Completed 404 Not Found in 13ms (ActiveRecord: 2.3ms)
+
+ActiveRecord::RecordNotFound (Couldn't find Course with 'id'=show):
+  app/controllers/courses_controller.rb:5:in `show'
+
+
+  Rendered /Users/kev/.rbenv/versions/2.6.6/lib/ruby/gems/2.6.0/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_source.erb (3.3ms)
+  Rendered /Users/kev/.rbenv/versions/2.6.6/lib/ruby/gems/2.6.0/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.9ms)
+  Rendered /Users/kev/.rbenv/versions/2.6.6/lib/ruby/gems/2.6.0/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.1ms)
+  Rendered /Users/kev/.rbenv/versions/2.6.6/lib/ruby/gems/2.6.0/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (23.2ms)
+
+
+Started GET "/courses/5" for 127.0.0.1 at 2023-11-01 22:15:58 -0400
+Processing by CoursesController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mCourse Load (0.2ms)[0m  [1mSELECT  "courses".* FROM "courses" WHERE "courses"."id" = ? LIMIT 1[0m  [["id", 5]]
+  Rendered courses/show.html.erb within layouts/application (1.2ms)
+  Rendered layouts/_flash.erb (0.2ms)
+Completed 200 OK in 50ms (Views: 38.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/courses" for 127.0.0.1 at 2023-11-01 22:26:27 -0400
+Processing by CoursesController#index as HTML
+  [1m[35mCourse Load (0.2ms)[0m  SELECT "courses".* FROM "courses"
+  Rendered courses/index.html.erb within layouts/application (2.2ms)
+  Rendered layouts/_flash.erb (0.1ms)
+Completed 200 OK in 99ms (Views: 98.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/courses/2" for 127.0.0.1 at 2023-11-01 22:28:38 -0400
+Processing by CoursesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mCourse Load (1.0ms)[0m  [1mSELECT  "courses".* FROM "courses" WHERE "courses"."id" = ? LIMIT 1[0m  [["id", 2]]
+  Rendered courses/show.html.erb within layouts/application (3.6ms)
+  Rendered layouts/_flash.erb (0.4ms)
+Completed 200 OK in 60ms (Views: 52.5ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/courses" for 127.0.0.1 at 2023-11-01 22:28:42 -0400
+Processing by CoursesController#index as HTML
+  [1m[35mCourse Load (0.9ms)[0m  SELECT "courses".* FROM "courses"
+  Rendered courses/index.html.erb within layouts/application (5.4ms)
+  Rendered layouts/_flash.erb (0.0ms)
+Completed 200 OK in 21ms (Views: 19.4ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/courses" for 127.0.0.1 at 2023-11-01 22:38:28 -0400
+Processing by CoursesController#index as HTML
+  [1m[36mCourse Load (2.7ms)[0m  [1mSELECT "courses".* FROM "courses"[0m
+  Rendered courses/index.html.erb within layouts/application (31.2ms)
+  Rendered layouts/_flash.erb (1.9ms)
+Completed 200 OK in 136ms (Views: 129.5ms | ActiveRecord: 2.7ms)
+
+
+Started GET "/assets/application.self-e55f4231c5dab54230342e1d3b22271965183fd1dd92e93b9d86b77501e34496.css?body=1" for 127.0.0.1 at 2023-11-01 22:38:28 -0400
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for 127.0.0.1 at 2023-11-01 22:38:28 -0400
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for 127.0.0.1 at 2023-11-01 22:38:28 -0400
+
+
+Started GET "/assets/application.self-377610cd7c1509e934744c810e3b4cf672dfbcacac3274e7d039827e2ae0fcc7.js?body=1" for 127.0.0.1 at 2023-11-01 22:38:28 -0400
+
+
+Started GET "/assets/application-e55f4231c5dab54230342e1d3b22271965183fd1dd92e93b9d86b77501e34496.css" for 127.0.0.1 at 2023-11-01 22:38:28 -0400
+
+
+Started GET "/courses" for 127.0.0.1 at 2023-11-01 22:44:18 -0400
+Processing by CoursesController#index as HTML
+  Rendered courses/index.html.erb within layouts/application (7.7ms)
+Completed 500 Internal Server Error in 28ms (ActiveRecord: 0.0ms)
+
+SyntaxError (/Users/kev/Desktop/Comp Sci Projects/COMSW4152 Projects/CourseCompass/app/views/courses/index.html.erb:47: syntax error, unexpected end-of-input, expecting end):
+  app/views/courses/index.html.erb:47: syntax error, unexpected end-of-input, expecting end
+
+
+  Rendered /Users/kev/.rbenv/versions/2.6.6/lib/ruby/gems/2.6.0/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_source.erb (6.6ms)
+  Rendered /Users/kev/.rbenv/versions/2.6.6/lib/ruby/gems/2.6.0/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (13.3ms)
+  Rendered /Users/kev/.rbenv/versions/2.6.6/lib/ruby/gems/2.6.0/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.1ms)
+  Rendered /Users/kev/.rbenv/versions/2.6.6/lib/ruby/gems/2.6.0/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (51.1ms)
+
+
+Started GET "/courses" for 127.0.0.1 at 2023-11-01 22:53:21 -0400
+Processing by CoursesController#index as HTML
+  [1m[35m (0.5ms)[0m  SELECT COUNT(*) FROM "courses"
+  [1m[36mCourse Load (0.3ms)[0m  [1mSELECT "courses".* FROM "courses"[0m
+  Rendered courses/index.html.erb within layouts/application (43.3ms)
+  Rendered layouts/_flash.erb (0.3ms)
+Completed 200 OK in 80ms (Views: 77.4ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/courses" for 127.0.0.1 at 2023-11-01 22:53:23 -0400
+Processing by CoursesController#index as HTML
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "courses"
+  [1m[36mCourse Load (0.3ms)[0m  [1mSELECT "courses".* FROM "courses"[0m
+  Rendered courses/index.html.erb within layouts/application (3.9ms)
+  Rendered layouts/_flash.erb (0.1ms)
+Completed 200 OK in 19ms (Views: 18.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/courses" for 127.0.0.1 at 2023-11-01 22:53:25 -0400
+Processing by CoursesController#index as HTML
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "courses"
+  [1m[36mCourse Load (0.3ms)[0m  [1mSELECT "courses".* FROM "courses"[0m
+  Rendered courses/index.html.erb within layouts/application (3.1ms)
+  Rendered layouts/_flash.erb (0.4ms)
+Completed 200 OK in 16ms (Views: 15.3ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2023-11-01 22:53:27 -0400
+
+
+Started GET "/courses" for 127.0.0.1 at 2023-11-01 22:53:27 -0400
+Processing by CoursesController#index as HTML
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "courses"
+  [1m[36mCourse Load (0.2ms)[0m  [1mSELECT "courses".* FROM "courses"[0m
+  Rendered courses/index.html.erb within layouts/application (2.6ms)
+  Rendered layouts/_flash.erb (0.0ms)
+Completed 200 OK in 78ms (Views: 77.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/courses" for 127.0.0.1 at 2023-11-01 22:53:29 -0400
+Processing by CoursesController#index as HTML
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "courses"
+  [1m[36mCourse Load (0.1ms)[0m  [1mSELECT "courses".* FROM "courses"[0m
+  Rendered courses/index.html.erb within layouts/application (2.1ms)
+  Rendered layouts/_flash.erb (0.1ms)
+Completed 200 OK in 14ms (Views: 13.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/courses" for 127.0.0.1 at 2023-11-01 22:53:46 -0400
+Processing by CoursesController#index as HTML
+  [1m[35mCourse Load (0.5ms)[0m  SELECT "courses".* FROM "courses"
+  Rendered courses/index.html.erb within layouts/application (10.1ms)
+  Rendered layouts/_flash.erb (0.1ms)
+Completed 200 OK in 47ms (Views: 45.7ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/courses" for 127.0.0.1 at 2023-11-01 22:54:34 -0400
+Processing by CoursesController#index as HTML
+  [1m[36m (1.4ms)[0m  [1mSELECT COUNT(*) FROM "courses"[0m
+  [1m[35mCourse Load (0.4ms)[0m  SELECT "courses".* FROM "courses"
+  Rendered courses/index.html.erb within layouts/application (11.2ms)
+  Rendered layouts/_flash.erb (0.1ms)
+Completed 200 OK in 38ms (Views: 35.6ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/courses" for 127.0.0.1 at 2023-11-01 22:54:34 -0400
+Processing by CoursesController#index as HTML
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "courses"[0m
+  [1m[35mCourse Load (0.2ms)[0m  SELECT "courses".* FROM "courses"
+  Rendered courses/index.html.erb within layouts/application (2.6ms)
+  Rendered layouts/_flash.erb (0.1ms)
+Completed 200 OK in 15ms (Views: 14.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/courses" for 127.0.0.1 at 2023-11-01 22:54:35 -0400
+Processing by CoursesController#index as HTML
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "courses"[0m
+  [1m[35mCourse Load (0.3ms)[0m  SELECT "courses".* FROM "courses"
+  Rendered courses/index.html.erb within layouts/application (4.1ms)
+  Rendered layouts/_flash.erb (0.1ms)
+Completed 200 OK in 17ms (Views: 16.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/courses" for 127.0.0.1 at 2023-11-01 22:54:47 -0400
+Processing by CoursesController#index as HTML
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "courses"[0m
+  Rendered courses/index.html.erb within layouts/application (9.0ms)
+Completed 500 Internal Server Error in 16ms (ActiveRecord: 0.2ms)
+
+ActionView::Template::Error (wrong number of arguments (given 1, expected 0)):
+     7:   </div>
+     8:   <%= submit_tag 'Search', class: 'btn btn-primary' %>
+     9: 
+    10:   <% if @courses.any? puts(@courses.any?) %>
+    11:     <table class="table table-striped col-md-12" id="courses">
+    12:       <thead>
+    13:       <tr>
+  app/views/courses/index.html.erb:10:in `block in _app_views_courses_index_html_erb___9263152604738033_70097660721080'
+  app/views/courses/index.html.erb:4:in `_app_views_courses_index_html_erb___9263152604738033_70097660721080'
+
+
+  Rendered /Users/kev/.rbenv/versions/2.6.6/lib/ruby/gems/2.6.0/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_source.erb (21.4ms)
+  Rendered /Users/kev/.rbenv/versions/2.6.6/lib/ruby/gems/2.6.0/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.0ms)
+  Rendered /Users/kev/.rbenv/versions/2.6.6/lib/ruby/gems/2.6.0/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.3ms)
+  Rendered /Users/kev/.rbenv/versions/2.6.6/lib/ruby/gems/2.6.0/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (66.4ms)
+
+
+Started GET "/courses" for 127.0.0.1 at 2023-11-01 22:55:08 -0400
+Processing by CoursesController#index as HTML
+  [1m[35m (1.5ms)[0m  SELECT COUNT(*) FROM "courses"
+  Rendered courses/index.html.erb within layouts/application (9.0ms)
+Completed 500 Internal Server Error in 18ms (ActiveRecord: 1.5ms)
+
+ActionView::Template::Error (wrong number of arguments (given 1, expected 0)):
+     7:   </div>
+     8:   <%= submit_tag 'Search', class: 'btn btn-primary' %>
+     9: 
+    10:   <% if @courses.any? puts@courses.any? %>
+    11:     <table class="table table-striped col-md-12" id="courses">
+    12:       <thead>
+    13:       <tr>
+  app/views/courses/index.html.erb:10:in `block in _app_views_courses_index_html_erb___9263152604738033_70097682102240'
+  app/views/courses/index.html.erb:4:in `_app_views_courses_index_html_erb___9263152604738033_70097682102240'
+
+
+  Rendered /Users/kev/.rbenv/versions/2.6.6/lib/ruby/gems/2.6.0/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_source.erb (7.1ms)
+  Rendered /Users/kev/.rbenv/versions/2.6.6/lib/ruby/gems/2.6.0/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (6.3ms)
+  Rendered /Users/kev/.rbenv/versions/2.6.6/lib/ruby/gems/2.6.0/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /Users/kev/.rbenv/versions/2.6.6/lib/ruby/gems/2.6.0/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (37.3ms)
+
+
+Started GET "/courses" for 127.0.0.1 at 2023-11-01 22:55:13 -0400
+Processing by CoursesController#index as HTML
+  Rendered courses/index.html.erb within layouts/application (3.5ms)
+Completed 500 Internal Server Error in 6ms (ActiveRecord: 0.0ms)
+
+SyntaxError (/Users/kev/Desktop/Comp Sci Projects/COMSW4152 Projects/CourseCompass/app/views/courses/index.html.erb:10: syntax error, unexpected ',', expecting then or ';' or '\n'
+'.freeze;   if @courses.any?, puts@courses.any? 
+                            ^
+/Users/kev/Desktop/Comp Sci Projects/COMSW4152 Projects/CourseCompass/app/views/courses/index.html.erb:39: else without rescue is useless
+'.freeze;   else 
+            ^~~~
+/Users/kev/Desktop/Comp Sci Projects/COMSW4152 Projects/CourseCompass/app/views/courses/index.html.erb:46: syntax error, unexpected ensure, expecting end-of-input
+          ensure
+          ^~~~~~):
+  app/views/courses/index.html.erb:10: syntax error, unexpected ',', expecting then or ';' or '\n'
+  app/views/courses/index.html.erb:39: else without rescue is useless
+  app/views/courses/index.html.erb:46: syntax error, unexpected ensure, expecting end-of-input
+
+
+  Rendered /Users/kev/.rbenv/versions/2.6.6/lib/ruby/gems/2.6.0/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_source.erb (41.7ms)
+  Rendered /Users/kev/.rbenv/versions/2.6.6/lib/ruby/gems/2.6.0/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (5.1ms)
+  Rendered /Users/kev/.rbenv/versions/2.6.6/lib/ruby/gems/2.6.0/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.6ms)
+  Rendered /Users/kev/.rbenv/versions/2.6.6/lib/ruby/gems/2.6.0/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (71.5ms)
+
+
+Started GET "/courses" for 127.0.0.1 at 2023-11-01 22:55:21 -0400
+Processing by CoursesController#index as HTML
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "courses"[0m
+  [1m[35mCourse Load (0.3ms)[0m  SELECT "courses".* FROM "courses"
+  Rendered courses/index.html.erb within layouts/application (4.9ms)
+  Rendered layouts/_flash.erb (0.2ms)
+Completed 200 OK in 34ms (Views: 33.0ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/courses" for 127.0.0.1 at 2023-11-01 22:55:27 -0400
+Processing by CoursesController#index as HTML
+  Rendered courses/index.html.erb within layouts/application (0.9ms)
+Completed 500 Internal Server Error in 6ms (ActiveRecord: 0.0ms)
+
+SyntaxError (/Users/kev/Desktop/Comp Sci Projects/COMSW4152 Projects/CourseCompass/app/views/courses/index.html.erb:39: else without rescue is useless
+'.freeze;   else 
+            ^~~~
+/Users/kev/Desktop/Comp Sci Projects/COMSW4152 Projects/CourseCompass/app/views/courses/index.html.erb:46: syntax error, unexpected ensure, expecting end-of-input
+          ensure
+          ^~~~~~):
+  app/views/courses/index.html.erb:39: else without rescue is useless
+  app/views/courses/index.html.erb:46: syntax error, unexpected ensure, expecting end-of-input
+
+
+  Rendered /Users/kev/.rbenv/versions/2.6.6/lib/ruby/gems/2.6.0/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_source.erb (4.3ms)
+  Rendered /Users/kev/.rbenv/versions/2.6.6/lib/ruby/gems/2.6.0/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.3ms)
+  Rendered /Users/kev/.rbenv/versions/2.6.6/lib/ruby/gems/2.6.0/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /Users/kev/.rbenv/versions/2.6.6/lib/ruby/gems/2.6.0/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (26.3ms)
+
+
+Started GET "/courses" for 127.0.0.1 at 2023-11-01 22:56:02 -0400
+Processing by CoursesController#index as HTML
+  Rendered courses/index.html.erb within layouts/application (5.6ms)
+Completed 500 Internal Server Error in 10ms (ActiveRecord: 0.0ms)
+
+SyntaxError (/Users/kev/Desktop/Comp Sci Projects/COMSW4152 Projects/CourseCompass/app/views/courses/index.html.erb:43: syntax error, unexpected ensure, expecting end-of-input
+          ensure
+          ^~~~~~):
+  app/views/courses/index.html.erb:43: syntax error, unexpected ensure, expecting end-of-input
+
+
+  Rendered /Users/kev/.rbenv/versions/2.6.6/lib/ruby/gems/2.6.0/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_source.erb (12.6ms)
+  Rendered /Users/kev/.rbenv/versions/2.6.6/lib/ruby/gems/2.6.0/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (34.5ms)
+  Rendered /Users/kev/.rbenv/versions/2.6.6/lib/ruby/gems/2.6.0/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.8ms)
+  Rendered /Users/kev/.rbenv/versions/2.6.6/lib/ruby/gems/2.6.0/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (106.2ms)
+
+
+Started GET "/courses" for 127.0.0.1 at 2023-11-01 22:56:19 -0400
+Processing by CoursesController#index as HTML
+  [1m[36mCourse Load (0.4ms)[0m  [1mSELECT "courses".* FROM "courses"[0m
+  Rendered courses/index.html.erb within layouts/application (5.8ms)
+  Rendered layouts/_flash.erb (0.1ms)
+Completed 200 OK in 310ms (Views: 306.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/courses" for 127.0.0.1 at 2023-11-01 22:57:06 -0400
+Processing by CoursesController#index as HTML
+  [1m[35mCourse Load (2.2ms)[0m  SELECT "courses".* FROM "courses"
+  Rendered courses/index.html.erb within layouts/application (27.0ms)
+  Rendered layouts/_flash.erb (0.3ms)
+Completed 200 OK in 125ms (Views: 122.2ms | ActiveRecord: 2.2ms)
+
+
+Started GET "/courses" for 127.0.0.1 at 2023-11-01 22:57:33 -0400
+Processing by CoursesController#index as HTML
+  [1m[36mCourse Load (1.5ms)[0m  [1mSELECT "courses".* FROM "courses"[0m
+  Rendered courses/index.html.erb within layouts/application (4.1ms)
+  Rendered layouts/_flash.erb (0.1ms)
+Completed 200 OK in 47ms (Views: 45.0ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/courses" for 127.0.0.1 at 2023-11-01 22:58:21 -0400
+Processing by CoursesController#index as HTML
+  [1m[35mCourse Load (0.4ms)[0m  SELECT "courses".* FROM "courses"
+  Rendered courses/index.html.erb within layouts/application (8.9ms)
+  Rendered layouts/_flash.erb (0.1ms)
+Completed 200 OK in 60ms (Views: 59.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/courses" for 127.0.0.1 at 2023-11-01 22:58:29 -0400
+Processing by CoursesController#index as HTML
+  [1m[36mCourse Load (0.3ms)[0m  [1mSELECT "courses".* FROM "courses"[0m
+  Rendered courses/index.html.erb within layouts/application (5.1ms)
+  Rendered layouts/_flash.erb (0.1ms)
+Completed 200 OK in 21ms (Views: 21.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/courses" for 127.0.0.1 at 2023-11-01 22:58:36 -0400
+Processing by CoursesController#index as HTML
+  [1m[35mCourse Load (0.2ms)[0m  SELECT "courses".* FROM "courses"
+  Rendered courses/index.html.erb within layouts/application (4.5ms)
+  Rendered layouts/_flash.erb (0.1ms)
+Completed 200 OK in 21ms (Views: 20.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/courses" for 127.0.0.1 at 2023-11-01 22:58:37 -0400
+Processing by CoursesController#index as HTML
+  [1m[36mCourse Load (0.8ms)[0m  [1mSELECT "courses".* FROM "courses"[0m
+  Rendered courses/index.html.erb within layouts/application (7.4ms)
+  Rendered layouts/_flash.erb (0.1ms)
+Completed 200 OK in 24ms (Views: 23.3ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/courses" for 127.0.0.1 at 2023-11-01 22:58:44 -0400
+Processing by CoursesController#index as HTML
+  [1m[35mCourse Load (1.2ms)[0m  SELECT "courses".* FROM "courses"
+  Rendered courses/index.html.erb within layouts/application (4.8ms)
+  Rendered layouts/_flash.erb (0.1ms)
+Completed 200 OK in 20ms (Views: 18.6ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/courses" for 127.0.0.1 at 2023-11-01 22:59:09 -0400
+Processing by CoursesController#index as HTML
+  [1m[36mCourse Load (0.4ms)[0m  [1mSELECT "courses".* FROM "courses"[0m
+  Rendered courses/index.html.erb within layouts/application (3.2ms)
+  Rendered layouts/_flash.erb (0.1ms)
+Completed 200 OK in 35ms (Views: 34.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/courses?utf8=%E2%9C%93&search=test&commit=Search" for 127.0.0.1 at 2023-11-01 22:59:20 -0400
+Processing by CoursesController#index as HTML
+  Parameters: {"utf8"=>"✓", "search"=>"test", "commit"=>"Search"}
+  [1m[35mCourse Load (0.5ms)[0m  SELECT "courses".* FROM "courses" WHERE (course_number LIKE '%test%' OR course_title LIKE '%test%')
+  Rendered courses/index.html.erb within layouts/application (2.9ms)
+  Rendered layouts/_flash.erb (0.1ms)
+Completed 200 OK in 27ms (Views: 16.1ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/courses?utf8=%E2%9C%93&search=machine&commit=Search" for 127.0.0.1 at 2023-11-01 22:59:26 -0400
+Processing by CoursesController#index as HTML
+  Parameters: {"utf8"=>"✓", "search"=>"machine", "commit"=>"Search"}
+  [1m[36mCourse Load (0.3ms)[0m  [1mSELECT "courses".* FROM "courses" WHERE (course_number LIKE '%machine%' OR course_title LIKE '%machine%')[0m
+  Rendered courses/index.html.erb within layouts/application (1.7ms)
+  Rendered layouts/_flash.erb (0.1ms)
+Completed 200 OK in 23ms (Views: 22.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/courses?utf8=%E2%9C%93&search=advanced+programming&commit=Search" for 127.0.0.1 at 2023-11-01 22:59:35 -0400
+Processing by CoursesController#index as HTML
+  Parameters: {"utf8"=>"✓", "search"=>"advanced programming", "commit"=>"Search"}
+  [1m[35mCourse Load (0.3ms)[0m  SELECT "courses".* FROM "courses" WHERE (course_number LIKE '%advanced programming%' OR course_title LIKE '%advanced programming%')
+  Rendered courses/index.html.erb within layouts/application (2.0ms)
+  Rendered layouts/_flash.erb (0.1ms)
+Completed 200 OK in 21ms (Views: 20.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/courses?utf8=%E2%9C%93&search=computer+graphics&commit=Search" for 127.0.0.1 at 2023-11-01 22:59:52 -0400
+Processing by CoursesController#index as HTML
+  Parameters: {"utf8"=>"✓", "search"=>"computer graphics", "commit"=>"Search"}
+  [1m[36mCourse Load (0.2ms)[0m  [1mSELECT "courses".* FROM "courses" WHERE (course_number LIKE '%computer graphics%' OR course_title LIKE '%computer graphics%')[0m
+  Rendered courses/index.html.erb within layouts/application (1.2ms)
+  Rendered layouts/_flash.erb (0.2ms)
+Completed 200 OK in 31ms (Views: 30.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/courses?utf8=%E2%9C%93&search=&commit=Search" for 127.0.0.1 at 2023-11-01 22:59:58 -0400
+Processing by CoursesController#index as HTML
+  Parameters: {"utf8"=>"✓", "search"=>"", "commit"=>"Search"}
+  [1m[35mCourse Load (0.3ms)[0m  SELECT "courses".* FROM "courses"
+  Rendered courses/index.html.erb within layouts/application (4.9ms)
+  Rendered layouts/_flash.erb (0.1ms)
+Completed 200 OK in 23ms (Views: 22.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/courses?utf8=%E2%9C%93&search=comsW&commit=Search" for 127.0.0.1 at 2023-11-01 23:00:02 -0400
+Processing by CoursesController#index as HTML
+  Parameters: {"utf8"=>"✓", "search"=>"comsW", "commit"=>"Search"}
+  [1m[36mCourse Load (0.3ms)[0m  [1mSELECT "courses".* FROM "courses" WHERE (course_number LIKE '%comsW%' OR course_title LIKE '%comsW%')[0m
+  Rendered courses/index.html.erb within layouts/application (1.3ms)
+  Rendered layouts/_flash.erb (0.1ms)
+Completed 200 OK in 17ms (Views: 16.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/courses?utf8=%E2%9C%93&search=coms+w&commit=Search" for 127.0.0.1 at 2023-11-01 23:00:04 -0400
+Processing by CoursesController#index as HTML
+  Parameters: {"utf8"=>"✓", "search"=>"coms w", "commit"=>"Search"}
+  [1m[35mCourse Load (0.3ms)[0m  SELECT "courses".* FROM "courses" WHERE (course_number LIKE '%coms w%' OR course_title LIKE '%coms w%')
+  Rendered courses/index.html.erb within layouts/application (1.9ms)
+  Rendered layouts/_flash.erb (0.1ms)
+Completed 200 OK in 15ms (Views: 14.7ms | ActiveRecord: 0.3ms)

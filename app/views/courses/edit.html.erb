@@ -1,12 +1,42 @@
-<h2>Edit Existing Movie</h2>
-<%= form_tag movie_path(@course), :method => :put do %>
-  <%= label :course, :title, 'Title', :class => 'col-form-label' %>
-  <%= text_field :course, 'title', :class => 'form-control' %>
-  <%= label :course, :rating, 'Rating', :class => 'col-form-label'  %>
-  <%= select :course, :rating, ['G', 'PG', 'PG-13', 'R', 'NC-17'], {}, { :class => 'form-control col-1'} %>
-  <%= label :course, :release_date, 'Released On', :class => 'col-form-label'  %>
-  <%= date_select :course, :release_date, {}, :class => 'form-control col-2 d-inline' %>
-  <br/>
-  <%= submit_tag 'Update Movie Info', :class => 'btn btn-primary' %>
-  <%= link_to 'Cancel', movies_path, :class => 'btn btn-secondary' %>
+<h2>Edit Existing Course</h2>
+<%= form_for @course, url: course_path(@course), method: :put do |f| %>
+  <div class="form-group">
+    <%= f.label :course_number, 'Course Number' %>
+    <%= f.text_field :course_number, class: 'form-control' %>
+  </div>
+  <div class="form-group">
+    <%= f.label :course_title, 'Course Title' %>
+    <%= f.text_field :course_title, class: 'form-control' %>
+  </div>
+  <div class="form-group">
+    <%= f.label :offering_term, 'Offering Term' %>
+    <%= f.text_field :offering_term, class: 'form-control' %>
+  </div>
+  <div class="form-group">
+    <%= f.label :midterm, 'Midterm' %>
+    <%= f.select :midterm, options_for_select([['No midterm', 0], ['Midterm', 1]], @course.midterm), {}, class: 'form-control' %>
+  </div>
+  <div class="form-group">
+    <%= f.label :project, 'Project' %>
+    <%= f.select :project, options_for_select([['No project', 0], ['Project', 1]], @course.project), {}, class: 'form-control' %>
+  </div>
+  <div class="form-group">
+    <%= f.label :instructor, 'Instructor' %>
+    <%= f.text_field :instructor, class: 'form-control' %>
+  </div>
+  <div class="form-group">
+    <%= f.label :time, 'Time' %>
+    <%= f.text_field :time, class: 'form-control' %>
+  </div>
+  <div class="form-group">
+    <%= f.label :days, 'Days' %>
+    <%= f.text_field :days, class: 'form-control' %>
+  </div>
+  <div class="form-group">
+    <%= f.label :website, 'Website' %>
+    <%= f.text_field :website, class: 'form-control' %>
+  </div>
+  <br>
+  <%= f.submit 'Update Course Info', class: 'btn btn-primary' %>
+  <%= link_to 'Cancel', courses_path, class: 'btn btn-secondary' %>
 <% end %>
