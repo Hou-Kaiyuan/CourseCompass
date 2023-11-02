@@ -14,12 +14,14 @@
 ActiveRecord::Schema.define(version: 20231101234712) do
 
   create_table "courses", force: :cascade do |t|
-    t.string   "name",                          null: false
-    t.text     "description"
-    t.integer  "offering_term", default: 2
+    t.string   "course_number",                 null: false
+    t.string   "course_title"
+    t.string   "offering_term",                 null: false
     t.boolean  "midterm",       default: false
     t.boolean  "project",       default: true
     t.string   "instructor"
+    t.string   "time"
+    t.string   "days"
     t.string   "website"
     t.datetime "created_at"
     t.datetime "updated_at"
