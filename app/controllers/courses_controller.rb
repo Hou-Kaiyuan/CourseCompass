@@ -15,8 +15,8 @@ class CoursesController < ApplicationController
   end
 
   def create
-    @course = Course.create!(movie_params)
-    flash[:notice] = "#{@course.title} was successfully created."
+    @course = Course.create!(course_params)
+    flash[:notice] = "#{@course.course_title} was successfully created."
     redirect_to movies_path
   end
 
@@ -26,22 +26,32 @@ class CoursesController < ApplicationController
 
   def update
     @course = Course.find params[:id]
-    @course.update_attributes!(movie_params)
-    flash[:notice] = "#{@course.title} was successfully updated."
+    @course.update_attributes!(course_params)
+    flash[:notice] = "#{@course.course_title} was successfully updated."
     redirect_to movie_path(@course)
   end
 
   def destroy
     @course = Course.find(params[:id])
     @course.destroy
-    flash[:notice] = "Course '#{@course.title}' deleted."
+    flash[:notice] = "Course '#{@course.course_title}' deleted."
     redirect_to movies_path
   end
 
   private
   # Making "internal" methods private is not required, but is a common practice.
   # This helps make clear which methods respond to requests, and which ones do not.
-  def movie_params
-    params.require(:course).permit(:title, :rating, :description, :release_date)
+  def course_params
+    params.require(:course).permit(
+      :course_number,
+      :course_title,
+      :offering_term,
+      :midterm,
+      :project,
+      :instructor,
+      :time,
+      :days,
+      :website
+    )
   end
 end

@@ -1,13 +1,13 @@
-<!--  This file is app/views/movies/index.html.erb -->
-<h2>All Movies</h2>
+<!--  This file is app/views/courses/index.html.erb -->
+<h2>All Courses</h2>
 
 <%#  Part 2: Start here... %>
 
 <table class="table table-striped col-md-12" id="movies">
   <thead>
     <tr>
-      <th>Movie Title</th>
-      <th>Description</th>
+      <th>Course Name</th>
+      <th>Instructor</th>
       <th>Offering Term</th>
       <th>More Info</th>
     </tr>
@@ -16,19 +16,19 @@
     <% @courses.each do |course| %>
       <tr>
         <td>
-          <%= course.name %>
+          <%= course.course_number + " " + course.course_title %>
         </td>
         <td>
-          <%= course.description %>
+          <%= course.instructor %>
         </td>
         <td>
           <%= course.offering_term %>
         </td>
         <td>
-          <%= link_to "More about #{course.name}", course_path(course)%>
+          <%= link_to "More about #{course.course_title}", course_path(course)%>
         </td>
       </tr>
     <% end %>
   </tbody>
 </table>
-<%= link_to 'Add new movie', new_course_path, :class => 'btn btn-primary' %>
+<%= link_to 'Add new course', new_course_path, :class => 'btn btn-primary' %>
