@@ -108,7 +108,7 @@ heroku run bash
 ```
 
 ### Heroku Demo Deployment 
-https://course-compass.herokuapp.com/
+https://course-compass-bb433aa11641.herokuapp.com/
 
 ### GitHub Repo
 
