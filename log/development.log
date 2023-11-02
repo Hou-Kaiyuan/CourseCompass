@@ -619,3 +619,92 @@ DEPRECATION WARNING: `#timestamps` was called without specifying an option for `
   [1m[35m (0.0ms)[0m  begin transaction
   [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "users" ("provider", "uid", "oauth_token", "email", "major", "first_name", "last_name", "profile_pic", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["provider", "google_oauth2"], ["uid", "10"], ["oauth_token", "0"], ["email", "test10@columbia.edu"], ["major", "Political Science"], ["first_name", "Test"], ["last_name", "User10"], ["profile_pic", "https://static.vecteezy.com/system/resources/previews/002/318/271/non_2x/user-profile-icon-free-vector.jpg"], ["created_at", "2023-11-02 00:55:58.759745"], ["updated_at", "2023-11-02 00:55:58.759745"]]
   [1m[35m (2.0ms)[0m  commit transaction
+
+
+Started GET "/courses" for 127.0.0.1 at 2023-11-01 20:57:43 -0400
+Processing by CoursesController#index as HTML
+  [1m[36mCourse Load (6.5ms)[0m  [1mSELECT "courses".* FROM "courses"[0m
+  Rendered courses/index.html.erb within layouts/application (37.7ms)
+Completed 500 Internal Server Error in 116ms (ActiveRecord: 7.0ms)
+
+ActionView::Template::Error (undefined method `name' for #<Course:0x00007fb136886410>):
+    16:     <% @courses.each do |course| %>
+    17:       <tr>
+    18:         <td>
+    19:           <%= course.name %>
+    20:         </td>
+    21:         <td>
+    22:           <%= course.description %>
+  app/views/courses/index.html.erb:19:in `block in _app_views_courses_index_html_erb__3579892463508398369_70199525487680'
+  app/views/courses/index.html.erb:16:in `_app_views_courses_index_html_erb__3579892463508398369_70199525487680'
+
+
+  Rendered /Users/kev/.rbenv/versions/2.6.6/lib/ruby/gems/2.6.0/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_source.erb (4.2ms)
+  Rendered /Users/kev/.rbenv/versions/2.6.6/lib/ruby/gems/2.6.0/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.1ms)
+  Rendered /Users/kev/.rbenv/versions/2.6.6/lib/ruby/gems/2.6.0/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (12.0ms)
+  Rendered /Users/kev/.rbenv/versions/2.6.6/lib/ruby/gems/2.6.0/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (33.9ms)
+
+
+Started GET "/courses" for 127.0.0.1 at 2023-11-01 21:00:06 -0400
+Processing by CoursesController#index as HTML
+  [1m[35mCourse Load (0.7ms)[0m  SELECT "courses".* FROM "courses"
+  Rendered courses/index.html.erb within layouts/application (4.7ms)
+  Rendered layouts/_flash.erb (0.8ms)
+Completed 200 OK in 597ms (Views: 595.5ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for 127.0.0.1 at 2023-11-01 21:00:07 -0400
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for 127.0.0.1 at 2023-11-01 21:00:07 -0400
+
+
+Started GET "/assets/application.self-377610cd7c1509e934744c810e3b4cf672dfbcacac3274e7d039827e2ae0fcc7.js?body=1" for 127.0.0.1 at 2023-11-01 21:00:07 -0400
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 127.0.0.1 at 2023-11-01 21:00:07 -0400
+
+
+Started GET "/courses" for 127.0.0.1 at 2023-11-01 21:05:36 -0400
+Processing by CoursesController#index as HTML
+  [1m[36mCourse Load (5.1ms)[0m  [1mSELECT "courses".* FROM "courses"[0m
+  Rendered courses/index.html.erb within layouts/application (57.7ms)
+Completed 500 Internal Server Error in 139ms (ActiveRecord: 5.9ms)
+
+ActionView::Template::Error (undefined method `course_name' for #<Course:0x00007fd6a3963760>
+Did you mean?  course_number):
+    16:     <% @courses.each do |course| %>
+    17:       <tr>
+    18:         <td>
+    19:           <%= course.course_name +  " " + course.course_title %>
+    20:         </td>
+    21:         <td>
+    22:           <%= course.instructor %>
+  app/views/courses/index.html.erb:19:in `block in _app_views_courses_index_html_erb___103987847498310433_70279922048580'
+  app/views/courses/index.html.erb:16:in `_app_views_courses_index_html_erb___103987847498310433_70279922048580'
+
+
+  Rendered /Users/kev/.rbenv/versions/2.6.6/lib/ruby/gems/2.6.0/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_source.erb (8.1ms)
+  Rendered /Users/kev/.rbenv/versions/2.6.6/lib/ruby/gems/2.6.0/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (11.2ms)
+  Rendered /Users/kev/.rbenv/versions/2.6.6/lib/ruby/gems/2.6.0/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (12.4ms)
+  Rendered /Users/kev/.rbenv/versions/2.6.6/lib/ruby/gems/2.6.0/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (90.2ms)
+
+
+Started GET "/courses" for 127.0.0.1 at 2023-11-01 21:07:56 -0400
+Processing by CoursesController#index as HTML
+  [1m[35mCourse Load (0.6ms)[0m  SELECT "courses".* FROM "courses"
+  Rendered courses/index.html.erb within layouts/application (6.7ms)
+  Rendered layouts/_flash.erb (0.7ms)
+Completed 200 OK in 305ms (Views: 303.4ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for 127.0.0.1 at 2023-11-01 21:07:57 -0400
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for 127.0.0.1 at 2023-11-01 21:07:57 -0400
+
+
+Started GET "/assets/application.self-377610cd7c1509e934744c810e3b4cf672dfbcacac3274e7d039827e2ae0fcc7.js?body=1" for 127.0.0.1 at 2023-11-01 21:07:57 -0400
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 127.0.0.1 at 2023-11-01 21:07:57 -0400
