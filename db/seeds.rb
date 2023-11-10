@@ -5,6 +5,7 @@
 #
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
+require 'faker'
 
 courses = [
 	{ :course_number => 'COMS W 4152',
@@ -175,120 +176,74 @@ courses.each do |course|
   Course.create!(course)
 end
 
+num_users_to_create = 100
+starting_uid = 1
 
-users = [
-  {
-    :provider => "google_oauth2",
-    :uid => "1",
-    :oauth_token => "0",
-    :oauth_expires_at => 9999999999,
-    :email => "test1@columbia.edu",
-    :major => "Computer Science",
-    :first_name => "Test",
-    :last_name => "User1",
-    :profile_pic => "https://static.vecteezy.com/system/resources/previews/002/318/271/non_2x/user-profile-icon-free-vector.jpg"
-  },
-  {
-    :provider => "google_oauth2",
-    :uid => "2",
-    :oauth_token => "0",
-    :oauth_expires_at => 9999999999,
-    :email => "test2@columbia.edu",
-    :major => "Computer Science",
-    :first_name => "Test",
-    :last_name => "User2",
-    :profile_pic => "https://static.vecteezy.com/system/resources/previews/002/318/271/non_2x/user-profile-icon-free-vector.jpg"
-  },
-  {
-    :provider => "google_oauth2",
-    :uid => "3",
-    :oauth_token => "0",
-    :oauth_expires_at => 9999999999,
-    :email => "test3@columbia.edu",
-    :major => "Economics",
-    :first_name => "Test",
-    :last_name => "User3",
-    :profile_pic => "https://static.vecteezy.com/system/resources/previews/002/318/271/non_2x/user-profile-icon-free-vector.jpg"
-  },
-  {
-    :provider => "google_oauth2",
-    :uid => "4",
-    :oauth_token => "0",
-    :oauth_expires_at => 9999999999,
-    :email => "test4@columbia.edu",
-    :major => "Electrical Engineering",
-    :first_name => "Test",
-    :last_name => "User4",
-    :profile_pic => "https://static.vecteezy.com/system/resources/previews/002/318/271/non_2x/user-profile-icon-free-vector.jpg"
-  },
-  {
-    :provider => "google_oauth2",
-    :uid => "5",
-    :oauth_token => "0",
-    :oauth_expires_at => 9999999999,
-    :email => "test5@columbia.edu",
-    :major => "Mechanical Engineering",
-    :first_name => "Test",
-    :last_name => "User5",
-    :profile_pic => "https://static.vecteezy.com/system/resources/previews/002/318/271/non_2x/user-profile-icon-free-vector.jpg"
-  },
-  {
-    :provider => "google_oauth2",
-    :uid => "6",
-    :oauth_token => "0",
-    :oauth_expires_at => 9999999999,
-    :email => "test6@columbia.edu",
-    :major => "Physics",
-    :first_name => "Test",
-    :last_name => "User6",
-    :profile_pic => "https://static.vecteezy.com/system/resources/previews/002/318/271/non_2x/user-profile-icon-free-vector.jpg"
-  },
-  {
-    :provider => "google_oauth2",
-    :uid => "7",
-    :oauth_token => "0",
-    :oauth_expires_at => 9999999999,
-    :email => "test7@columbia.edu",
-    :major => "Mathematics",
-    :first_name => "Test",
-    :last_name => "User7",
-    :profile_pic => "https://static.vecteezy.com/system/resources/previews/002/318/271/non_2x/user-profile-icon-free-vector.jpg"
-  },
-  {
-    :provider => "google_oauth2",
-    :uid => "8",
-    :oauth_token => "0",
-    :oauth_expires_at => 9999999999,
-    :email => "test8@columbia.edu",
-    :major => "Biology",
-    :first_name => "Test",
-    :last_name => "User8",
-    :profile_pic => "https://static.vecteezy.com/system/resources/previews/002/318/271/non_2x/user-profile-icon-free-vector.jpg"
-  },
-  {
-    :provider => "google_oauth2",
-    :uid => "9",
-    :oauth_token => "0",
-    :oauth_expires_at => 9999999999,
-    :email => "test9@columbia.edu",
-    :major => "Chemistry",
-    :first_name => "Test",
-    :last_name => "User9",
-    :profile_pic => "https://static.vecteezy.com/system/resources/previews/002/318/271/non_2x/user-profile-icon-free-vector.jpg"
-  },
-  {
-    :provider => "google_oauth2",
-    :uid => "10",
-    :oauth_token => "0",
-    :oauth_expires_at => 9999999999,
-    :email => "test10@columbia.edu",
-    :major => "Political Science",
-    :first_name => "Test",
-    :last_name => "User10",
-    :profile_pic => "https://static.vecteezy.com/system/resources/previews/002/318/271/non_2x/user-profile-icon-free-vector.jpg"
+num_users_to_create.times do
+  uid = starting_uid.to_s
+  email = "test#{uid}@columbia.edu"
+
+  while User.exists?(uid: uid)
+    starting_uid += 1
+    uid = starting_uid.to_s
+    email = "test#{uid}@columbia.edu"
+  end
+
+  user = {
+    provider: "google_oauth2",
+    uid: uid,
+    oauth_token: "0",
+    oauth_expires_at: 9999999999,
+    email: email,
+    major: Faker::Educator.subject,
+    first_name: "Test",
+    last_name: "User#{uid}",
+    profile_pic: "https://static.vecteezy.com/system/resources/previews/002/318/271/non_2x/user-profile-icon-free-vector.jpg"
   }
-]
+    User.create!(user)
 
-users.each do |user|
-  User.create!(user)
+    starting_uid += 1
+  end
+ 
+
+grades = ['A+', 'A', 'A-', 'B+', 'B', 'B-', 'C+', 'C', 'C-', 'D+', 'D']
+probabilities = [0.02, 0.08, 0.1, 0.2, 0.3, 0.1, 0.05, 0.05, 0.05, 0.025, 0.025]
+
+def weighted_sample(values, weights)
+  total_weight = weights.sum
+  threshold = rand * total_weight
+  values.zip(weights).each do |value, weight|
+    threshold -= weight
+    return value if threshold <= 0
+  end
+end
+
+num_users_to_create.times do
+  user = User.order(Arel.sql("RANDOM()")).first 
+  year = [2022, 2023].sample                 
+
+  num_courses = rand(4..40)
+
+  if num_courses > 20
+    adjusted_probabilities = probabilities.map { |p| p * 0.5 }
+    adjusted_probabilities[0] = 0.1 
+    adjusted_probabilities[1] = 0.2 
+    grade = weighted_sample(grades, adjusted_probabilities)
+  else
+    grade = weighted_sample(grades, probabilities)
+  end
+
+  courses_to_take = courses.sample(num_courses)
+
+  courses_to_take.each do |course|
+    if CourseEnrollment.find_by(user_id: user[:uid], course_id: course[:course_number]).nil?
+      enrollment = {
+        user_id: user[:uid], 
+        course_id: course[:course_number], 
+        year: year,
+        grade: grade
+      }
+    CourseEnrollment.create!(enrollment)
+    end
+  end
 end
