@@ -14,8 +14,8 @@
 ActiveRecord::Schema.define(version: 20231110005827) do
 
   create_table "course_enrollments", force: :cascade do |t|
-    t.integer  "user_id"
-    t.integer  "course_id"
+    t.integer  "user"
+    t.string   "course"
     t.integer  "year"
     t.string   "grade"
     t.datetime "created_at"

@@ -555,33 +555,33 @@ def weighted_sample(values, weights)
     return value if threshold <= 0
   end
 end
-
 num_users_to_create.times do
   user = User.order(Arel.sql("RANDOM()")).first 
   year = [2022, 2023].sample                 
 
   num_courses = rand(4..20)
 
-  if num_courses > 10
-    adjusted_probabilities = probabilities.map { |p| p * 0.5 }
-    adjusted_probabilities[0] = 0.1 
-    adjusted_probabilities[1] = 0.2 
-    grade = weighted_sample(grades, adjusted_probabilities)
-  else
-    grade = weighted_sample(grades, probabilities)
-  end
-
   courses_to_take = courses.sample(num_courses)
 
   courses_to_take.each do |course|
-    if CourseEnrollment.find_by(user_id: user[:uid], course_id: course[:course_number]).nil?
+    if CourseEnrollment.find_by(user: user[:uid], course: course[:course_number]).nil?
+      if num_courses > 10
+        adjusted_probabilities = probabilities.map { |p| p * 0.5 }
+        adjusted_probabilities[0] = 0.1 
+        adjusted_probabilities[1] = 0.2 
+        grade = weighted_sample(grades, adjusted_probabilities)
+      else
+        grade = weighted_sample(grades, probabilities)
+      end
+
       enrollment = {
-        user_id: user[:uid], 
-        course_id: course[:course_number], 
+        user: user[:uid], 
+        course: course[:course_number], 
         year: year,
         grade: grade
       }
-    CourseEnrollment.create!(enrollment)
+      CourseEnrollment.create!(enrollment)
     end
   end
 end
+
