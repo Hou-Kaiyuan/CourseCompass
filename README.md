@@ -10,6 +10,12 @@ Orr: work on login feature / 3rd party authorization, only allow columbia emails
 Kaiyuan: Proof of concept (PoC) implement recommendation without integration in ruby for iter 1. 
 ```
 
+### Iteration 2: Login function, user info page, recommendation page
+```
+Esteeven & Kevin: User page and recommendation page (including view, feature/cucumber, and spec)
+Orr:login
+Kaiyuan: get recommendation and show on recommendation page
+```
 
 ### Note:
 ```
