@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20231110005827) do
+ActiveRecord::Schema.define(version: 20231113175628) do
 
   create_table "course_enrollments", force: :cascade do |t|
     t.integer  "user"
@@ -37,17 +37,18 @@ ActiveRecord::Schema.define(version: 20231110005827) do
   end
 
   create_table "users", force: :cascade do |t|
-    t.string   "uid",              null: false
+    t.string   "uid"
     t.string   "provider"
     t.string   "oauth_token"
     t.datetime "oauth_expires_at"
-    t.string   "email"
+    t.string   "email",            null: false
     t.string   "major"
     t.string   "first_name"
     t.string   "last_name"
     t.string   "profile_pic"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.string   "password_digest"
   end
 
   add_index "users", ["uid"], name: "index_users_on_uid", unique: true
