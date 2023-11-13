@@ -1,6 +1,9 @@
+require 'bcrypt'
+
 class User < ActiveRecord::Base
-    has_many :course_enrollments
-    has_many :courses, through: :course_enrollments
+  has_secure_password  
+  has_many :course_enrollments
+  has_many :courses, through: :course_enrollments
 
     def self.from_omniauth(auth)
         User.find_or_create_by!(uid: auth[:uid]) do |u|
@@ -41,7 +44,7 @@ class User < ActiveRecord::Base
     end
 
 
-  def cosine_similarity(vec1, vec2):
+  def cosine_similarity(vec1, vec2)
     raise 'Vectors must be of same length' if vec1.size != vec2.size
     dot_product = vec1.zip(vec2).reduce(0) { |sum, (v1, v2)| sum + v1 * v2 }
     magnitude1 = Math.sqrt(vec1.reduce(0) { |sum, v| sum + v**2 })

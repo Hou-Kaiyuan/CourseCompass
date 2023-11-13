@@ -536,7 +536,9 @@ num_users_to_create.times do
     major: Faker::Educator.subject,
     first_name: "Test",
     last_name: "User#{uid}",
-    profile_pic: "https://static.vecteezy.com/system/resources/previews/002/318/271/non_2x/user-profile-icon-free-vector.jpg"
+    profile_pic: "https://static.vecteezy.com/system/resources/previews/002/318/271/non_2x/user-profile-icon-free-vector.jpg",
+    password: uid,
+    password_confirmation: uid
   }
     User.create!(user)
 
