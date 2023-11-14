@@ -7,8 +7,8 @@ Feature: Login
 Background: course evaluations have been added to database
 
     Given database is seeded
-    Then 10 courses should exist
-    And 4 users should exist
+    Then 50 courses should exist
+    And 100 users should exist
 
 
 Scenario: User will be redirected to login page from all pages if not logged in
