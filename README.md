@@ -46,7 +46,7 @@ Member 4 UNI:  km3628
 brew install rbenv
 echo 'export PATH="$HOME/.rbenv/shims:$PATH"' >> ~/.zshrc
 brew install ruby-build
-
+brew install v8
 # Check rbenv installation -- make sure everything is OK
 curl -fsSL https://github.com/rbenv/rbenv-installer/raw/main/bin/rbenv-doctor | bash
 
@@ -88,6 +88,8 @@ git clone https://github.com/Hou-Kaiyuan/CourseCompass
 cd CourseCompass
 
 gem update bundler
+
+gem install libv8-node -- --with-system-v8 (on Apple sillicon, this may take a while)
 
 bundle install
 ```
