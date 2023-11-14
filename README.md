@@ -122,7 +122,7 @@ heroku run bash
 ```
 
 ### Heroku Demo Deployment 
-[course-compass-bb433aa11641.herokuapp.com](course-compass-bb433aa11641.herokuapp.com/courses)
+[course-compass-bb433aa11641.herokuapp.com](https://course-compass-bb433aa11641.herokuapp.com)
 
 ### GitHub Repo
 
