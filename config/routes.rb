@@ -1,9 +1,11 @@
 CourseCompass::Application.routes.draw do
+
   resources :courses
   resources :user
 
   get "signup", to: "registrations#new"
   post "signup", to: "registrations#create"
+  get "profiles", to: "profiles#show"
 
   get "login", to: "sessions#new"
   post "login", to: "sessions#create"
