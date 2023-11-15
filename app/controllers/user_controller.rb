@@ -1,5 +1,5 @@
 class UserController < ApplicationController
-  before_action :set_user, only: [:recommendations]
+  # before_action :set_user, only: [:recommendations]
 
   def index
     if session[:user_id]
