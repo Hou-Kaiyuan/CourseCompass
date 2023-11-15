@@ -37,4 +37,25 @@ RSpec.describe SessionsController, type: :controller do
       end
     end
   end
+
+  describe 'DELETE sessions#destroy' do
+  # Arrange
+  let(:user) { User.create({email: 'test1@columbia.edu', password: '1234', password_confirmation: '1234'}) }
+
+    it 'logs out the user' do
+        session[:user_id] = user.id
+        # Act
+        delete :destroy
+        # Assert
+        expect(session[:user_id]).to be_nil
+    end
+
+    it 'redirects to the root page' do
+        session[:user_id] = user.id
+        # Act
+        delete :destroy
+        # Assert
+        expect(response).to redirect_to(root_path)
+    end
+end
 end
