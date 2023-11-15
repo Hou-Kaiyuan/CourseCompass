@@ -7,18 +7,14 @@ class UserController < ApplicationController
     end
   end
 
-  def show
-
-  end
-
   # GET /users/:id/recommendations
-  def recommendations
-    @recommended_courses = @user.recommend_courses
-  end
+  # def recommendations
+  #   @recommended_courses = @user.recommend_courses
+  # end
 
-  private
+  # private
 
-  def set_user
-    @user = User.find(params[:id])
-  end
+  # def set_user
+  #   @user = User.find(params[:id])
+  # end
 end
