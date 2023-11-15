@@ -21,6 +21,10 @@ module NavigationHelpers
     #   when /^(.*)'s profile page$/i
     #     user_profile_path(User.find_by_login($1))
 
+    when /^the user page for (.*)$/i
+      user_id = User.find_by(email: $1).id
+      user_path(user_id)
+
     else
       begin
         page_name =~ /^the (.*) page$/
