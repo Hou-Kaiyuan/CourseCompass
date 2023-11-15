@@ -42,17 +42,6 @@ class CoursesController < ApplicationController
     redirect_to courses_path
   end
 
-  def add_to_enrolled_courses
-    @course = Course.find(params[:id])
-    # You can replace these with actual values for year and grade
-    year = Time.now.year
-    grade = 'A'
-
-    if session[:user_id].present?
-      CourseEnrollment.add_enrollment(:user_id, @course.course_title, year, grade)
-      redirect_to course_path, notice: "Course successfully added to your profile."
-    end
-  end
   private
   # Making "internal" methods private is not required, but is a common practice.
   # This helps make clear which methods respond to requests, and which ones do not.
