@@ -7,6 +7,10 @@ class UserController < ApplicationController
     end
   end
 
+  def show
+
+  end
+
   # GET /users/:id/recommendations
   def recommendations
     @recommended_courses = @user.recommend_courses

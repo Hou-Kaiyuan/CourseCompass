@@ -59,3 +59,13 @@ end
 # See https://github.com/cucumber/cucumber-rails/blob/master/features/choose_javascript_database_strategy.feature
 Cucumber::Rails::Database.javascript_strategy = :truncation
 
+Before do
+  unless @database_seeded
+    Rails.application.load_seed
+    @database_seeded = true
+  end
+end
+
+After do
+  ActiveRecord::Base.subclasses.each(&:delete_all)
+end

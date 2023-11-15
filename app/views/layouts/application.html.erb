@@ -11,8 +11,21 @@
   </head>
   <body>
     <%# These classes come from the Bootstrap CSS framework. %>
-    <nav class="navbar navbar-expand-lg bg-warning text-black mb-3">
+    <nav role="navigation" class="navbar navbar-expand-lg bg-warning text-black mb-3">
       <h1 class="title">Course Compass</h1>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <p><%= link_to "Courses", courses_path, class: "nav-link text-dark" %></p>
+          </li>
+          <li class="nav-item">
+            <p><%= link_to "Log In/Sign Up", login_path, class: "nav-link text-dark" %></p>
+          </li>
+        </ul>
+      </div>
     </nav>
     <div class="container">
       <%# Render "flash" messages in our application. This loads _flash.erb %>

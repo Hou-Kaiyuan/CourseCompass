@@ -4,8 +4,8 @@ Feature: add a data point for user 1 and course A
 
   Background: courses have been added to database
     Given database is seeded
-    Then 10 courses should exist
-    And 4 users should exist
+    Then 50 courses should exist
+    And 100 users should exist
 
   Scenario: course A exists in the database, and user 1 has not rated course A 
 

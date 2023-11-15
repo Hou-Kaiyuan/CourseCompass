@@ -1,1 +1,0 @@
-Feature: display all courses
