@@ -75,7 +75,7 @@ cd CourseCompass
 
 gem update bundler
 
-gem install libv8-node -- --with-system-v8 (on Apple sillicon, this may take a while)
+(We failed to make it work on Apple Silicon)
 
 bundle install
 ```
