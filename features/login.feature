@@ -5,17 +5,15 @@ Feature: Login
   Only Columbia accounts will be permitted to log in.
 
  Background:
-      Given the following users exist:
-      | email                | password         |
-      | user@columbia.edu    | password123      |
+    Given database is seeded
 
   Scenario: Successful login
     When I go to the login page
-    And I fill in "Email" with "user@columbia.com"
-    And I fill in "Password" with "password123"
+    And I fill in "Email" with "test1@columbia.edu"
+    And I fill in "Password" with "1234"
     And I press "Log In"
-    Then I should land on the user page for "user@columbia.com"
-    And I should see "Welcome, test1@columbia.com"
+    Then I should land on the user page for "test1@columbia.edu"
+    And I should see "Welcome, test1@columbia.edu"
 
   Scenario: Unsuccessful login
     When I go to the new_session page
