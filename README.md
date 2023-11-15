@@ -4,24 +4,10 @@ CourseCompass provides Columbia Students a more personalize course recommendatio
 
 
 ### Iteration 1: Basic page view for courses, seeds and the recommendation methods
-```
-Esteeven & Kevin: User page and course page (including view, feature/cucumber, and spec)
-Orr: work on login feature / 3rd party authorization, only allow columbia emails (columbia.edu/ tc.columbia.edu/ barnard.edu)
-Kaiyuan: Proof of concept (PoC) implement recommendation without integration in ruby for iter 1. 
-```
 
-### Iteration 2: Login function, user info page, recommendation page
-```
-Esteeven & Kevin: User page and recommendation page (including view, feature/cucumber, and spec)
-Orr:login
-Kaiyuan: get recommendation and show on recommendation page
-```
 
-### Note:
-```
-We have a separate login brach but not merged yet, there are some compability issue we need to solve
-In the development folder, we have implement the recommendation method in python, and will implement it later
-```
+### Iteration 2: Login function, user info page, course enrollments
+
 
 
 ### Name | UNI
