@@ -1,6 +1,8 @@
 CourseCompass::Application.routes.draw do
 
-  resources :courses
+  resources :courses do
+    post 'add_to_enrolled', on: :member
+  end
   resources :user
 
   get "signup", to: "registrations#new"

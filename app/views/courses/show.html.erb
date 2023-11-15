@@ -42,7 +42,11 @@
 </p>
 
 <div class="row">
-  <%= link_to 'Edit', edit_course_path(@course), class: 'btn btn-primary col-2' %>
-  <%= link_to 'Delete', course_path(@course), 'data-method' => 'delete', 'data-confirm' => 'Are you sure?', class: 'btn btn-danger col-2' %>
-  <%= link_to 'Back to course list', courses_path, class: 'btn btn-primary col-2' %>
+  <% if session[:user_id].present? %>
+    <%= link_to 'Add to Enrolled Courses', add_to_enrolled_course_path(@course), class: 'btn btn-success col-3' %>
+  <% end %>
+
+  <%= link_to 'Edit', edit_course_path(@course), class: 'btn btn-primary col-3' %>
+  <%= link_to 'Delete', course_path(@course), 'data-method' => 'delete', 'data-confirm' => 'Are you sure?', class: 'btn btn-danger col-3' %>
+  <%= link_to 'Back to course list', courses_path, class: 'btn btn-primary col-3' %>
 </div>
