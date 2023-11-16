@@ -1,16 +1,17 @@
-## CourseCompass
+# CourseCompass
 
 CourseCompass provides Columbia Students a more personalize course recommendation and career planner. 
 
 
-### Iteration 1: Basic page view for courses, seeds and the recommendation methods
+## Iteration 1: Basic page view for courses, seeds and the recommendation methods
 #### Heroku Demo Deployment (Iteration 1)
 [heroku-iter1](https://course-compass-iter1-cc03da1256a5.herokuapp.com)
 
 
-### Iteration 2: Login function, user info page, course enrollments
+## Iteration 2: Login function, user info page, course enrollments
 #### Heroku Demo Deployment (Iteration 2)
 [heroku-iter2](https://course-compass-iter2-ea6d54216710.herokuapp.com)
+
 ## Coverage Report
 The current test coverage is 94.12%. Detailed reports can be found in `coverage/index.html`. 
 Just in case if there are issues setting up Ruby locally.
@@ -31,7 +32,7 @@ After logging in, user information and course history will be available on the p
 
 
 
-### Name | UNI
+## Name | UNI
 
 ```
 Member 1 Name: Esteeven Cepeda
@@ -44,7 +45,7 @@ Member 4 Name: Kevin Medina
 Member 4 UNI:  km3628
 ```
 
-### Install Ruby
+## Install Ruby
 
 #### MacOS
 
@@ -86,7 +87,7 @@ ruby -v
 ```
 
 
-### Setting up (Instructions to run and test the project)
+## Setting up (Instructions to run and test the project)
 
 #### 1. Clone repo, install gems and dependencies
 
@@ -109,7 +110,7 @@ bundle exec rspec
 bundle exec cucumber
 ```
 
-### Heroku deployment
+## Heroku deployment
 For heroku deployment, make sure [Heroku CLI](https://devcenter.heroku.com/articles/heroku-cli) is installed. Then,
 
 ```bash
