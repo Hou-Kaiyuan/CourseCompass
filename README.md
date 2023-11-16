@@ -118,10 +118,10 @@ heroku run bash
 ```
 
 ### Heroku Demo Deployment (Iteration 1)
-[course-compass-bb433aa11641.herokuapp.com](https://course-compass-bb433aa11641.herokuapp.com)
+[heroku-iter1](https://course-compass-iter1-bb433aa11641.herokuapp.com)
 ### Heroku Demo Deployment (Iteration 2)
 
-[course-compass-bb433aa11641.herokuapp.com](https://course-compass-iter2-ea6d54216710.herokuapp.com)
+[heroku-iter2](https://course-compass-iter2-ea6d54216710.herokuapp.com)
 
 
 ### GitHub Repo
