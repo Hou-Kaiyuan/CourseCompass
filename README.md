@@ -12,7 +12,8 @@ CourseCompass provides Columbia Students a more personalize course recommendatio
 #### Heroku Demo Deployment (Iteration 2)
 [heroku-iter2](https://course-compass-iter2-ea6d54216710.herokuapp.com)
 ## Coverage Report
-The current test coverage is 94.12%. Detailed reports can be found in `coverage/index.html`. If there are issues setting up Ruby locally, refer to the troubleshooting section.
+The current test coverage is 94.12%. Detailed reports can be found in `coverage/index.html`. 
+Just in case if there are issues setting up Ruby locally.
 
 ## Heroku App Usage
 
