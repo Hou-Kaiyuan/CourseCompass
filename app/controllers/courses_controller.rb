@@ -35,12 +35,12 @@ class CoursesController < ApplicationController
     redirect_to course_path(@course)
   end
 
-  def destroy
-    @course = Course.find(params[:id])
-    @course.destroy
-    flash[:notice] = "Course '#{@course.course_title}' deleted."
-    redirect_to courses_path
-  end
+  # def destroy
+  #   @course = Course.find(params[:id])
+  #   @course.destroy
+  #   flash[:notice] = "Course '#{@course.course_title}' deleted."
+  #   redirect_to courses_path
+  # end
 
   private
   # Making "internal" methods private is not required, but is a common practice.
