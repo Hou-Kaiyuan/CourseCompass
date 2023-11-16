@@ -8,9 +8,10 @@ Feature: Login
     Given database is seeded
 
   Scenario: Successful login
+    Given a valid user
     When I go to the login page
-    And I fill in "Email" with "aaaa@columbia.edu"
-    And I fill in "Password" with "aa"
+    And I fill in "Email" with "test@columbia.edu"
+    And I fill in "Password" with "1234"
     And I press "Log In"
     Then I should see "Successfully Logged In!"
 
