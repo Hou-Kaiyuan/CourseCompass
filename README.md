@@ -4,10 +4,13 @@ CourseCompass provides Columbia Students a more personalize course recommendatio
 
 
 ### Iteration 1: Basic page view for courses, seeds and the recommendation methods
+### Heroku Demo Deployment (Iteration 1)
+[heroku-iter1](https://course-compass-iter1-cc03da1256a5.herokuapp.com)
 
 
 ### Iteration 2: Login function, user info page, course enrollments
-
+### Heroku Demo Deployment (Iteration 2)
+[heroku-iter2](https://course-compass-iter2-ea6d54216710.herokuapp.com)
 
 
 ### Name | UNI
@@ -117,11 +120,6 @@ heroku logs
 heroku run bash
 ```
 
-### Heroku Demo Deployment (Iteration 1)
-[heroku-iter1](https://course-compass-iter1-cc03da1256a5.herokuapp.com)
-### Heroku Demo Deployment (Iteration 2)
-
-[heroku-iter2](https://course-compass-iter2-ea6d54216710.herokuapp.com)
 
 
 ### GitHub Repo
