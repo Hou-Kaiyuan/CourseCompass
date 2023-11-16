@@ -99,6 +99,8 @@ cd CourseCompass
 heroku create
 # You should see heroku in `git remote -v`
 # To remove a previous heroku remote, use `git remote rm heroku`
+heroku git:remote -a <app_name>
+
 heroku stack:set heroku-20
 
 heroku addons:create heroku-postgresql
