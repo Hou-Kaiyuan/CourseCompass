@@ -19,29 +19,29 @@ class User < ActiveRecord::Base
     #     end
     # end
 
-    def self.get_user_info(uid)
-        user = User.where(uid: uid).first
-        if user.nil?
-          nil
-        else
-          {
-            :uid => user[:uid],
-            :email => user[:email],
-            :first_name => user[:first_name],
-            :last_name => user[:last_name],
-            :department => user[:department],
-            :profile_pic => user[:profile_pic]
-          }
-        end
-    end
-
-    def self.get_email(uid)
-        user = User.where(uid: uid).first
-        if user.nil?
-          nil
-        end
-        user[:email]
-    end
+    # def self.get_user_info(uid)
+    #     user = User.where(uid: uid).first
+    #     if user.nil?
+    #       nil
+    #     else
+    #       {
+    #         :uid => user[:uid],
+    #         :email => user[:email],
+    #         :first_name => user[:first_name],
+    #         :last_name => user[:last_name],
+    #         :department => user[:department],
+    #         :profile_pic => user[:profile_pic]
+    #       }
+    #     end
+    # end
+    #
+    # def self.get_email(uid)
+    #     user = User.where(uid: uid).first
+    #     if user.nil?
+    #       nil
+    #     end
+    #     user[:email]
+    # end
 
 
   # def cosine_similarity(vec1, vec2)
