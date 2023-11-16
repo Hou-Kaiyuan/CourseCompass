@@ -110,10 +110,6 @@ git push heroku master
 # Initialize the databases
 heroku run rake db:migrate db:seed
 
-heroku run bundle exec rspec
-
-heroku run bundle exec cucumber
-
 # To view any errors, use
 heroku logs
 
