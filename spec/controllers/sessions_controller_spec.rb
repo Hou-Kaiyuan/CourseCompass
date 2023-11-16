@@ -17,7 +17,7 @@ RSpec.describe SessionsController, type: :controller do
         # Act
         post :create, user: { email: user.email, password: user.password }
         # Assert
-        expect(response).to redirect_to(user_index_path(id: user.id))
+        expect(response).to redirect_to(courses_path(id: user.id))
       end
     end
 

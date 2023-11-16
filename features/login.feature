@@ -16,7 +16,7 @@ Feature: Login
     And I should see "Welcome, test1@columbia.edu"
 
   Scenario: Unsuccessful login
-    When I go to the new_session page
+    When I go to the login page
     And I fill in "Email" with "user@columbia.com"
     And I fill in "Password" with "wrongpassword"
     And I press "Log In"
