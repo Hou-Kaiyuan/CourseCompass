@@ -87,9 +87,15 @@ bundle exec rake db:migrate db:test:prepare db:seed
 bundle exec rspec
 bundle exec cucumber
 ```
+
+### Heroku deployment
 For heroku deployment, make sure [Heroku CLI](https://devcenter.heroku.com/articles/heroku-cli) is installed. Then,
 
 ```bash
+git clone https://github.com/Hou-Kaiyuan/CourseCompass
+
+cd CourseCompass
+
 heroku create
 # You should see heroku in `git remote -v`
 # To remove a previous heroku remote, use `git remote rm heroku`
@@ -101,6 +107,10 @@ git push heroku master
 
 # Initialize the databases
 heroku run rake db:migrate db:seed
+
+heroku run bundle exec rspec
+
+heroku run bundle exec cucumber
 
 # To view any errors, use
 heroku logs
