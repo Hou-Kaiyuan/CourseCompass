@@ -118,7 +118,7 @@ heroku run bash
 ```
 
 ### Heroku Demo Deployment (Iteration 1)
-[heroku-iter1](https://course-compass-iter1-bb433aa11641.herokuapp.com)
+[heroku-iter1](https://course-compass-iter1-cc03da1256a5.herokuapp.com)
 ### Heroku Demo Deployment (Iteration 2)
 
 [heroku-iter2](https://course-compass-iter2-ea6d54216710.herokuapp.com)
