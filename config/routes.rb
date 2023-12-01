@@ -13,6 +13,10 @@ CourseCompass::Application.routes.draw do
   post "login", to: "sessions#create"
   delete "logout", to: "sessions#destroy"
 
+  # config/routes.rb
+  get '/users/:id/recommendations', to: 'user#recommendations', as: 'user_recommendations'
+
+
   # map '/' to be a redirect to '/courses'
   root :to => redirect('/courses')
 end

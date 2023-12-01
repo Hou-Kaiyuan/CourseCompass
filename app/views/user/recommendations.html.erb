@@ -1,0 +1,13 @@
+<h1>Course Recommendations for <%= @user.first_name %> <%= @user.last_name %></h1>
+
+<div>
+  <% if @recommended_courses.any? %>
+    <ul>
+        <% @recommended_courses.each do |course| %>
+            <li><%= course.course_number %></li> <!-- Replace 'course.name' with 'course.course_number' -->
+        <% end %>
+    </ul>
+  <% else %>
+    <p>No recommendations available.</p>
+  <% end %>
+</div>

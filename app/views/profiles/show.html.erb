@@ -23,7 +23,7 @@
       <tbody>
       <% @course_enrollments.each do |enrollment| %>
         <tr>
-          <td><%= enrollment.course %></td>
+          <td><%= enrollment.course.course_number %></td>
           <td><%= enrollment.year %></td>
           <td><%= enrollment.grade %></td>
         </tr>
@@ -32,5 +32,16 @@
     </table>
   <% else %>
     <p>No course history available.</p>
+  <% end %>
+</div>
+
+<div>
+  <h2>Course Recommendations:</h2>
+  <%= form_tag user_recommendations_path(@user), method: :get do %>
+    <div class="form-group">
+      <label for="recommendation_count">Number of Recommendations:</label>
+      <input type="number" id="recommendation_count" name="recommendation_count" value="5" class="form-control" min="1">
+    </div>
+    <%= submit_tag 'Get Recommendations', class: 'btn btn-primary' %>
   <% end %>
 </div>

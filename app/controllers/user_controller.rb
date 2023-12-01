@@ -7,14 +7,20 @@ class UserController < ApplicationController
     end
   end
 
-  # GET /users/:id/recommendations
-  # def recommendations
-  #   @recommended_courses = @user.recommend_courses
-  # end
+  def recommendations
+    @user = User.find(params[:id])
+    top_n_courses = params[:recommendation_count] || 5
+    @recommended_courses = @user.recommend_courses(params[:recommendation_count].to_i)
 
-  # private
 
-  # def set_user
-  #   @user = User.find(params[:id])
-  # end
+    # Render the view with recommended courses
+    # Assuming you have a corresponding view at app/views/user/recommendations.html.erb
+    render 'recommendations'
+  end
+
+  private
+
+  def set_user
+    @user = User.find(params[:id])
+  end
 end
