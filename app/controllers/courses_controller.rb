@@ -8,11 +8,12 @@ class CoursesController < ApplicationController
 
   def index
     if params[:search].present?
-      @courses = Course.where("course_number LIKE ? OR course_title LIKE ?", "%#{params[:search]}%", "%#{params[:search]}%")
+      @courses = Course.where("course_number LIKE ? OR course_title LIKE ?", "%#{params[:search]}%", "%#{params[:search]}%").paginate(page: params[:page], per_page: 10)
     else
-      @courses = Course.all
+      @courses = Course.paginate(page: params[:page], per_page: 10)
     end
   end
+  
 
   def new
     # default: render 'new' template

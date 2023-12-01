@@ -35,3 +35,6 @@ gem 'faker'
 # for login
 gem 'mini_racer', platforms: :ruby
 gem 'bcrypt'
+
+# paginate
+gem 'will_paginate', '~> 3.1.0'

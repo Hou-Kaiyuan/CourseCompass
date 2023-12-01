@@ -1,12 +1,19 @@
 <!--  This file is app/views/courses/index.html.erb -->
 <h2>All Courses</h2>
 
-<%= form_tag courses_path, method: :get, class: 'form-inline' do %>
-  <div class="form-group">
-    <%= text_field_tag :search, params[:search], class: 'form-control', placeholder: 'Search for courses' %>
+<div class="row mb-3">
+  <div class="col-md-8">
+    <%= form_tag courses_path, method: :get, class: 'form-inline' do %>
+      <div class="form-group">
+        <%= text_field_tag :search, params[:search], placeholder: 'Search for courses', class: 'form-control mr-2' %>
+        <%= submit_tag 'Search', class: 'btn btn-primary' %>
+      </div>
+    <% end %>
   </div>
-  <%= submit_tag 'Search', class: 'btn btn-primary' %>
-<% end %>
+  <div class="col-md-4 text-right">
+    <%= link_to 'Add new course', new_course_path, class: 'btn btn-primary' %>
+  </div>
+</div>
 
 <table class="table table-striped col-md-12" id="courses">
   <thead>
@@ -30,10 +37,12 @@
           <%= course.offering_term %>
         </td>
         <td>
-          <%= link_to "More about #{course.course_title}", course_path(course)%>
+          <%= link_to "More about #{course.course_title}", course_path(course) %>
         </td>
       </tr>
     <% end %>
   </tbody>
 </table>
-<%= link_to 'Add new course', new_course_path, :class => 'btn btn-primary' %>
+
+<%= will_paginate @courses, renderer: WillPaginate::ActionView::LinkRenderer %>
+
