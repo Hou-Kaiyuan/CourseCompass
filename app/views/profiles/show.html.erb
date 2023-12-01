@@ -15,64 +15,76 @@
   </div>
 
   <div class="mt-3">
-  <h2>Course History:</h2>
-  <% if @course_enrollments.any? %>
-    <table class="table table-striped" id="enrolled_courses">
-      <thead>
-        <tr>
-          <th>Course</th>
-          <th>Year</th>
-          <th>Grade</th>
-        </tr>
-      </thead>
-      <tbody>
-        <% @course_enrollments.each_with_index do |enrollment, index| %>
-          <tr class="<%= 'course-row' if index >= 5 %>">
-            <td><%= enrollment.course.course_number %></td>
-            <td><%= enrollment.year %></td>
-            <td><%= enrollment.grade %></td>
+    <h2>Course History:</h2>
+    <%= check_box_tag :show_grades, '1', true, id: 'show_grades', onclick: 'toggleGrades()' %>
+    <label for="show_grades">Show Grades</label>
+    <% if @course_enrollments.any? %>
+      <table class="table table-striped" id="enrolled_courses">
+        <thead>
+          <tr>
+            <th>Course</th>
+            <th>Year</th>
+            <th class="grade-column">Grade</th>
           </tr>
-        <% end %>
-      </tbody>
-    </table>
-    <% if @course_enrollments.size > 5 %>
-      <p id="toggle_courses" onclick="toggleCourses()" style="cursor:pointer;">
-        Show More
-      </p>
+        </thead>
+        <tbody>
+          <% @course_enrollments.each_with_index do |enrollment, index| %>
+            <tr class="<%= 'course-row' if index >= 5 %>">
+              <td><%= enrollment.course.course_number %></td>
+              <td><%= enrollment.year %></td>
+              <td class="grade-column"><%= enrollment.grade %></td>
+            </tr>
+          <% end %>
+        </tbody>
+      </table>
+      <% if @course_enrollments.size > 5 %>
+        <p id="toggle_courses" onclick="toggleCourses()" style="cursor:pointer;">
+          Show More
+        </p>
+      <% end %>
+    <% else %>
+      <p>No course history available.</p>
     <% end %>
-  <% else %>
-    <p>No course history available.</p>
-  <% end %>
-  
-  <script>
-    function toggleCourses() {
-      var rows = document.querySelectorAll('.course-row');
-      for (var i = 0; i < rows.length; i++) {
-        rows[i].style.display = rows[i].style.display === 'none' ? '' : 'none';
+
+    <script>
+      function toggleCourses() {
+        var rows = document.querySelectorAll('.course-row');
+        for (var i = 0; i < rows.length; i++) {
+          rows[i].style.display = rows[i].style.display === 'none' ? '' : 'none';
+        }
+        var toggleText = document.getElementById('toggle_courses');
+        toggleText.textContent = toggleText.textContent === 'Show More' ? 'Show Less' : 'Show More';
       }
-      var toggleText = document.getElementById('toggle_courses');
-      toggleText.textContent = toggleText.textContent === 'Show More' ? 'Show Less' : 'Show More';
-    }
-  
-    // Initially hide rows if more than 5 courses
-    document.addEventListener('DOMContentLoaded', (event) => {
-      if (document.querySelectorAll('.course-row').length > 0) {
-        toggleCourses();
+
+      function toggleGrades() {
+        var grades = document.querySelectorAll('.grade-column');
+        for (var i = 0; i < grades.length; i++) {
+          grades[i].style.display = grades[i].style.display === 'none' ? '' : 'none';
+        }
+        var showGradesCheckbox = document.getElementById('show_grades');
+        var label = document.querySelector('label[for="show_grades"]');
+        label.textContent = showGradesCheckbox.checked ? 'Hide Grades' : 'Show Grades';
       }
-    });
-  </script>
-  
+
+      // Initially hide rows if more than 5 courses and grades
+      document.addEventListener('DOMContentLoaded', (event) => {
+        if (document.querySelectorAll('.course-row').length > 5) {
+          toggleCourses();
+        }
+        toggleGrades();
+      });
+    </script>
   </div>
 
   <div class="mt-3">
-  <h2>Course Recommendations:</h2>
-  <%= form_tag user_recommendations_path(@user), method: :get do %>
-    <div class="form-group">
-      <label for="recommendation_count">Number of Recommendations:</label>
-      <input type="number" id="recommendation_count" name="recommendation_count" value="5" class="form-control" min="1">
-    </div>
-    <%= submit_tag 'Get Recommendations', class: 'btn btn-primary' %>
-  <% end %>
-</div>
+    <h2>Course Recommendations:</h2>
+    <%= form_tag user_recommendations_path(@user), method: :get do %>
+      <div class="form-group">
+        <label for="recommendation_count">Number of Recommendations:</label>
+        <input type="number" id="recommendation_count" name="recommendation_count" value="5" class="form-control" min="1">
+      </div>
+      <%= submit_tag 'Get Recommendations', class: 'btn btn-primary' %>
+    <% end %>
+  </div>
 
 </div>
