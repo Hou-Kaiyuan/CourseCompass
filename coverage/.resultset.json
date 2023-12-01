@@ -1,13 +1,13 @@
 {
   "Cucumber Features": {
     "coverage": {
-      "/home/icsl/workspace/KaiyuanHou/COMS4152/CourseCompass/app/models/course.rb": {
+      "/home/codio/workspace/app/models/course.rb": {
         "lines": [
           1,
           null
         ]
       },
-      "/home/icsl/workspace/KaiyuanHou/COMS4152/CourseCompass/app/models/user.rb": {
+      "/home/codio/workspace/app/models/user.rb": {
         "lines": [
           1,
           null,
@@ -95,14 +95,14 @@
           null
         ]
       },
-      "/home/icsl/workspace/KaiyuanHou/COMS4152/CourseCompass/app/models/course_enrollment.rb": {
+      "/home/codio/workspace/app/models/course_enrollment.rb": {
         "lines": [
           1,
           null,
           null
         ]
       },
-      "/home/icsl/workspace/KaiyuanHou/COMS4152/CourseCompass/app/controllers/courses_controller.rb": {
+      "/home/codio/workspace/app/controllers/courses_controller.rb": {
         "lines": [
           1,
           null,
@@ -167,7 +167,7 @@
           null
         ]
       },
-      "/home/icsl/workspace/KaiyuanHou/COMS4152/CourseCompass/app/controllers/application_controller.rb": {
+      "/home/codio/workspace/app/controllers/application_controller.rb": {
         "lines": [
           1,
           null,
@@ -187,25 +187,25 @@
           null
         ]
       },
-      "/home/icsl/workspace/KaiyuanHou/COMS4152/CourseCompass/app/helpers/application_helper.rb": {
+      "/home/codio/workspace/app/helpers/application_helper.rb": {
         "lines": [
           1,
           null
         ]
       },
-      "/home/icsl/workspace/KaiyuanHou/COMS4152/CourseCompass/app/helpers/courses_helper.rb": {
+      "/home/codio/workspace/app/helpers/courses_helper.rb": {
         "lines": [
           1,
           null
         ]
       },
-      "/home/icsl/workspace/KaiyuanHou/COMS4152/CourseCompass/app/helpers/profiles_helper.rb": {
+      "/home/codio/workspace/app/helpers/profiles_helper.rb": {
         "lines": [
           1,
           null
         ]
       },
-      "/home/icsl/workspace/KaiyuanHou/COMS4152/CourseCompass/app/controllers/sessions_controller.rb": {
+      "/home/codio/workspace/app/controllers/sessions_controller.rb": {
         "lines": [
           1,
           null,
@@ -232,7 +232,7 @@
           null
         ]
       },
-      "/home/icsl/workspace/KaiyuanHou/COMS4152/CourseCompass/app/controllers/registrations_controller.rb": {
+      "/home/codio/workspace/app/controllers/registrations_controller.rb": {
         "lines": [
           1,
           null,
@@ -259,7 +259,7 @@
           null
         ]
       },
-      "/home/icsl/workspace/KaiyuanHou/COMS4152/CourseCompass/app/controllers/profiles_controller.rb": {
+      "/home/codio/workspace/app/controllers/profiles_controller.rb": {
         "lines": [
           1,
           1,
@@ -273,7 +273,7 @@
           null
         ]
       },
-      "/home/icsl/workspace/KaiyuanHou/COMS4152/CourseCompass/app/controllers/user_controller.rb": {
+      "/home/codio/workspace/app/controllers/user_controller.rb": {
         "lines": [
           0,
           null,
@@ -300,29 +300,29 @@
         }
       }
     },
-    "timestamp": 1700101094
+    "timestamp": 1701455981
   },
   "RSpec": {
     "coverage": {
-      "/home/icsl/workspace/KaiyuanHou/COMS4152/CourseCompass/app/helpers/application_helper.rb": {
+      "/home/codio/workspace/app/helpers/application_helper.rb": {
         "lines": [
           1,
           null
         ]
       },
-      "/home/icsl/workspace/KaiyuanHou/COMS4152/CourseCompass/app/helpers/courses_helper.rb": {
+      "/home/codio/workspace/app/helpers/courses_helper.rb": {
         "lines": [
           1,
           null
         ]
       },
-      "/home/icsl/workspace/KaiyuanHou/COMS4152/CourseCompass/app/helpers/profiles_helper.rb": {
+      "/home/codio/workspace/app/helpers/profiles_helper.rb": {
         "lines": [
           1,
           null
         ]
       },
-      "/home/icsl/workspace/KaiyuanHou/COMS4152/CourseCompass/app/controllers/courses_controller.rb": {
+      "/home/codio/workspace/app/controllers/courses_controller.rb": {
         "lines": [
           1,
           null,
@@ -387,7 +387,7 @@
           null
         ]
       },
-      "/home/icsl/workspace/KaiyuanHou/COMS4152/CourseCompass/app/controllers/application_controller.rb": {
+      "/home/codio/workspace/app/controllers/application_controller.rb": {
         "lines": [
           1,
           null,
@@ -407,7 +407,7 @@
           null
         ]
       },
-      "/home/icsl/workspace/KaiyuanHou/COMS4152/CourseCompass/app/controllers/profiles_controller.rb": {
+      "/home/codio/workspace/app/controllers/profiles_controller.rb": {
         "lines": [
           1,
           1,
@@ -421,7 +421,7 @@
           null
         ]
       },
-      "/home/icsl/workspace/KaiyuanHou/COMS4152/CourseCompass/app/controllers/registrations_controller.rb": {
+      "/home/codio/workspace/app/controllers/registrations_controller.rb": {
         "lines": [
           1,
           null,
@@ -448,7 +448,7 @@
           null
         ]
       },
-      "/home/icsl/workspace/KaiyuanHou/COMS4152/CourseCompass/app/controllers/sessions_controller.rb": {
+      "/home/codio/workspace/app/controllers/sessions_controller.rb": {
         "lines": [
           1,
           null,
@@ -475,7 +475,7 @@
           null
         ]
       },
-      "/home/icsl/workspace/KaiyuanHou/COMS4152/CourseCompass/app/controllers/user_controller.rb": {
+      "/home/codio/workspace/app/controllers/user_controller.rb": {
         "lines": [
           1,
           null,
@@ -499,13 +499,13 @@
           null
         ]
       },
-      "/home/icsl/workspace/KaiyuanHou/COMS4152/CourseCompass/app/models/course.rb": {
+      "/home/codio/workspace/app/models/course.rb": {
         "lines": [
           1,
           null
         ]
       },
-      "/home/icsl/workspace/KaiyuanHou/COMS4152/CourseCompass/app/models/user.rb": {
+      "/home/codio/workspace/app/models/user.rb": {
         "lines": [
           1,
           null,
@@ -593,7 +593,7 @@
           null
         ]
       },
-      "/home/icsl/workspace/KaiyuanHou/COMS4152/CourseCompass/app/models/course_enrollment.rb": {
+      "/home/codio/workspace/app/models/course_enrollment.rb": {
         "lines": [
           1,
           null,
@@ -601,6 +601,6 @@
         ]
       }
     },
-    "timestamp": 1700101109
+    "timestamp": 1701455928
   }
 }

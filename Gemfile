@@ -33,5 +33,5 @@ gem 'jquery-rails'
 gem 'faker'
 
 # for login
-gem 'mini_racer'
+gem 'mini_racer', platforms: :ruby
 gem 'bcrypt'
