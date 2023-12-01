@@ -10,7 +10,7 @@ class UserController < ApplicationController
   def recommendations
     @user = User.find(params[:id])
     top_n_courses = params[:recommendation_count] || 5
-    @recommended_courses = @user.recommend_courses(params[:recommendation_count].to_i)
+    @recommended_courses_with_gpa = @user.recommend_courses(5) # or however many courses you want to recommend
 
 
     # Render the view with recommended courses
