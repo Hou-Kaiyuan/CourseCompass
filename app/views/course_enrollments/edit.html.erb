@@ -1,0 +1,20 @@
+<!-- app/views/course_enrollments/edit.html.erb -->
+<%= form_for([@user, @course_enrollment]) do |f| %>
+  <div class="form-group">
+    <%= f.label :course, 'Course' %>
+    <!-- Assuming course_number is unique and can be used as a value -->
+    <%= f.select :course, Course.all.collect { |c| [c.course_number, c.course_number] }, {}, { class: 'form-control', disabled: true } %>
+  </div>
+  
+  <div class="form-group">
+    <%= f.label :year, 'Year' %>
+    <%= f.number_field :year, class: 'form-control', min: 1900, max: Date.today.year %>
+  </div>
+  
+  <div class="form-group">
+    <%= f.label :grade, 'Grade' %>
+    <%= f.select :grade, options_for_select(['A+', 'A', 'A-', 'B+', 'B', 'B-', 'C+', 'C', 'C-', 'D'], selected: @course_enrollment.grade), {}, { class: 'form-control' } %>
+  </div>
+  
+  <%= f.submit 'Update Course Enrollment', class: 'btn btn-primary' %>
+<% end %>
