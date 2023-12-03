@@ -1,13 +1,50 @@
-<h2>Create New Movie</h2>
+<h1>Add New Course</h1>
 
-<%= form_tag courses_path, :class => 'form' do %>
-  <%= label :course, :title, 'Title', :class => 'col-form-label' %>
-  <%= text_field :course, :title, :class => 'form-control' %>
-  <%= label :course, :rating, 'Rating', :class => 'col-form-label'  %>
-  <%= select :course, :rating, ['G', 'PG', 'PG-13', 'R', 'NC-17'], {}, { :class => 'form-control col-1'} %>
-  <%= label :course, :release_date, 'Released On', :class => 'col-form-label'  %>
-  <%= date_select :course, :release_date, {}, :class => 'form-control col-2 d-inline' %>
-  <br/>
-  <%= submit_tag 'Save Changes', :class => 'btn btn-primary' %>
-  <%= link_to 'Cancel', courses_path, :class => 'btn btn-secondary' %>
+<%= form_for(@course, local: true) do |form| %>
+  <div class="form-group">
+    <%= form.label :course_number, 'Course Number' %><span class="text-danger">*</span>
+    <%= form.text_field :course_number, class: 'form-control', required: true %>
+  </div>
+
+  <div class="form-group">
+    <%= form.label :course_title, 'Course Title' %><span class="text-danger">*</span>
+    <%= form.text_field :course_title, class: 'form-control', required: true %>
+  </div>
+
+  <div class="form-group">
+    <%= form.label :offering_term, 'Offering Term' %>
+    <%= form.text_field :offering_term, class: 'form-control', placeholder: 'Fall 2023' %>
+  </div>
+
+  <div class="form-group">
+    <%= form.label :midterm, 'Midterm Exam' %>
+    <%= form.check_box :midterm %>
+  </div>
+
+  <div class="form-group">
+    <%= form.label :project, 'Project' %>
+    <%= form.check_box :project %>
+  </div>
+
+  <div class="form-group">
+    <%= form.label :instructor, 'Instructor' %><span class="text-danger">*</span>
+    <%= form.text_field :instructor, class: 'form-control', required: true %>
+  </div>
+
+  <div class="form-group">
+    <%= form.label :website, 'Course Website' %>
+    <%= form.text_field :website, class: 'form-control' %>
+  </div>
+
+  <div class="form-group">
+    <%= form.label :days, 'Days' %>
+    <%= form.text_field :days, class: 'form-control', placeholder: 'MW' %>
+  </div>
+
+  <div class="form-group">
+    <%= form.label :time, 'Time' %>
+    <%= form.text_field :time, class: 'form-control', placeholder: '8:40 AM - 9:55 AM' %>
+  </div>
+
+  <%= form.submit 'Create Course', class: 'btn btn-primary' %>
 <% end %>

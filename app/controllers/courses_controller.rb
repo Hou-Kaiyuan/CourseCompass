@@ -16,13 +16,17 @@ class CoursesController < ApplicationController
   
 
   def new
-    # default: render 'new' template
+    @course = Course.new # Initializes a new Course object for the form
   end
 
   def create
-    @course = Course.create!(course_params)
-    flash[:notice] = "#{@course.course_title} was successfully created."
-    redirect_to courses_path
+    @course = Course.new(course_params) # Initializes with course_params instead of create! directly
+    if @course.save
+      flash[:notice] = "#{@course.course_title} was successfully created."
+      redirect_to courses_path
+    else
+      render :new # Render the new form again if the course fails to save
+    end
   end
 
   def edit
