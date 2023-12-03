@@ -112,7 +112,17 @@ bundle _2.0.0.pre.3_ install
 bundle exec rake db:migrate db:test:prepare db:seed
 bundle exec rspec
 bundle exec cucumber
+
+rails s -b 0.0.0.0 -p 3456
 ```
+
+
+#### 3. Run locally/on a public server
+```bash
+rails s -b 0.0.0.0 -p <port>
+```
+
+Then browse the <ip>:<port>
 
 ## Heroku deployment
 For heroku deployment, make sure [Heroku CLI](https://devcenter.heroku.com/articles/heroku-cli) is installed. Then,
