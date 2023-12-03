@@ -21,26 +21,20 @@ class User < ActiveRecord::Base
   end
 
   def recommend_courses(top_n_courses = 5)
-    # Get all course IDs
     all_course_ids = Course.pluck(:id)
     
-    # Vector representing the courses the current user is enrolled in
     my_course_ids = self.courses.pluck(:id)
     my_courses_vector = all_course_ids.map { |id| my_course_ids.include?(id) ? 1 : 0 }
     
-    # Get all other users excluding the current user
     other_users = User.where.not(id: self.id)
     
-    # Calculate the cosine similarity between the current user and all other users
     similarities = other_users.each_with_object({}) do |user, memo|
       other_user_courses_vector = all_course_ids.map { |id| user.courses.pluck(:id).include?(id) ? 1 : 0 }
       memo[user.id] = cosine_similarity(my_courses_vector, other_user_courses_vector)
     end
     
-    # Sort the users by similarity and take the top 5
     top_users = similarities.sort_by { |_uid, similarity| -similarity }.map(&:first).first(5)
     
-    # Get the top N recommended course IDs
     recommended_course_ids = CourseEnrollment
                             .where(uid: top_users)
                             .where.not(course_id: my_course_ids)
@@ -50,7 +44,6 @@ class User < ActiveRecord::Base
                             .pluck(:course_id)
 
   
-    # Calculate the average GPA for each recommended course based on the top 5 similar users' grades
     recommended_courses_with_gpa = recommended_course_ids.map do |course_id|
       enrollments = CourseEnrollment.where(course: course_id, user: top_users)
       total_gpa = enrollments.reduce(0) do |sum, enrollment|
@@ -60,10 +53,8 @@ class User < ActiveRecord::Base
       { course_id: course_id, average_gpa: average_gpa }
     end
   
-    # Sort the recommended courses by their average GPA in descending order
     recommended_courses_sorted_by_gpa = recommended_courses_with_gpa.sort_by { |c| -c[:average_gpa] }
     
-    # Return the courses with their calculated average GPA
     recommended_courses_sorted_by_gpa
   end
   
@@ -82,7 +73,6 @@ class User < ActiveRecord::Base
     "D": 1.0
 }
 def grade_to_gpa(grade)
-  # Ensure that grades are treated as strings and then converted to symbols
   GRADE_TO_GPA[grade.upcase.strip.to_sym] || 0
 end
   

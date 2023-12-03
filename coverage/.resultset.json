@@ -1,108 +1,132 @@
 {
   "Cucumber Features": {
     "coverage": {
-      "/home/codio/workspace/app/models/course.rb": {
+      "/home/icsl/workspace/KaiyuanHou/COMS4152/CourseCompass/app/models/course.rb": {
         "lines": [
           1,
-          null
-        ]
-      },
-      "/home/codio/workspace/app/models/user.rb": {
-        "lines": [
-          1,
-          null,
           1,
           1,
           1,
           1,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null
-        ]
-      },
-      "/home/codio/workspace/app/models/course_enrollment.rb": {
-        "lines": [
           1,
           null,
           null
         ]
       },
-      "/home/codio/workspace/app/controllers/courses_controller.rb": {
+      "/home/icsl/workspace/KaiyuanHou/COMS4152/CourseCompass/app/models/user.rb": {
+        "lines": [
+          1,
+          null,
+          1,
+          1,
+          null,
+          1,
+          1,
+          1,
+          null,
+          null,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          null,
+          0,
+          null,
+          null,
+          null,
+          1,
+          null,
+          0,
+          null,
+          null,
+          0,
+          0,
+          null,
+          null,
+          0,
+          null,
+          null,
+          0,
+          0,
+          0,
+          null,
+          null,
+          null,
+          0,
+          null,
+          null,
+          0,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          0,
+          0,
+          0,
+          0,
+          null,
+          0,
+          0,
+          null,
+          null,
+          null,
+          0,
+          null,
+          null,
+          0,
+          null,
+          null,
+          1,
+          null,
+          1,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          1,
+          null,
+          0,
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      "/home/icsl/workspace/KaiyuanHou/COMS4152/CourseCompass/app/models/course_enrollment.rb": {
+        "lines": [
+          1,
+          null,
+          null,
+          1,
+          1,
+          null,
+          null,
+          1,
+          1,
+          1,
+          null,
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      "/home/icsl/workspace/KaiyuanHou/COMS4152/CourseCompass/app/controllers/courses_controller.rb": {
         "lines": [
           1,
           null,
@@ -113,21 +137,26 @@
           null,
           null,
           1,
-          7,
+          8,
           2,
           null,
-          5,
+          6,
           null,
-          null,
-          null,
-          1,
           null,
           null,
           null,
           1,
           0,
+          null,
+          null,
+          1,
           0,
           0,
+          0,
+          0,
+          null,
+          0,
+          null,
           null,
           null,
           1,
@@ -167,7 +196,7 @@
           null
         ]
       },
-      "/home/codio/workspace/app/controllers/application_controller.rb": {
+      "/home/icsl/workspace/KaiyuanHou/COMS4152/CourseCompass/app/controllers/application_controller.rb": {
         "lines": [
           1,
           null,
@@ -187,25 +216,25 @@
           null
         ]
       },
-      "/home/codio/workspace/app/helpers/application_helper.rb": {
+      "/home/icsl/workspace/KaiyuanHou/COMS4152/CourseCompass/app/helpers/application_helper.rb": {
         "lines": [
           1,
           null
         ]
       },
-      "/home/codio/workspace/app/helpers/courses_helper.rb": {
+      "/home/icsl/workspace/KaiyuanHou/COMS4152/CourseCompass/app/helpers/courses_helper.rb": {
         "lines": [
           1,
           null
         ]
       },
-      "/home/codio/workspace/app/helpers/profiles_helper.rb": {
+      "/home/icsl/workspace/KaiyuanHou/COMS4152/CourseCompass/app/helpers/profiles_helper.rb": {
         "lines": [
           1,
           null
         ]
       },
-      "/home/codio/workspace/app/controllers/sessions_controller.rb": {
+      "/home/icsl/workspace/KaiyuanHou/COMS4152/CourseCompass/app/controllers/sessions_controller.rb": {
         "lines": [
           1,
           null,
@@ -232,7 +261,7 @@
           null
         ]
       },
-      "/home/codio/workspace/app/controllers/registrations_controller.rb": {
+      "/home/icsl/workspace/KaiyuanHou/COMS4152/CourseCompass/app/controllers/registrations_controller.rb": {
         "lines": [
           1,
           null,
@@ -259,21 +288,21 @@
           null
         ]
       },
-      "/home/codio/workspace/app/controllers/profiles_controller.rb": {
+      "/home/icsl/workspace/KaiyuanHou/COMS4152/CourseCompass/app/controllers/profiles_controller.rb": {
         "lines": [
           1,
           1,
           1,
-          1,
-          1,
-          null,
           0,
+          0,
+          null,
+          1,
           null,
           null,
           null
         ]
       },
-      "/home/codio/workspace/app/controllers/user_controller.rb": {
+      "/home/icsl/workspace/KaiyuanHou/COMS4152/CourseCompass/app/controllers/users_controller.rb": {
         "lines": [
           0,
           null,
@@ -284,23 +313,86 @@
           0,
           0,
           null,
+          0,
+          0,
+          0,
+          0,
+          null,
+          0,
+          0,
+          null,
+          0,
+          null,
+          0,
+          0,
+          0,
+          0
+        ],
+        "branches": {
+        }
+      },
+      "/home/icsl/workspace/KaiyuanHou/COMS4152/CourseCompass/app/controllers/course_enrollments_controller.rb": {
+        "lines": [
+          null,
+          0,
+          0,
+          null,
+          0,
+          0,
+          0,
+          0,
           null,
           null,
           null,
           null,
+          0,
+          0,
+          0,
+          null,
+          0,
+          null,
+          0,
+          0,
+          0,
+          0,
+          0,
+          null,
+          0,
+          null,
+          0,
+          0,
+          0,
+          null,
+          0,
+          0,
+          0,
+          null,
+          0,
+          null,
+          0,
+          0,
+          0,
+          0,
+          0,
           null,
           null,
           null,
+          0,
           null,
+          0,
+          0,
+          0,
           null,
-          null,
+          0,
+          0,
+          0,
           0
         ],
         "branches": {
         }
       }
     },
-    "timestamp": 1701455981
+    "timestamp": 1701627159
   },
   "RSpec": {
     "coverage": {
@@ -494,9 +586,8 @@
           0,
           null,
           null,
-          0,
-          0,
-          0,
+          null,
+          null,
           0
         ],
         "branches": {
@@ -667,6 +758,24 @@
           0,
           0,
           null,
+          0,
+          null,
+          0,
+          0,
+          0,
+          null,
+          0,
+          0,
+          0,
+          null,
+          0,
+          null,
+          0,
+          0,
+          0,
+          0,
+          0,
+          null,
           null,
           null,
           0,
@@ -684,6 +793,6 @@
         }
       }
     },
-    "timestamp": 1701614245
+    "timestamp": 1701627132
   }
 }

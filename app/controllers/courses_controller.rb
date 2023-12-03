@@ -1,9 +1,9 @@
 class CoursesController < ApplicationController
 
   def show
-    id = params[:id] # retrieve movie ID from URI route
-    @course = Course.find(id) # look up movie by unique ID
-    # will render app/views/courses/show.<extension> by default
+    id = params[:id]
+    @course = Course.find(id) 
+   
   end
 
   def index
@@ -16,16 +16,16 @@ class CoursesController < ApplicationController
   
 
   def new
-    @course = Course.new # Initializes a new Course object for the form
+    @course = Course.new 
   end
 
   def create
-    @course = Course.new(course_params) # Initializes with course_params instead of create! directly
+    @course = Course.new(course_params)
     if @course.save
       flash[:notice] = "#{@course.course_title} was successfully created."
       redirect_to courses_path
     else
-      render :new # Render the new form again if the course fails to save
+      render :new 
     end
   end
 

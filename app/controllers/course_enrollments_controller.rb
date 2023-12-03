@@ -15,7 +15,6 @@ class CourseEnrollmentsController < ApplicationController
     @user = @course_enrollment.user
     
     if @course_enrollment.update(course_enrollment_params)
-      # Redirect to the profile page with the user's ID as a query parameter
       redirect_to profiles_path(id: @user.id), notice: 'Course enrollment was successfully updated.'
     else
       render :edit
@@ -23,7 +22,6 @@ class CourseEnrollmentsController < ApplicationController
   end
   
   def new
-    # Assuming that you have defined a method to set the user based on the session or params
     @user = User.find_by(uid: params[:user_uid])
     @course_enrollment = @user.course_enrollments.new
   end
@@ -33,7 +31,6 @@ class CourseEnrollmentsController < ApplicationController
     @course_enrollment.user = User.find_by(uid: params[:user_uid])
   
     if @course_enrollment.save
-      # redirect_to profiles_path(id: @course_enrollment.user.uid), notice: 'Course enrollment was successfully created.'
       render :new
     else
       redirect_to root_path, notice: "Create course enrollment failed."
