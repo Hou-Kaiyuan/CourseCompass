@@ -122,7 +122,7 @@ rails s -b 0.0.0.0 -p 3456
 rails s -b 0.0.0.0 -p <port>
 ```
 
-Then browse the <ip>:<port>
+Then browse the ip:port
 
 ## Heroku deployment
 For heroku deployment, make sure [Heroku CLI](https://devcenter.heroku.com/articles/heroku-cli) is installed. Then,
