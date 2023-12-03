@@ -1,8 +1,8 @@
 <h2>Edit Existing Course</h2>
 <%= form_for @course, url: course_path(@course), method: :put do |f| %>
   <div class="form-group">
-    <%= f.label :course_number, 'Course Number' %>
-    <%= f.text_field :course_number, class: 'form-control' %>
+    <%= f.label :course_id, 'Course Number' %>
+    <%= f.text_field :course_id, class: 'form-control' %>
   </div>
   <div class="form-group">
     <%= f.label :course_title, 'Course Title' %>

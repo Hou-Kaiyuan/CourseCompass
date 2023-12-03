@@ -1,9 +1,9 @@
 class CourseHistory < ActiveRecord::Migration
   def change
     create_table :course_enrollments do |t|
-      t.integer :user, foreign_key: true
-      t.string :course, foreign_key: true 
-      t.integer :year
+      t.string :uid, foreign_key: true
+      t.string :course_id, foreign_key: true 
+      t.string :year
       t.string :grade
 
       t.timestamps

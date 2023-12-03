@@ -22,8 +22,8 @@ module NavigationHelpers
     #     user_profile_path(User.find_by_login($1))
 
     when /^the user page for (.*)$/i
-      user_id = User.find_by(email: $1).id
-      user_path(user_id)
+      uid = User.find_by(email: $1).id
+      user_path(uid)
 
     else
       begin

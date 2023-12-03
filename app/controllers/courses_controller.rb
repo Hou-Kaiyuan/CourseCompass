@@ -8,7 +8,7 @@ class CoursesController < ApplicationController
 
   def index
     if params[:search].present?
-      @courses = Course.where("course_number LIKE ? OR course_title LIKE ?", "%#{params[:search]}%", "%#{params[:search]}%").paginate(page: params[:page], per_page: 10)
+      @courses = Course.where("course_id LIKE ? OR course_title LIKE ?", "%#{params[:search]}%", "%#{params[:search]}%").paginate(page: params[:page], per_page: 10)
     else
       @courses = Course.paginate(page: params[:page], per_page: 10)
     end
@@ -52,7 +52,7 @@ class CoursesController < ApplicationController
   # This helps make clear which methods respond to requests, and which ones do not.
   def course_params
     params.require(:course).permit(
-      :course_number,
+      :course_id,
       :course_title,
       :offering_term,
       :midterm,

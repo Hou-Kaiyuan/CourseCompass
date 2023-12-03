@@ -10,7 +10,7 @@ RSpec.describe SessionsController, type: :controller do
         # Act
         post :create, user: { email: user.email, password: user.password }
         # Assert
-        expect(session[:user_id]).to eq(user.id)
+        expect(session[:uid]).to eq(user.id)
       end
 
       it 'redirects to the user page' do
@@ -26,7 +26,7 @@ RSpec.describe SessionsController, type: :controller do
         # Act
         post :create, user: { email: 'invalid@example.com', password: 'wrongpassword' }
         # Assert
-        expect(session[:user_id]).to be_nil
+        expect(session[:uid]).to be_nil
       end
 
       it 'redirects to the login page' do
@@ -43,15 +43,15 @@ RSpec.describe SessionsController, type: :controller do
   let(:user) { User.create({email: 'test1@columbia.edu', password: '1234', password_confirmation: '1234'}) }
 
     it 'logs out the user' do
-        session[:user_id] = user.id
+        session[:uid] = user.id
         # Act
         delete :destroy
         # Assert
-        expect(session[:user_id]).to be_nil
+        expect(session[:uid]).to be_nil
     end
 
     it 'redirects to the root page' do
-        session[:user_id] = user.id
+        session[:uid] = user.id
         # Act
         delete :destroy
         # Assert

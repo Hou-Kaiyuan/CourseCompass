@@ -3,9 +3,11 @@ class CourseEnrollmentsController < ApplicationController
   before_action :set_course_enrollment, only: [:edit, :update]
 
   def edit
-    @user = User.find(params[:user_id])
+    @user = User.find_by(uid: params[:user_uid])
     @course_enrollment = @user.course_enrollments.find(params[:id])
   end
+  
+  
   
 
   def update

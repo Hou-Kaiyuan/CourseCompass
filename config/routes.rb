@@ -3,10 +3,10 @@ CourseCompass::Application.routes.draw do
     post 'add_to_enrolled', on: :member
   end
 
-  resources :users do
-    # Nested resource for course enrollments
+  resources :users, param: :uid do
     resources :course_enrollments, only: [:new, :create, :edit, :update]
   end
+  
 
   # The rest of your existing routes
   get "signup", to: "registrations#new"

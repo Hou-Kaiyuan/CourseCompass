@@ -8,7 +8,7 @@
 require 'faker'
 
 courses = [
-	{ :course_number => 'COMS W 4152',
+	{ :course_id => 'COMS W 4152',
     :course_title => 'Engineering Software-as-a-Service',
     :offering_term => 'Fall 2023',# 0: fall, 1: spring, 2: both
     :midterm  => 0, # 0: no midterm, 1: midterm
@@ -18,7 +18,7 @@ courses = [
     :days => "TR",
     :website => "http://www.columbia.edu/cu/bulletin/uwb/subj/COMS/W4152-20233-001/"
   },
-  { :course_number => 'COMS E 6998-024',
+  { :course_id => 'COMS E 6998-024',
     :course_title => 'Adv Computer Networks',
     :offering_term => 'Fall 2023',
     :midterm => 0,
@@ -28,7 +28,7 @@ courses = [
     :days => "TR",
     :time => "2:40 PM - 3:55 PM"
   },
-  { :course_number => 'COMS W 4995-014',
+  { :course_id => 'COMS W 4995-014',
     :course_title => 'Adv Mach Lrng Health &med',
     :offering_term => 'Fall 2023',
     :midterm => 0,
@@ -38,7 +38,7 @@ courses = [
     :days => "Fr",
     :time => "2:00 PM - 4:00 PM"
   },
-  { :course_number => 'COMS E 6998-012',
+  { :course_id => 'COMS E 6998-012',
     :course_title => 'Adv Web Design Studio',
     :offering_term => 'Fall 2023',
     :midterm => 0,
@@ -48,7 +48,7 @@ courses = [
     :days => "Fr",
     :time => "12:10 PM - 2:00 PM"
   },
-  { :course_number => 'COMS W 3157-001',
+  { :course_id => 'COMS W 3157-001',
     :course_title => 'Advanced Programming',
     :offering_term => 'Fall 2023',
     :midterm => 0,
@@ -58,7 +58,7 @@ courses = [
     :days => "TR",
     :time => "2:40 PM - 3:55 PM"
   },
-  { :course_number => 'COMS W 3157-002',
+  { :course_id => 'COMS W 3157-002',
     :course_title => 'Advanced Programming',
     :offering_term => 'Fall 2023',
     :midterm => 0,
@@ -68,7 +68,7 @@ courses = [
     :days => "TR",
     :time => "5:40 PM - 6:55 PM"
   },
-  { :course_number => 'COMS E 6998-020',
+  { :course_id => 'COMS E 6998-020',
     :course_title => 'Agile & Iterative Dev',
     :offering_term => 'Fall 2023',
     :midterm => 0,
@@ -78,7 +78,7 @@ courses = [
     :days => "MW",
     :time => "4:10 PM - 5:25 PM"
   },
-  { :course_number => 'COMS W 3157-004',
+  { :course_id => 'COMS W 3157-004',
     :course_title => 'Advanced Programming',
     :offering_term => 'Fall 2023',
     :midterm => 0,
@@ -88,7 +88,7 @@ courses = [
     :days => "TR",
     :time => "8:10 AM - 9:25 AM"
   },
-  { :course_number => 'COMS W 4735-001',
+  { :course_id => 'COMS W 4735-001',
     :course_title => 'Computational Aspects of Robotics',
     :offering_term => 'Fall 2023',
     :midterm => 1,
@@ -98,7 +98,7 @@ courses = [
     :days => "TR",
     :time => "11:40 AM - 12:55 PM"
   },
-  { :course_number => 'COMS W 4118-001',
+  { :course_id => 'COMS W 4118-001',
     :course_title => 'Operating Systems I',
     :offering_term => 'Fall 2023',
     :midterm => 1,
@@ -108,7 +108,7 @@ courses = [
     :days => "TR",
     :time => "1:10 PM - 2:25 PM"
   },
-  { :course_number => 'COMS W 4160-001',
+  { :course_id => 'COMS W 4160-001',
     :course_title => 'Computer Graphics',
     :offering_term => 'Fall 2023',
     :midterm => 0,
@@ -118,7 +118,7 @@ courses = [
     :days => "TR",
     :time => "10:10 AM - 11:25 AM"
   },
-  { :course_number => 'COMS W 4156-001',
+  { :course_id => 'COMS W 4156-001',
     :course_title => 'Advanced Software Engineering',
     :offering_term => 'Fall 2023',
     :midterm => 1,
@@ -128,7 +128,7 @@ courses = [
     :days => "MW",
     :time => "10:10 AM - 11:25 AM"
   },
-  { :course_number => 'EECS E 4764',
+  { :course_id => 'EECS E 4764',
     :course_title => 'IoT - Intelligent and Connected Systems',
     :offering_term => 'Fall 2023',
     :midterm => 1,
@@ -138,7 +138,7 @@ courses = [
     :days => "MW",
     :time => "4:10 PM - 5:25 PM"
   },
-  { :course_number => 'COMS W 1004-003',
+  { :course_id => 'COMS W 1004-003',
     :course_title => 'Introduction to Computer Science and Programming in Java',
     :offering_term => 'Fall 2023',
     :midterm => 1,
@@ -148,7 +148,7 @@ courses = [
     :days => "TR",
     :time => "4:10 PM - 5:25 PM"
   },
-  { :course_number => 'COMS W 1007-001',
+  { :course_id => 'COMS W 1007-001',
     :course_title => 'Honors Introduction to Computer Science',
     :offering_term => 'Fall 2023',
     :midterm => 1,
@@ -158,7 +158,7 @@ courses = [
     :days => "TR",
     :time => "11:40 AM - 12:55 PM"
   },
-  { :course_number => 'COMS W 4170-001',
+  { :course_id => 'COMS W 4170-001',
     :course_title => 'User Interface Design',
     :offering_term => 'Fall 2023',
     :midterm => 0,
@@ -168,7 +168,7 @@ courses = [
     :days => "MW",
     :time => "2:40 PM - 3:55 PM"
   },
-  { :course_number => 'COMS W 4775-001',
+  { :course_id => 'COMS W 4775-001',
     :course_title => 'Causal Inference',
     :offering_term => 'Fall 2023',
     :midterm => 0, 
@@ -178,7 +178,7 @@ courses = [
     :days => "MW",
     :time => "4:10 PM - 5:25 PM"
   },
-  { :course_number => 'COMS E 6998-019',
+  { :course_id => 'COMS E 6998-019',
     :course_title => 'Causal Trustworthy AI',
     :offering_term => 'Fall 2023',
     :midterm => 0, 
@@ -188,7 +188,7 @@ courses = [
     :days => "Mo",
     :time => "6:10 PM - 8:00 PM"
   },
-  { :course_number => 'COMS W 3107-001',
+  { :course_id => 'COMS W 3107-001',
     :course_title => 'Clean Object-Oriented Design',
     :offering_term => 'Fall 2023',
     :midterm => 0, 
@@ -198,7 +198,7 @@ courses = [
     :days => "MW",
     :time => "4:10 PM - 5:25 PM"
   },
-  { :course_number => 'COMS E 6998-010',
+  { :course_id => 'COMS E 6998-010',
     :course_title => 'Cloud Computing & Big Data',
     :offering_term => 'Fall 2023',
     :midterm => 0, 
@@ -208,7 +208,7 @@ courses = [
     :days => "Mo",
     :time => "6:10 PM - 8:00 PM"
   },
-  { :course_number => 'COMS W 4995-005',
+  { :course_id => 'COMS W 4995-005',
     :course_title => 'Competitive Programming',
     :offering_term => 'Fall 2023',
     :midterm => 0, 
@@ -218,7 +218,7 @@ courses = [
     :days => "Mo",
     :time => "7:00 PM - 9:30 PM"
   },
-  { :course_number => 'COMS W 4165-001',
+  { :course_id => 'COMS W 4165-001',
     :course_title => 'Computational Techniques In Pixel Processing',
     :offering_term => 'Fall 2023',
     :midterm => 0,
@@ -228,7 +228,7 @@ courses = [
     :days => "TR",
     :time => "8:40 AM - 9:55 AM"
   },
-  { :course_number => 'CSEE W 4824-001',
+  { :course_id => 'CSEE W 4824-001',
     :course_title => 'Computer Architecture',
     :offering_term => 'Fall 2023',
     :midterm => 0,
@@ -238,7 +238,7 @@ courses = [
     :days => "MW",
     :time => "10:10 AM - 11:25 AM"
   },
-  { :course_number => 'COMS W 3261-001',
+  { :course_id => 'COMS W 3261-001',
     :course_title => 'Computer Science Theory',
     :offering_term => 'Fall 2023',
     :midterm => 0,
@@ -248,7 +248,7 @@ courses = [
     :days => "MW",
     :time => "8:40 AM - 9:55 AM"
   },
-  { :course_number => 'COMS W 3261-002',
+  { :course_id => 'COMS W 3261-002',
     :course_title => 'Computer Science Theory',
     :offering_term => 'Fall 2023',
     :midterm => 0,
@@ -258,7 +258,7 @@ courses = [
     :days => "MW",
     :time => "10:10 AM - 11:25 AM"
   },
-  { :course_number => 'COMS W 4731-001',
+  { :course_id => 'COMS W 4731-001',
     :course_title => 'Computer Vision I: First Principles',
     :offering_term => 'Fall 2023',
     :midterm => 0,
@@ -268,7 +268,7 @@ courses = [
     :days => "MW",
     :time => "10:10 AM - 11:25 AM"
   },
-  { :course_number => 'COMS W 3410-001',
+  { :course_id => 'COMS W 3410-001',
     :course_title => 'Computers and Society',
     :offering_term => 'Fall 2023',
     :midterm => 0,
@@ -278,7 +278,7 @@ courses = [
     :days => "Tu",
     :time => "5:30 PM - 8:00 PM"
   },
-  { :course_number => 'COMS W 1002-001',
+  { :course_id => 'COMS W 1002-001',
     :course_title => 'Computing in Context',
     :offering_term => 'Fall 2023',
     :midterm => 0,
@@ -288,7 +288,7 @@ courses = [
     :days => "TR",
     :time => "2:40 PM - 3:55 PM"
   },
-  { :course_number => 'COMS W 3134-001',
+  { :course_id => 'COMS W 3134-001',
     :course_title => 'Data Structures in Java',
     :offering_term => 'Fall 2023',
     :midterm => 0,
@@ -298,7 +298,7 @@ courses = [
     :days => "MW",
     :time => "4:10 PM - 5:25 PM"
   },
-  { :course_number => 'COMS W 3203-001',
+  { :course_id => 'COMS W 3203-001',
     :course_title => 'Discrete Mathematics: Introduction To Combinatorics and Graph Theory',
     :offering_term => 'Fall 2023',
     :midterm => 0,
@@ -308,7 +308,7 @@ courses = [
     :days => "MW",
     :time => "2:40 PM - 3:55 PM"
   },
-  { :course_number => 'COMS W 4995-009',
+  { :course_id => 'COMS W 4995-009',
     :course_title => 'Data-driven Design for Social Innovation',
     :offering_term => 'Fall 2023',
     :midterm => 0,
@@ -318,7 +318,7 @@ courses = [
     :days => "Fr",
     :time => "1:10 PM - 3:40 PM"
   },
-  { :course_number => 'COMS W 4995-011',
+  { :course_id => 'COMS W 4995-011',
     :course_title => 'Deep Learning for Computer Vision',
     :offering_term => 'Fall 2023',
     :midterm => 0,
@@ -328,7 +328,7 @@ courses = [
     :days => "TR",
     :time => "2:40 PM - 3:55 PM"
   },
-  { :course_number => 'COMS W 4995-030',
+  { :course_id => 'COMS W 4995-030',
     :course_title => 'Elements of Data Science',
     :offering_term => 'Fall 2023',
     :midterm => 0,
@@ -338,7 +338,7 @@ courses = [
     :days => "Mo",
     :time => "7:00 PM - 9:30 PM"
   },
-  { :course_number => 'COMS W 1404-001',
+  { :course_id => 'COMS W 1404-001',
     :course_title => 'Emerging Scholars Program Seminar',
     :offering_term => 'Fall 2023',
     :midterm => 0,
@@ -348,7 +348,7 @@ courses = [
     :days => "Fr",
     :time => "8:40 AM - 9:55 AM"
   },
-  { :course_number => 'COMS E 6998-004',
+  { :course_id => 'COMS E 6998-004',
     :course_title => 'Engineering Web3 Blockchain Applications',
     :offering_term => 'Fall 2023',
     :midterm => 0,
@@ -358,7 +358,7 @@ courses = [
     :days => "Tu",
     :time => "10:10 AM - 12:00 PM"
   },
-  { :course_number => 'COMS W 3136-001',
+  { :course_id => 'COMS W 3136-001',
     :course_title => 'Essential Data Structures in C/C++',
     :offering_term => 'Fall 2023',
     :midterm => 0,
@@ -368,7 +368,7 @@ courses = [
     :days => "TR",
     :time => "5:40 PM - 6:55 PM"
   },
-  { :course_number => 'COMS E 6998-016',
+  { :course_id => 'COMS E 6998-016',
     :course_title => 'Formal Verification Systems',
     :offering_term => 'Fall 2023',
     :midterm => 0,
@@ -378,7 +378,7 @@ courses = [
     :days => "Th",
     :time => "2:10 PM - 4:00 PM"
   },
-  { :course_number => 'COMS E 6998-022',
+  { :course_id => 'COMS E 6998-022',
     :course_title => 'Foundations of Data Privacy',
     :offering_term => 'Fall 2023',
     :midterm => 0,
@@ -388,7 +388,7 @@ courses = [
     :days => "Fr",
     :time => "10:10 AM - 12:40 PM"
   },
-  { :course_number => 'COMS E 6998-009',
+  { :course_id => 'COMS E 6998-009',
     :course_title => 'Fundamentals of Speech Recognition',
     :offering_term => 'Fall 2023',
     :midterm => 0,
@@ -398,7 +398,7 @@ courses = [
     :days => "Th",
     :time => "7:00 PM - 9:30 PM"
   },
-  { :course_number => 'CSEE W 3827-001',
+  { :course_id => 'CSEE W 3827-001',
     :course_title => 'Fundamentals of Computer Systems',
     :offering_term => 'Fall 2023',
     :midterm => 0,
@@ -408,7 +408,7 @@ courses = [
     :days => "TR",
     :time => "11:40 AM - 12:55 PM"
   },
-  { :course_number => 'CSEE W 3827-002',
+  { :course_id => 'CSEE W 3827-002',
     :course_title => 'Fundamentals of Computer Systems',
     :offering_term => 'Fall 2023',
     :midterm => 0,
@@ -418,7 +418,7 @@ courses = [
     :days => "TR",
     :time => "1:10 PM - 2:25 PM"
   },
-  { :course_number => 'COMS W 4113-001',
+  { :course_id => 'COMS W 4113-001',
     :course_title => 'Fundamentals of Large-Scale Distributed Systems',
     :offering_term => 'Fall 2023',
     :midterm => 0,
@@ -428,7 +428,7 @@ courses = [
     :days => "Fr",
     :time => "10:10 AM - 12:40 PM"
   },
-  { :course_number => 'COMS W 4995-008',
+  { :course_id => 'COMS W 4995-008',
     :course_title => 'Hacking 4 Defense',
     :offering_term => 'Fall 2023',
     :midterm => 0,
@@ -438,7 +438,7 @@ courses = [
     :days => "Tu",
     :time => "4:10 PM - 6:40 PM"
   },
-  { :course_number => 'COMS E 6998-023',
+  { :course_id => 'COMS E 6998-023',
     :course_title => 'Internet Measurement',
     :offering_term => 'Fall 2023',
     :midterm => 0,
@@ -448,7 +448,7 @@ courses = [
     :days => "We",
     :time => "4:10 PM - 6:40 PM"
   },
-  { :course_number => 'COMS E 6998-021',
+  { :course_id => 'COMS E 6998-021',
     :course_title => 'Introduction to Property Testing',
     :offering_term => 'Fall 2023',
     :midterm => 0,
@@ -458,7 +458,7 @@ courses = [
     :days => "Fr",
     :time => "2:10 PM - 4:00 PM"
   },
-  { :course_number => 'ENGI E 1006-001',
+  { :course_id => 'ENGI E 1006-001',
     :course_title => 'Introduction to Computing for Engineers and Applied Scientists',
     :offering_term => 'Fall 2023',
     :midterm => 0,
@@ -468,7 +468,7 @@ courses = [
     :days => "MW",
     :time => "10:10 AM - 11:25 AM"
   },
-  { :course_number => 'COMS W 4236-001',
+  { :course_id => 'COMS W 4236-001',
     :course_title => 'Introduction to Computational Complexity',
     :offering_term => 'Fall 2023',
     :midterm => 0,
@@ -478,7 +478,7 @@ courses = [
     :days => "MW",
     :time => "1:10 PM - 2:25 PM"
   },
-  { :course_number => 'COMS W 4252-001',
+  { :course_id => 'COMS W 4252-001',
     :course_title => 'Introduction to Computational Learning Theory',
     :offering_term => 'Fall 2023',
     :midterm => 0,
@@ -488,7 +488,7 @@ courses = [
     :days => "MW",
     :time => "8:40 AM - 9:55 AM"
   },
-  { :course_number => 'COMS W 1004-001',
+  { :course_id => 'COMS W 1004-001',
     :course_title => 'Introduction to Computer Science and Programming in Java',
     :offering_term => 'Fall 2023',
     :midterm => 0,
@@ -498,7 +498,7 @@ courses = [
     :days => "MW",
     :time => "2:40 PM - 3:55 PM"
   },
-  { :course_number => 'COMS W 4261-001',
+  { :course_id => 'COMS W 4261-001',
     :course_title => 'Introduction to Cryptography',
     :offering_term => 'Fall 2023',
     :midterm => 0,
@@ -566,7 +566,10 @@ num_users_to_create.times do
   courses_to_take = courses.sample(num_courses)
 
   courses_to_take.each do |course|
-    if CourseEnrollment.find_by(user: user[:uid], course: course[:course_number]).nil?
+    # if CourseEnrollment.find_by(user: user[:uid], course: course[:course_id]).nil?
+    # if CourseEnrollment.find_by(user: user, course: course).nil?
+    unless CourseEnrollment.exists?(user: user, course: Course.find_by(course_id: course[:course_id]))
+
       if num_courses > 10
         adjusted_probabilities = probabilities.map { |p| p * 0.5 }
         adjusted_probabilities[0] = 0.1 
@@ -576,13 +579,19 @@ num_users_to_create.times do
         grade = weighted_sample(grades, probabilities)
       end
 
-      enrollment = {
-        user: user[:uid], 
-        course: course[:course_number], 
-        year: year,
+    #   enrollment = {
+    #     user: user,  # Use the User object here
+    #     course: course,
+    #     year: year,
+    #     grade: grade
+    # }
+    #   CourseEnrollment.create!(enrollment)
+    CourseEnrollment.create!(
+        user: user, 
+        course: Course.find_by(course_id: course[:course_id]), 
+        year: year, 
         grade: grade
-      }
-      CourseEnrollment.create!(enrollment)
+      )
     end
   end
 end

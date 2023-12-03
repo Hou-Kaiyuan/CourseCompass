@@ -4,7 +4,7 @@
 <ul id="details">
   <li>
     Course Number:
-    <%= @course.course_number %>
+    <%= @course.course_id %>
   </li>
   <li>
     Offering Term:
@@ -42,7 +42,7 @@
 </p>
 
 <div class="row">
-  <% if session[:user_id].present? %>
+  <% if session[:uid].present? %>
     <%= link_to 'Add to Enrolled Courses', add_to_enrolled_course_path(@course), class: 'btn btn-success col-3' %>
   <% end %>
 

@@ -2,8 +2,8 @@
 <%= form_for([@user, @course_enrollment]) do |f| %>
   <div class="form-group">
     <%= f.label :course, 'Course' %>
-    <!-- Assuming course_number is unique and can be used as a value -->
-    <%= f.select :course, Course.all.collect { |c| [c.course_number, c.course_number] }, {}, { class: 'form-control', disabled: true } %>
+    <!-- Assuming course_id is unique and can be used as a value -->
+    <%= f.select :course, Course.all.collect { |c| [c.course_id, c.course_id] }, {}, { class: 'form-control', disabled: true } %>
   </div>
   
   <div class="form-group">

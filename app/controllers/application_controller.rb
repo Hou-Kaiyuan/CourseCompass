@@ -6,11 +6,11 @@ class ApplicationController < ActionController::Base
   # helper_method :current_user
 
   # def require_login
-  #   redirect_to new_session_path unless session.include? :user_id
+  #   redirect_to new_session_path unless session.include? :uid
   # end
 
   # def current_user
-  #   @current_user ||= User.find(session[:user_id]) if session[:user_id]
+  #   @current_user ||= User.find(session[:uid]) if session[:uid]
   # end
 
 end

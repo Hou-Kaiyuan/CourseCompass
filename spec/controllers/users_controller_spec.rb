@@ -3,7 +3,7 @@ require 'rails_helper'
 RSpec.describe UserController, type: :controller do
   describe "GET index" do
     context "when a user is logged in" do
-      it "assigns @user based on session user_id and renders the index template" do
+      it "assigns @user based on session uid and renders the index template" do
         user = User.create!(
           provider: "google_oauth2",
           uid: "1234567890",
@@ -18,7 +18,7 @@ RSpec.describe UserController, type: :controller do
           password_confirmation: "1234567890"
         )
 
-        session[:user_id] = user.id
+        session[:uid] = user.id
 
         get :index
 
@@ -32,7 +32,7 @@ RSpec.describe UserController, type: :controller do
 
     context "when no user is logged in" do
       it "does not assign @user and still renders the index template" do
-        session[:user_id] = nil
+        session[:uid] = nil
 
         get :index
 

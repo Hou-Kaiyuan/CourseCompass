@@ -24,7 +24,7 @@ RSpec.describe ProfilesController, type: :controller do
           CourseEnrollment.create!(user: @user.id, course: "Course 2", year: 2022, grade: "B")
         ]
 
-        session[:user_id] = @user.id
+        session[:uid] = @user.id
       end
 
       it "returns http success" do

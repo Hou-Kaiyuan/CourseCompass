@@ -1,0 +1,15 @@
+<h1>Course Recommendations</h1>
+
+<ul>
+  <% @recommended_courses_with_gpa.each do |recommendation| %>
+    <%# Assume 'recommendation' includes the course number which is used to find the course %>
+    <% course = Course.find_by(course_id: recommendation[:course_id]) %>
+    <% if course %>
+      <li>
+        <%= link_to course.course_title, course.website %> - Average GPA: <%= '%.2f' % recommendation[:average_gpa] %>
+      </li>
+    <% else %>
+      <li>Course with number <%= recommendation[:course_id] %> not found.</li>
+    <% end %>
+  <% end %>
+</ul>

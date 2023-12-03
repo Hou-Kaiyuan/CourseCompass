@@ -2,7 +2,7 @@
 class CreateCourses < ActiveRecord::Migration
   def change
     create_table :courses do |t|
-      t.string :course_number, null: false
+      t.string :course_id, null: false
       t.string :course_title
       t.string :offering_term, null: false
       t.boolean :midterm, default: false # 0: no midterm, 1: midterm

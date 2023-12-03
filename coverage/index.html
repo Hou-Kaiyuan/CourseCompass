@@ -878,7 +878,7 @@
 
             
 
-            <code class="ruby">  #   redirect_to new_session_path unless session.include? :user_id</code>
+            <code class="ruby">  #   redirect_to new_session_path unless session.include? :uid</code>
           </li>
         </div>
       
@@ -922,7 +922,7 @@
 
             
 
-            <code class="ruby">  #   @current_user ||= User.find(session[:user_id]) if session[:user_id]</code>
+            <code class="ruby">  #   @current_user ||= User.find(session[:uid]) if session[:uid]</code>
           </li>
         </div>
       
@@ -1107,7 +1107,7 @@
 
             
 
-            <code class="ruby">      @courses = Course.where(&quot;course_number LIKE ? OR course_title LIKE ?&quot;, &quot;%#{params[:search]}%&quot;, &quot;%#{params[:search]}%&quot;)</code>
+            <code class="ruby">      @courses = Course.where(&quot;course_id LIKE ? OR course_title LIKE ?&quot;, &quot;%#{params[:search]}%&quot;, &quot;%#{params[:search]}%&quot;)</code>
           </li>
         </div>
       
@@ -1536,7 +1536,7 @@
 
             
 
-            <code class="ruby">      :course_number,</code>
+            <code class="ruby">      :course_id,</code>
           </li>
         </div>
       
@@ -1721,7 +1721,7 @@
 
             
 
-            <code class="ruby">    if session[:user_id].present?</code>
+            <code class="ruby">    if session[:uid].present?</code>
           </li>
         </div>
       
@@ -1732,7 +1732,7 @@
 
             
 
-            <code class="ruby">      @user = User.find_by(id: session[:user_id])</code>
+            <code class="ruby">      @user = User.find_by(id: session[:uid])</code>
           </li>
         </div>
       
@@ -1939,7 +1939,7 @@
 
             
 
-            <code class="ruby">            session[:user_id] = @user.id</code>
+            <code class="ruby">            session[:uid] = @user.id</code>
           </li>
         </div>
       
@@ -2212,7 +2212,7 @@
 
             
 
-            <code class="ruby">      session[:user_id] = user.id</code>
+            <code class="ruby">      session[:uid] = user.id</code>
           </li>
         </div>
       
@@ -2322,7 +2322,7 @@
 
             
 
-            <code class="ruby">    session[:user_id] = nil</code>
+            <code class="ruby">    session[:uid] = nil</code>
           </li>
         </div>
       
@@ -2452,7 +2452,7 @@
 
             
 
-            <code class="ruby">    if session[:user_id]</code>
+            <code class="ruby">    if session[:uid]</code>
           </li>
         </div>
       
@@ -2463,7 +2463,7 @@
 
             
 
-            <code class="ruby">      @user = User.find_by(id: session[:user_id])</code>
+            <code class="ruby">      @user = User.find_by(id: session[:uid])</code>
           </li>
         </div>
       
@@ -3716,7 +3716,7 @@
 
             
 
-            <code class="ruby">  #     top_users = similarities.sort_by { |_user_id, similarity| -similarity }.map(&amp;:first).first(top_n_students)</code>
+            <code class="ruby">  #     top_users = similarities.sort_by { |_uid, similarity| -similarity }.map(&amp;:first).first(top_n_students)</code>
           </li>
         </div>
       
@@ -3749,7 +3749,7 @@
 
             
 
-            <code class="ruby">  #                             .where(user_id: top_users)</code>
+            <code class="ruby">  #                             .where(uid: top_users)</code>
           </li>
         </div>
       
@@ -3782,7 +3782,7 @@
 
             
 
-            <code class="ruby">  #                             .order(&#39;COUNT(user_id) DESC&#39;)</code>
+            <code class="ruby">  #                             .order(&#39;COUNT(uid) DESC&#39;)</code>
           </li>
         </div>
       

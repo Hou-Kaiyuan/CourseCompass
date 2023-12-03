@@ -14,16 +14,16 @@
 ActiveRecord::Schema.define(version: 20231113175628) do
 
   create_table "course_enrollments", force: :cascade do |t|
-    t.integer  "user"
-    t.string   "course"
-    t.integer  "year"
+    t.string   "uid"
+    t.string   "course_id"
+    t.string   "year"
     t.string   "grade"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
 
   create_table "courses", force: :cascade do |t|
-    t.string   "course_number",                 null: false
+    t.string   "course_id",                     null: false
     t.string   "course_title"
     t.string   "offering_term",                 null: false
     t.boolean  "midterm",       default: false

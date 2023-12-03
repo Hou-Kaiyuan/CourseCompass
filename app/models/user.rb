@@ -2,47 +2,10 @@ require 'bcrypt'
 
 class User < ActiveRecord::Base
   has_secure_password  
-  has_many :course_enrollments, foreign_key: 'user'
+  # has_many :course_enrollments
+  self.primary_key = 'uid'
+  has_many :course_enrollments, foreign_key: 'uid'
   has_many :courses, through: :course_enrollments
-
-    # def self.from_omniauth(auth)
-    #     User.find_or_create_by!(uid: auth[:uid]) do |u|
-    #       u.provider = auth[:provider]
-    #       u.uid = auth[:uid]
-    #       u.oauth_token = auth[:credentials][:token]
-    #       u.oauth_expires_at = Time.at(auth[:credentials][:expires_at])
-    #       u.email = auth[:info][:email]
-    #       u.major = auth[:info][:major]
-    #       u.first_name = auth[:info][:first_name]
-    #       u.last_name = auth[:info][:last_name]
-    #       u.profile_pic = auth[:info][:image]
-    #     end
-    # end
-
-    # def self.get_user_info(uid)
-    #     user = User.where(uid: uid).first
-    #     if user.nil?
-    #       nil
-    #     else
-    #       {
-    #         :uid => user[:uid],
-    #         :email => user[:email],
-    #         :first_name => user[:first_name],
-    #         :last_name => user[:last_name],
-    #         :department => user[:department],
-    #         :profile_pic => user[:profile_pic]
-    #       }
-    #     end
-    # end
-    #
-    # def self.get_email(uid)
-    #     user = User.where(uid: uid).first
-    #     if user.nil?
-    #       nil
-    #     end
-    #     user[:email]
-    # end
-
 
 
   def cosine_similarity(vec1, vec2)
@@ -75,16 +38,17 @@ class User < ActiveRecord::Base
     end
     
     # Sort the users by similarity and take the top 5
-    top_users = similarities.sort_by { |_user_id, similarity| -similarity }.map(&:first).first(5)
+    top_users = similarities.sort_by { |_uid, similarity| -similarity }.map(&:first).first(5)
     
     # Get the top N recommended course IDs
     recommended_course_ids = CourseEnrollment
-                                .where(user: top_users)
-                                .where.not(course: my_course_ids)
-                                .group(:course)
-                                .order('COUNT(user) DESC')
-                                .limit(top_n_courses)
-                                .pluck(:course)
+                            .where(uid: top_users)
+                            .where.not(course_id: my_course_ids)
+                            .group(:course_id)
+                            .order('COUNT(uid) DESC')
+                            .limit(top_n_courses)
+                            .pluck(:course_id)
+
   
     # Calculate the average GPA for each recommended course based on the top 5 similar users' grades
     recommended_courses_with_gpa = recommended_course_ids.map do |course_id|
@@ -121,11 +85,6 @@ def grade_to_gpa(grade)
   # Ensure that grades are treated as strings and then converted to symbols
   GRADE_TO_GPA[grade.upcase.strip.to_sym] || 0
 end
-  
-  
-  
-
-
   
   
 end

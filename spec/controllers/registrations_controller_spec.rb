@@ -11,7 +11,7 @@ RSpec.describe RegistrationsController, type: :controller do
         post :create, user: { email: new_user[:email], password: new_user[:password], password_confirmation: new_user[:password], first_name: new_user[:first_name], last_name: new_user[:last_name]}
         user = User.find_by(email: new_user[:email])
         # Assert
-        expect(session[:user_id]).to eq(user.id)
+        expect(session[:uid]).to eq(user.id)
       end
 
       it 'redirects to the user page' do
