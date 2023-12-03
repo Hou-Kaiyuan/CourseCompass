@@ -95,11 +95,15 @@ ruby -v
 git clone https://github.com/Hou-Kaiyuan/CourseCompass
 cd CourseCompass
 
-gem update bundler
+gem install bundler:2.0.0.pre.3
 
-(We failed to make it work on Apple Silicon)
+bundle _2.0.0.pre.3_ install
 
-bundle install
+# gem update bundler
+
+# (We failed to make it work on Apple Silicon)
+
+#bundle install
 ```
 
 #### 2. Setup db and run tests
