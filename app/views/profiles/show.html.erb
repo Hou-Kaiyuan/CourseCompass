@@ -1,83 +1,85 @@
 <div class="container mt-4">
-  <h1><%= @user.first_name %> <%= @user.last_name %>'s Profile</h1>
-
-  <div class="row mt-3">
-    <% if @user.profile_pic.present? %>
-      <div class="col-md-2">
-        <img src="<%= @user.profile_pic %>" alt="Profile Picture" class="img-thumbnail">
+  <div class="profile-header bg-light p-3 rounded">
+    <div class="row align-items-center">
+      <% if @user.profile_pic.present? %>
+        <div class="col-md-2">
+          <img src="<%= @user.profile_pic %>" alt="Profile Picture" class="img-thumbnail">
+        </div>
+      <% end %>
+      <div class="col-md-10">
+        <h1><%= @user.first_name %> <%= @user.last_name %>'s Profile</h1>
+        <p><strong>Email:</strong> <%= @user.email %></p>
+        <p><strong>Major:</strong> <%= @user.major %></p>
       </div>
-    <% end %>
-    <div class="col-md-10">
-      <h2>User Information:</h2>
-      <p><strong>Email:</strong> <%= @user.email %></p>
-      <p><strong>Major:</strong> <%= @user.major %></p>
     </div>
   </div>
 
-  <div class="mt-3">
+  <div class="course-history mt-4">
     <h2>Course History:</h2>
     <%= check_box_tag :show_grades, '1', true, id: 'show_grades', onclick: 'toggleGrades()' %>
-    <label for="show_grades">Show Grades</label>
+    <label for="show_grades" class="ml-2">Show Grades</label>
     <% if @course_enrollments.any? %>
-      <table class="table table-striped" id="enrolled_courses">
-        <thead>
-          <tr>
-            <th>Course</th>
-            <th>Year</th>
-            <th class="grade-column">Grade</th>
-            <th>Actions</th>
-          </tr>
-        </thead>
-        <tbody>
-          <% @course_enrollments.each_with_index do |enrollment, index| %>
-            <tr class="<%= 'hidden-course-row' if index >= 5 %>">
-              <td><%= enrollment.course.course_id %></td>
-              <td><%= enrollment.year %></td>
-              <td class="grade-column"><%= enrollment.grade %></td>
-              <td>
-                <%= link_to 'Edit', edit_user_course_enrollment_path(@user, enrollment) %>
-              </td>
+      <div class="table-responsive mt-3">
+        <table class="table table-bordered table-hover">
+          <thead class="thead-dark">
+            <tr>
+              <th>Course</th>
+              <th>Year</th>
+              <th class="grade-column">Grade</th>
+              <th>Actions</th>
             </tr>
-          <% end %>
-        </tbody>
-      </table>
+          </thead>
+          <tbody>
+            <% @course_enrollments.each_with_index do |enrollment, index| %>
+              <tr class="<%= 'hidden-course-row' if index >= 5 %>">
+                <td><%= enrollment.course.course_id %></td>
+                <td><%= enrollment.year %></td>
+                <td class="grade-column"><%= enrollment.grade %></td>
+                <td>
+                  <%= link_to 'Edit', edit_user_course_enrollment_path(@user, enrollment), class: 'btn btn-sm btn-primary' %>
+                </td>
+              </tr>
+            <% end %>
+          </tbody>
+        </table>
+      </div>
       <% if @course_enrollments.size > 5 %>
-        <p id="toggle_courses" onclick="toggleCourses()" style="cursor:pointer;">
+        <button id="toggle_courses" onclick="toggleCourses()" class="btn btn-outline-secondary mt-2">
           Show More
-        </p>
+        </button>
       <% end %>
     <% else %>
-      <p>No course history available.</p>
+      <p class="alert alert-info mt-3">No course history available.</p>
     <% end %>
   </div>
 
-  <div class="mt-3">
+  <div class="add-course mt-4">
     <h2>Add Course:</h2>
-    <%= form_for([@user, CourseEnrollment.new]) do |f| %>
+    <%= form_for([@user, CourseEnrollment.new], html: { class: 'form-horizontal' }) do |f| %>
       <div class="form-group">
-        <%= f.label :course, 'Course' %>
+        <%= f.label :course, 'Course', class: 'control-label' %>
         <%= f.collection_select :course_id, Course.all, :course_id, :course_title, { include_blank: true }, { class: 'form-control', required: true } %>
-        </div>
+      </div>
       <div class="form-group">
-        <%= f.label :year, 'Year' %>
+        <%= f.label :year, 'Year', class: 'control-label' %>
         <%= f.number_field :year, in: 1900..Date.today.year, class: 'form-control', required: true %>
       </div>
       <div class="form-group">
-        <%= f.label :grade, 'Grade' %>
+        <%= f.label :grade, 'Grade', class: 'control-label' %>
         <%= f.text_field :grade, class: 'form-control', required: true %>
       </div>
-      <%= f.submit 'Add Course', class: 'btn btn-primary' %>
+      <%= f.submit 'Add Course', class: 'btn btn-success' %>
     <% end %>
   </div>
 
-  <div class="mt-3">
+  <div class="course-recommendations mt-4">
     <h2>Course Recommendations:</h2>
-    <%= form_tag user_recommendations_path(@user), method: :get do %>
+    <%= form_tag user_recommendations_path(@user), method: :get, class: 'form-inline' do %>
       <div class="form-group">
-        <label for="recommendation_count">Number of Recommendations:</label>
-        <input type="number" id="recommendation_count" name="recommendation_count" value="5" class="form-control" min="1">
+        <label for="recommendation_count" class="mr-2">Number of Recommendations:</label>
+        <input type="number" id="recommendation_count" name="recommendation_count" value="5" class="form-control mr-2" min="1">
       </div>
-      <%= submit_tag 'Get Recommendations', class: 'btn btn-primary' %>
+      <%= submit_tag 'Get Recommendations', class: 'btn btn-info' %>
     <% end %>
   </div>
 </div>

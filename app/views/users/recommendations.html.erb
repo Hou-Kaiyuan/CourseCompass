@@ -1,15 +1,64 @@
-<h1>Course Recommendations</h1>
+<!-- app/views/recommendations/index.html.erb -->
+<h1 class="text-center my-4">Course Recommendations</h1>
 
-<ul>
+<div class="recommendations-list">
   <% @recommended_courses_with_gpa.each do |recommendation| %>
-    <%# Assume 'recommendation' includes the course number which is used to find the course %>
     <% course = Course.find_by(course_id: recommendation[:course_id]) %>
     <% if course %>
-      <li>
-        <%= link_to course.course_title, course.website %> - Average GPA: <%= '%.2f' % recommendation[:average_gpa] %>
-      </li>
+      <div class="card course-recommendation mb-3">
+        <div class="card-body">
+          <h5 class="card-title">
+            <%= link_to course.course_title, course.website, class: "course-link" %>
+          </h5>
+          <p class="card-text">Average GPA: <span class="gpa"><%= '%.2f' % recommendation[:average_gpa] %></span></p>
+        </div>
+      </div>
     <% else %>
-      <li>Course with number <%= recommendation[:course_id] %> not found.</li>
+      <div class="alert alert-warning" role="alert">
+        Course with number <%= recommendation[:course_id] %> not found.
+      </div>
     <% end %>
   <% end %>
-</ul>
+</div>
+
+<style>
+  .recommendations-list {
+    max-width: 800px;
+    margin: auto;
+  }
+
+  .course-recommendation {
+    background-color: #f8f9fa;
+    border: 1px solid #e3e6ea;
+    border-radius: 5px;
+  }
+
+  .course-recommendation .card-body {
+    padding: 20px;
+  }
+
+  .card-title {
+    margin-bottom: 15px;
+    color: #0056b3;
+  }
+
+  .course-link {
+    text-decoration: none;
+    color: #0056b3;
+  }
+
+  .course-link:hover {
+    text-decoration: underline;
+  }
+
+  .gpa {
+    font-weight: bold;
+    color: #28a745;
+  }
+
+  .alert.alert-warning {
+    background-color: #fff3cd;
+    border-color: #ffeeba;
+    color: #856404;
+  }
+</style>

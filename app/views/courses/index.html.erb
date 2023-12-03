@@ -1,48 +1,120 @@
-<!--  This file is app/views/courses/index.html.erb -->
-<h2>All Courses</h2>
+<!-- This file is app/views/courses/index.html.erb -->
+<div class="courses-index">
+  <h2 class="text-center my-4">All Courses</h2>
 
-<div class="row mb-3">
-  <div class="col-md-8">
-    <%= form_tag courses_path, method: :get, class: 'form-inline' do %>
-      <div class="form-group">
-        <%= text_field_tag :search, params[:search], placeholder: 'Search for courses', class: 'form-control mr-2' %>
-        <%= submit_tag 'Search', class: 'btn btn-primary' %>
-      </div>
-    <% end %>
+  <div class="row mb-4">
+    <div class="col-lg-8">
+      <%= form_tag courses_path, method: :get, class: 'form-inline justify-content-start mb-2 mb-lg-0' do %>
+        <div class="form-group mr-2">
+          <%= text_field_tag :search, params[:search], placeholder: 'Search for courses', class: 'form-control' %>
+        </div>
+        <%= submit_tag 'Search', class: 'btn btn-outline-secondary' %>
+      <% end %>
+    </div>
+    <div class="col-lg-4 text-lg-right">
+      <%= link_to 'Add New Course', new_course_path, class: 'btn btn-success' %>
+    </div>
   </div>
-  <div class="col-md-4 text-right">
-    <%= link_to 'Add new course', new_course_path, class: 'btn btn-primary' %>
+
+  <div class="table-responsive">
+    <table class="table table-hover">
+      <thead class="thead-light">
+        <tr>
+          <th>Course Name</th>
+          <th>Instructor</th>
+          <th>Offering Term</th>
+          <th>More Info</th>
+        </tr>
+      </thead>
+      <tbody>
+        <% @courses.each do |course| %>
+          <tr>
+            <td><%= course.course_id %> - <%= course.course_title %></td>
+            <td><%= course.instructor %></td>
+            <td><%= course.offering_term %></td>
+            <td><%= link_to "More about #{course.course_title}", course_path(course), class: 'btn btn-info btn-sm' %></td>
+          </tr>
+        <% end %>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="pagination-wrapper">
+    <%= will_paginate @courses, renderer: WillPaginate::ActionView::LinkRenderer, outer_window: 0, inner_window: 2, class: 'pagination justify-content-center' %>
   </div>
 </div>
 
-<table class="table table-striped col-md-12" id="courses">
-  <thead>
-    <tr>
-      <th>Course Name</th>
-      <th>Instructor</th>
-      <th>Offering Term</th>
-      <th>More Info</th>
-    </tr>
-  </thead>
-  <tbody>
-    <% @courses.each do |course| %>
-      <tr>
-        <td>
-          <%= course.course_id + " " + course.course_title %>
-        </td>
-        <td>
-          <%= course.instructor %>
-        </td>
-        <td>
-          <%= course.offering_term %>
-        </td>
-        <td>
-          <%= link_to "More about #{course.course_title}", course_path(course) %>
-        </td>
-      </tr>
-    <% end %>
-  </tbody>
-</table>
+<style>
+/* Pagination Custom Styles */
+.pagination {
+  display: inline-block;
+  padding-left: 0;
+  margin: 20px 0;
+  border-radius: 4px;
+}
 
-<%= will_paginate @courses, renderer: WillPaginate::ActionView::LinkRenderer %>
+.pagination > li {
+  display: inline;
+}
 
+.pagination > li > a,
+.pagination > li > span {
+  position: relative;
+  float: left;
+  padding: 6px 12px;
+  margin-left: -1px;
+  line-height: 1.42857143;
+  color: #337ab7;
+  text-decoration: none;
+  background-color: #fff;
+  border: 1px solid #ddd;
+}
+
+.pagination > li:first-child > a,
+.pagination > li:first-child > span {
+  margin-left: 0;
+  border-top-left-radius: 4px;
+  border-bottom-left-radius: 4px;
+}
+
+.pagination > li:last-child > a,
+.pagination > li:last-child > span {
+  border-top-right-radius: 4px;
+  border-bottom-right-radius: 4px;
+}
+
+.pagination > li > a:hover,
+.pagination > li > span:hover,
+.pagination > li > a:focus,
+.pagination > li > span:focus {
+  color: #23527c;
+  background-color: #eee;
+  border-color: #ddd;
+}
+
+.pagination > .active > a,
+.pagination > .active > span,
+.pagination > .active > a:hover,
+.pagination > .active > span:hover,
+.pagination > .active > a:focus,
+.pagination > .active > span:focus {
+  z-index: 2;
+  color: #fff;
+  background-color: #337ab7;
+  border-color: #337ab7;
+  cursor: default;
+}
+
+.pagination > .disabled > span,
+.pagination > .disabled > span:hover,
+.pagination > .disabled > span:focus,
+.pagination > .disabled > a,
+.pagination > .disabled > a:hover,
+.pagination > .disabled > a:focus {
+  color: #777;
+  background-color: #fff;
+  border-color: #ddd;
+  cursor: not-allowed;
+}
+
+</style>
