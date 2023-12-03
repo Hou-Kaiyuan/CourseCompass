@@ -33,7 +33,8 @@ class CourseEnrollmentsController < ApplicationController
     @course_enrollment.user = User.find_by(uid: params[:user_uid])
   
     if @course_enrollment.save
-      redirect_to profiles_path(id: @course_enrollment.user.uid), notice: 'Course enrollment was successfully created.'
+      # redirect_to profiles_path(id: @course_enrollment.user.uid), notice: 'Course enrollment was successfully created.'
+      render :new
     else
       redirect_to root_path, notice: "Create course enrollment failed."
     end

@@ -6,8 +6,18 @@
 <p><strong>Year:</strong> <%= @course_enrollment.year %></p>
 <p><strong>Grade:</strong> <%= @course_enrollment.grade %></p>
 
+<p>Returning to profile page in <span id="countdown">3</span> seconds...</p>
+
 <script>
-  setTimeout(function() {
-    window.location.href = "<%= profile_path(@user) %>";
-  }, 3000);
+  var countdownElement = document.getElementById('countdown');
+  var seconds = 3;
+  
+  var interval = setInterval(function() {
+    seconds--;
+    countdownElement.textContent = seconds;
+    if (seconds <= 0) {
+      clearInterval(interval);
+      window.location.href = "<%= profiles_path(@user) %>";
+    }
+  }, 1000);
 </script>
