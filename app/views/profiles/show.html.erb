@@ -30,7 +30,7 @@
         </thead>
         <tbody>
           <% @course_enrollments.each_with_index do |enrollment, index| %>
-            <tr class="<%= 'course-row' if index >= 5 %>">
+            <tr class="<%= 'hidden-course-row' if index >= 5 %>">
               <td><%= enrollment.course.course_id %></td>
               <td><%= enrollment.year %></td>
               <td class="grade-column"><%= enrollment.grade %></td>
@@ -56,8 +56,8 @@
     <%= form_for([@user, CourseEnrollment.new]) do |f| %>
       <div class="form-group">
         <%= f.label :course, 'Course' %>
-        <%= f.collection_select :course, Course.all, :course_id, :course_id, { include_blank: true }, { class: 'form-control', required: true } %>
-      </div>
+        <%= f.collection_select :course_id, Course.all, :course_id, :course_title, { include_blank: true }, { class: 'form-control', required: true } %>
+        </div>
       <div class="form-group">
         <%= f.label :year, 'Year' %>
         <%= f.number_field :year, in: 1900..Date.today.year, class: 'form-control', required: true %>
@@ -83,16 +83,36 @@
 </div>
 
 <script>
-  function toggleCourses() {
-    var rows = document.querySelectorAll('.course-row');
-    for (var i = 0; i < rows.length; i++) {
-      rows[i].style.display = rows[i].style.display === 'none' ? '' : 'none';
-    }
-    var toggleText = document.getElementById('toggle_courses');
-    toggleText.textContent = toggleText.textContent === 'Show More' ? 'Show Less' : 'Show More';
-  }
+function toggleCourses() {
+  var hiddenRows = document.querySelectorAll('.hidden-course-row');
+  var isAnyHidden = false;
 
-  function toggleGrades() {
+  // Toggle the display of the hidden rows
+  hiddenRows.forEach(function(row) {
+    if (row.style.display === 'none') {
+      row.style.display = '';
+      isAnyHidden = true;
+    } else {
+      row.style.display = 'none';
+    }
+  });
+
+  // Update the text of the toggle button based on whether any rows are still hidden
+  var toggleText = document.getElementById('toggle_courses');
+  if (isAnyHidden) {
+    toggleText.textContent = 'Show Less';
+  } else {
+    toggleText.textContent = 'Show More';
+  }
+}
+
+// Add the event listener for DOM content loaded
+document.addEventListener('DOMContentLoaded', function() {
+  // Initially, hide all but the first 5 courses
+  toggleCourses();
+});
+
+function toggleGrades() {
     var grades = document.querySelectorAll('.grade-column');
     for (var i = 0; i < grades.length; i++) {
       grades[i].style.display = grades[i].style.display === 'none' ? '' : 'none';
@@ -101,12 +121,4 @@
     var label = document.querySelector('label[for="show_grades"]');
     label.textContent = showGradesCheckbox.checked ? 'Hide Grades' : 'Show Grades';
   }
-
-  // Initially hide rows if more than 5 courses and grades are not to be shown
-  document.addEventListener('DOMContentLoaded', (event) => {
-    if (document.querySelectorAll('.course-row').length > 5) {
-      toggleCourses();
-    }
-    toggleGrades();
-  });
 </script>

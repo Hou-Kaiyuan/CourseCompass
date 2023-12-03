@@ -1,0 +1,13 @@
+<!-- app/views/course_enrollments/new.html.erb -->
+
+<h1>Course Enrollment Added</h1>
+
+<p><strong>Course ID:</strong> <%= @course_enrollment.course_id %></p>
+<p><strong>Year:</strong> <%= @course_enrollment.year %></p>
+<p><strong>Grade:</strong> <%= @course_enrollment.grade %></p>
+
+<script>
+  setTimeout(function() {
+    window.location.href = "<%= profile_path(@user) %>";
+  }, 3000);
+</script>

@@ -9,8 +9,7 @@ class CourseEnrollment < ActiveRecord::Base
   validates :year, presence: true
   validates :grade, presence: true
 
-  # Optionally, you can create a method to get the course number directly
-  def course_id
-    course.course_id
-  end
+  # def course_id
+  #   course.course_id
+  # end
 end

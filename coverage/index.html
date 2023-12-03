@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html xmlns='http://www.w3.org/1999/xhtml'>
   <head>
-    <title>Code coverage for Workspace</title>
+    <title>Code coverage for Coursecompass</title>
     <meta http-equiv="content-type" content="text/html; charset=utf-8" />
     <script src='./assets/0.12.3/application.js' type='text/javascript'></script>
     <link href='./assets/0.12.3/application.css' media='screen, projection, print' rel='stylesheet' type='text/css' />
-    <link rel="shortcut icon" type="image/png" href="./assets/0.12.3/favicon_green.png" />
+    <link rel="shortcut icon" type="image/png" href="./assets/0.12.3/favicon_red.png" />
     <link rel="icon" type="image/png" href="./assets/0.12.3/favicon.png" />
   </head>
 
@@ -14,7 +14,7 @@
       <img src="./assets/0.12.3/loading.gif" alt="loading"/>
     </div>
     <div id="wrapper" class="hide">
-      <div class="timestamp">Generated <abbr class="timeago" title="2023-12-01T18:39:41+00:00">2023-12-01T18:39:41+00:00</abbr></div>
+      <div class="timestamp">Generated <abbr class="timeago" title="2023-12-03T09:37:25-05:00">2023-12-03T09:37:25-05:00</abbr></div>
       <ul class="group_tabs"></ul>
 
       <div id="content">
@@ -22,15 +22,15 @@
   <h2>
     <span class="group_name">All Files</span>
     (<span class="covered_percent">
-      <span class="green">
-  94.12%
+      <span class="red">
+  13.33%
 </span>
 
      </span>
      covered at
      <span class="covered_strength">
-       <span class="green">
-         2.29
+       <span class="red">
+         0.13
        </span>
     </span> hits/line
     )
@@ -39,15 +39,15 @@
   <a name="AllFiles"></a>
 
   <div>
-    <b>12</b> files in total.
+    <b>13</b> files in total.
   </div>
 
   <div class="t-line-summary">
-    <b>68</b> relevant lines,
-    <span class="green"><b>64</b> lines covered</span> and
-    <span class="red"><b>4</b> lines missed. </span>
-    (<span class="green">
-  94.12%
+    <b>180</b> relevant lines,
+    <span class="green"><b>24</b> lines covered</span> and
+    <span class="red"><b>156</b> lines missed. </span>
+    (<span class="red">
+  13.33%
 </span>
 )
   </div>
@@ -71,134 +71,145 @@
       <tbody>
         
           <tr class="t-file">
-            <td class="strong t-file__name"><a href="#e0c1b5095e16b738f47e3c6484f2b888c71066ae" class="src_link" title="app/controllers/application_controller.rb">app/controllers/application_controller.rb</a></td>
+            <td class="strong t-file__name"><a href="#9b67e340390697f68a4eddb4b60158f7ac37e271" class="src_link" title="app/controllers/application_controller.rb">app/controllers/application_controller.rb</a></td>
             <td class="green strong cell--number t-file__coverage">100.00 %</td>
             <td class="cell--number">16</td>
             <td class="cell--number">1</td>
             <td class="cell--number">1</td>
             <td class="cell--number">0</td>
-            <td class="cell--number">2.00</td>
+            <td class="cell--number">1.00</td>
             
           </tr>
         
           <tr class="t-file">
-            <td class="strong t-file__name"><a href="#9c6660adaa8ccc3fd384987466f4944f189390f1" class="src_link" title="app/controllers/courses_controller.rb">app/controllers/courses_controller.rb</a></td>
-            <td class="yellow strong cell--number t-file__coverage">86.96 %</td>
-            <td class="cell--number">61</td>
+            <td class="strong t-file__name"><a href="#cb4345dc388e4b1199721d3f2a7d06217967519b" class="src_link" title="app/controllers/course_enrollments_controller.rb">app/controllers/course_enrollments_controller.rb</a></td>
+            <td class="red strong cell--number t-file__coverage">0.00 %</td>
+            <td class="cell--number">36</td>
             <td class="cell--number">23</td>
-            <td class="cell--number">20</td>
-            <td class="cell--number">3</td>
-            <td class="cell--number">1.87</td>
+            <td class="cell--number">0</td>
+            <td class="cell--number">23</td>
+            <td class="cell--number">0.00</td>
             
           </tr>
         
           <tr class="t-file">
-            <td class="strong t-file__name"><a href="#6f1b5279b0c4938e7bd7cc0a2fbcacb105c78aca" class="src_link" title="app/controllers/profiles_controller.rb">app/controllers/profiles_controller.rb</a></td>
-            <td class="green strong cell--number t-file__coverage">100.00 %</td>
+            <td class="strong t-file__name"><a href="#f3a7c4cb908cc1835ca30a9793cf11fe9f4f7b2f" class="src_link" title="app/controllers/courses_controller.rb">app/controllers/courses_controller.rb</a></td>
+            <td class="red strong cell--number t-file__coverage">34.62 %</td>
+            <td class="cell--number">66</td>
+            <td class="cell--number">26</td>
+            <td class="cell--number">9</td>
+            <td class="cell--number">17</td>
+            <td class="cell--number">0.35</td>
+            
+          </tr>
+        
+          <tr class="t-file">
+            <td class="strong t-file__name"><a href="#3fdfd3863f67ff8d312f8d44eea78fc855b7c626" class="src_link" title="app/controllers/profiles_controller.rb">app/controllers/profiles_controller.rb</a></td>
+            <td class="red strong cell--number t-file__coverage">33.33 %</td>
             <td class="cell--number">10</td>
             <td class="cell--number">6</td>
-            <td class="cell--number">6</td>
-            <td class="cell--number">0</td>
-            <td class="cell--number">3.00</td>
+            <td class="cell--number">2</td>
+            <td class="cell--number">4</td>
+            <td class="cell--number">0.33</td>
             
           </tr>
         
           <tr class="t-file">
-            <td class="strong t-file__name"><a href="#c59d8b60ff71ebb5ba059ce26d900511a955142a" class="src_link" title="app/controllers/registrations_controller.rb">app/controllers/registrations_controller.rb</a></td>
-            <td class="green strong cell--number t-file__coverage">91.67 %</td>
+            <td class="strong t-file__name"><a href="#dfeb1f8b0e0a9b7679c077d6a679cf6f32451f20" class="src_link" title="app/controllers/registrations_controller.rb">app/controllers/registrations_controller.rb</a></td>
+            <td class="red strong cell--number t-file__coverage">41.67 %</td>
             <td class="cell--number">23</td>
             <td class="cell--number">12</td>
-            <td class="cell--number">11</td>
-            <td class="cell--number">1</td>
-            <td class="cell--number">2.33</td>
+            <td class="cell--number">5</td>
+            <td class="cell--number">7</td>
+            <td class="cell--number">0.42</td>
             
           </tr>
         
           <tr class="t-file">
-            <td class="strong t-file__name"><a href="#8a03b46a192596fe8e87fc3f6fb5357bb4ac9eaa" class="src_link" title="app/controllers/sessions_controller.rb">app/controllers/sessions_controller.rb</a></td>
-            <td class="green strong cell--number t-file__coverage">100.00 %</td>
+            <td class="strong t-file__name"><a href="#f02436f4aa017832fa52a2eba2176efc39158f5f" class="src_link" title="app/controllers/sessions_controller.rb">app/controllers/sessions_controller.rb</a></td>
+            <td class="red strong cell--number t-file__coverage">33.33 %</td>
             <td class="cell--number">23</td>
             <td class="cell--number">12</td>
-            <td class="cell--number">12</td>
-            <td class="cell--number">0</td>
-            <td class="cell--number">3.33</td>
-            
-          </tr>
-        
-          <tr class="t-file">
-            <td class="strong t-file__name"><a href="#77f5c6a680a4c114dd14882fec3e4d9e9a59ac2d" class="src_link" title="app/controllers/user_controller.rb">app/controllers/user_controller.rb</a></td>
-            <td class="green strong cell--number t-file__coverage">100.00 %</td>
-            <td class="cell--number">20</td>
             <td class="cell--number">4</td>
-            <td class="cell--number">4</td>
-            <td class="cell--number">0</td>
-            <td class="cell--number">1.25</td>
+            <td class="cell--number">8</td>
+            <td class="cell--number">0.33</td>
             
           </tr>
         
           <tr class="t-file">
-            <td class="strong t-file__name"><a href="#f7f5c7eb62e8c6624a08ee3dc4d24d56ce0aa1f6" class="src_link" title="app/helpers/application_helper.rb">app/helpers/application_helper.rb</a></td>
+            <td class="strong t-file__name"><a href="#e8e446a0e7e12fc62478782ecaa5cf7e6cea22b2" class="src_link" title="app/controllers/users_controller.rb">app/controllers/users_controller.rb</a></td>
+            <td class="red strong cell--number t-file__coverage">0.00 %</td>
+            <td class="cell--number">23</td>
+            <td class="cell--number">17</td>
+            <td class="cell--number">0</td>
+            <td class="cell--number">17</td>
+            <td class="cell--number">0.00</td>
+            
+          </tr>
+        
+          <tr class="t-file">
+            <td class="strong t-file__name"><a href="#ec4e574b42a319cf22ff5170a40b1b6df532c7ea" class="src_link" title="app/helpers/application_helper.rb">app/helpers/application_helper.rb</a></td>
             <td class="green strong cell--number t-file__coverage">100.00 %</td>
             <td class="cell--number">2</td>
             <td class="cell--number">1</td>
             <td class="cell--number">1</td>
             <td class="cell--number">0</td>
-            <td class="cell--number">2.00</td>
+            <td class="cell--number">1.00</td>
             
           </tr>
         
           <tr class="t-file">
-            <td class="strong t-file__name"><a href="#e1de7aee8f784d53d399270b0f56237c86b41a68" class="src_link" title="app/helpers/courses_helper.rb">app/helpers/courses_helper.rb</a></td>
+            <td class="strong t-file__name"><a href="#da31d0761941fd95a8113768c0c44dec0c6ac0ac" class="src_link" title="app/helpers/courses_helper.rb">app/helpers/courses_helper.rb</a></td>
             <td class="green strong cell--number t-file__coverage">100.00 %</td>
             <td class="cell--number">2</td>
             <td class="cell--number">1</td>
             <td class="cell--number">1</td>
             <td class="cell--number">0</td>
-            <td class="cell--number">2.00</td>
+            <td class="cell--number">1.00</td>
             
           </tr>
         
           <tr class="t-file">
-            <td class="strong t-file__name"><a href="#f87ee15cb67ae675ebdacc0dd16177721b16bec9" class="src_link" title="app/helpers/profiles_helper.rb">app/helpers/profiles_helper.rb</a></td>
+            <td class="strong t-file__name"><a href="#07dcd4828ea3814b0c4f945bd68ee77d6b8acbaa" class="src_link" title="app/helpers/profiles_helper.rb">app/helpers/profiles_helper.rb</a></td>
             <td class="green strong cell--number t-file__coverage">100.00 %</td>
             <td class="cell--number">2</td>
             <td class="cell--number">1</td>
             <td class="cell--number">1</td>
             <td class="cell--number">0</td>
-            <td class="cell--number">2.00</td>
+            <td class="cell--number">1.00</td>
             
           </tr>
         
           <tr class="t-file">
-            <td class="strong t-file__name"><a href="#629329696806eae67547c0677925d8db16ef9fc6" class="src_link" title="app/models/course.rb">app/models/course.rb</a></td>
-            <td class="green strong cell--number t-file__coverage">100.00 %</td>
-            <td class="cell--number">2</td>
-            <td class="cell--number">1</td>
-            <td class="cell--number">1</td>
+            <td class="strong t-file__name"><a href="#9d3ff519738463e3bb46be0b7efa77740535d5b1" class="src_link" title="app/models/course.rb">app/models/course.rb</a></td>
+            <td class="red strong cell--number t-file__coverage">0.00 %</td>
+            <td class="cell--number">8</td>
+            <td class="cell--number">7</td>
             <td class="cell--number">0</td>
-            <td class="cell--number">2.00</td>
+            <td class="cell--number">7</td>
+            <td class="cell--number">0.00</td>
             
           </tr>
         
           <tr class="t-file">
-            <td class="strong t-file__name"><a href="#e4846f04f45ac85d4983bf7dc2c15f4b0291021b" class="src_link" title="app/models/course_enrollment.rb">app/models/course_enrollment.rb</a></td>
-            <td class="green strong cell--number t-file__coverage">100.00 %</td>
-            <td class="cell--number">3</td>
-            <td class="cell--number">1</td>
-            <td class="cell--number">1</td>
+            <td class="strong t-file__name"><a href="#a2d12c77b82c0cf0284c7e65d14c09fd9cff8ba1" class="src_link" title="app/models/course_enrollment.rb">app/models/course_enrollment.rb</a></td>
+            <td class="red strong cell--number t-file__coverage">0.00 %</td>
+            <td class="cell--number">16</td>
+            <td class="cell--number">10</td>
             <td class="cell--number">0</td>
-            <td class="cell--number">2.00</td>
+            <td class="cell--number">10</td>
+            <td class="cell--number">0.00</td>
             
           </tr>
         
           <tr class="t-file">
-            <td class="strong t-file__name"><a href="#ca2020b5e24a96ea344f0073a6de8e548c27df52" class="src_link" title="app/models/user.rb">app/models/user.rb</a></td>
-            <td class="green strong cell--number t-file__coverage">100.00 %</td>
-            <td class="cell--number">84</td>
-            <td class="cell--number">5</td>
-            <td class="cell--number">5</td>
+            <td class="strong t-file__name"><a href="#8629f2c6740b7dffe2f96943f7bf2ed9b0c8fc12" class="src_link" title="app/models/user.rb">app/models/user.rb</a></td>
+            <td class="red strong cell--number t-file__coverage">0.00 %</td>
+            <td class="cell--number">90</td>
+            <td class="cell--number">63</td>
             <td class="cell--number">0</td>
-            <td class="cell--number">2.00</td>
+            <td class="cell--number">63</td>
+            <td class="cell--number">0.00</td>
             
           </tr>
         
@@ -213,15 +224,15 @@
   <h2>
     <span class="group_name">Controllers</span>
     (<span class="covered_percent">
-      <span class="green">
-  93.1%
+      <span class="red">
+  21.65%
 </span>
 
      </span>
      covered at
      <span class="covered_strength">
-       <span class="green">
-         2.34
+       <span class="red">
+         0.22
        </span>
     </span> hits/line
     )
@@ -230,15 +241,15 @@
   <a name="Controllers"></a>
 
   <div>
-    <b>6</b> files in total.
+    <b>7</b> files in total.
   </div>
 
   <div class="t-line-summary">
-    <b>58</b> relevant lines,
-    <span class="green"><b>54</b> lines covered</span> and
-    <span class="red"><b>4</b> lines missed. </span>
-    (<span class="green">
-  93.1%
+    <b>97</b> relevant lines,
+    <span class="green"><b>21</b> lines covered</span> and
+    <span class="red"><b>76</b> lines missed. </span>
+    (<span class="red">
+  21.65%
 </span>
 )
   </div>
@@ -262,68 +273,79 @@
       <tbody>
         
           <tr class="t-file">
-            <td class="strong t-file__name"><a href="#e0c1b5095e16b738f47e3c6484f2b888c71066ae" class="src_link" title="app/controllers/application_controller.rb">app/controllers/application_controller.rb</a></td>
+            <td class="strong t-file__name"><a href="#9b67e340390697f68a4eddb4b60158f7ac37e271" class="src_link" title="app/controllers/application_controller.rb">app/controllers/application_controller.rb</a></td>
             <td class="green strong cell--number t-file__coverage">100.00 %</td>
             <td class="cell--number">16</td>
             <td class="cell--number">1</td>
             <td class="cell--number">1</td>
             <td class="cell--number">0</td>
-            <td class="cell--number">2.00</td>
+            <td class="cell--number">1.00</td>
             
           </tr>
         
           <tr class="t-file">
-            <td class="strong t-file__name"><a href="#9c6660adaa8ccc3fd384987466f4944f189390f1" class="src_link" title="app/controllers/courses_controller.rb">app/controllers/courses_controller.rb</a></td>
-            <td class="yellow strong cell--number t-file__coverage">86.96 %</td>
-            <td class="cell--number">61</td>
+            <td class="strong t-file__name"><a href="#cb4345dc388e4b1199721d3f2a7d06217967519b" class="src_link" title="app/controllers/course_enrollments_controller.rb">app/controllers/course_enrollments_controller.rb</a></td>
+            <td class="red strong cell--number t-file__coverage">0.00 %</td>
+            <td class="cell--number">36</td>
             <td class="cell--number">23</td>
-            <td class="cell--number">20</td>
-            <td class="cell--number">3</td>
-            <td class="cell--number">1.87</td>
+            <td class="cell--number">0</td>
+            <td class="cell--number">23</td>
+            <td class="cell--number">0.00</td>
             
           </tr>
         
           <tr class="t-file">
-            <td class="strong t-file__name"><a href="#6f1b5279b0c4938e7bd7cc0a2fbcacb105c78aca" class="src_link" title="app/controllers/profiles_controller.rb">app/controllers/profiles_controller.rb</a></td>
-            <td class="green strong cell--number t-file__coverage">100.00 %</td>
+            <td class="strong t-file__name"><a href="#f3a7c4cb908cc1835ca30a9793cf11fe9f4f7b2f" class="src_link" title="app/controllers/courses_controller.rb">app/controllers/courses_controller.rb</a></td>
+            <td class="red strong cell--number t-file__coverage">34.62 %</td>
+            <td class="cell--number">66</td>
+            <td class="cell--number">26</td>
+            <td class="cell--number">9</td>
+            <td class="cell--number">17</td>
+            <td class="cell--number">0.35</td>
+            
+          </tr>
+        
+          <tr class="t-file">
+            <td class="strong t-file__name"><a href="#3fdfd3863f67ff8d312f8d44eea78fc855b7c626" class="src_link" title="app/controllers/profiles_controller.rb">app/controllers/profiles_controller.rb</a></td>
+            <td class="red strong cell--number t-file__coverage">33.33 %</td>
             <td class="cell--number">10</td>
             <td class="cell--number">6</td>
-            <td class="cell--number">6</td>
-            <td class="cell--number">0</td>
-            <td class="cell--number">3.00</td>
+            <td class="cell--number">2</td>
+            <td class="cell--number">4</td>
+            <td class="cell--number">0.33</td>
             
           </tr>
         
           <tr class="t-file">
-            <td class="strong t-file__name"><a href="#c59d8b60ff71ebb5ba059ce26d900511a955142a" class="src_link" title="app/controllers/registrations_controller.rb">app/controllers/registrations_controller.rb</a></td>
-            <td class="green strong cell--number t-file__coverage">91.67 %</td>
+            <td class="strong t-file__name"><a href="#dfeb1f8b0e0a9b7679c077d6a679cf6f32451f20" class="src_link" title="app/controllers/registrations_controller.rb">app/controllers/registrations_controller.rb</a></td>
+            <td class="red strong cell--number t-file__coverage">41.67 %</td>
             <td class="cell--number">23</td>
             <td class="cell--number">12</td>
-            <td class="cell--number">11</td>
-            <td class="cell--number">1</td>
-            <td class="cell--number">2.33</td>
+            <td class="cell--number">5</td>
+            <td class="cell--number">7</td>
+            <td class="cell--number">0.42</td>
             
           </tr>
         
           <tr class="t-file">
-            <td class="strong t-file__name"><a href="#8a03b46a192596fe8e87fc3f6fb5357bb4ac9eaa" class="src_link" title="app/controllers/sessions_controller.rb">app/controllers/sessions_controller.rb</a></td>
-            <td class="green strong cell--number t-file__coverage">100.00 %</td>
+            <td class="strong t-file__name"><a href="#f02436f4aa017832fa52a2eba2176efc39158f5f" class="src_link" title="app/controllers/sessions_controller.rb">app/controllers/sessions_controller.rb</a></td>
+            <td class="red strong cell--number t-file__coverage">33.33 %</td>
             <td class="cell--number">23</td>
             <td class="cell--number">12</td>
-            <td class="cell--number">12</td>
-            <td class="cell--number">0</td>
-            <td class="cell--number">3.33</td>
+            <td class="cell--number">4</td>
+            <td class="cell--number">8</td>
+            <td class="cell--number">0.33</td>
             
           </tr>
         
           <tr class="t-file">
-            <td class="strong t-file__name"><a href="#77f5c6a680a4c114dd14882fec3e4d9e9a59ac2d" class="src_link" title="app/controllers/user_controller.rb">app/controllers/user_controller.rb</a></td>
-            <td class="green strong cell--number t-file__coverage">100.00 %</td>
-            <td class="cell--number">20</td>
-            <td class="cell--number">4</td>
-            <td class="cell--number">4</td>
+            <td class="strong t-file__name"><a href="#e8e446a0e7e12fc62478782ecaa5cf7e6cea22b2" class="src_link" title="app/controllers/users_controller.rb">app/controllers/users_controller.rb</a></td>
+            <td class="red strong cell--number t-file__coverage">0.00 %</td>
+            <td class="cell--number">23</td>
+            <td class="cell--number">17</td>
             <td class="cell--number">0</td>
-            <td class="cell--number">1.25</td>
+            <td class="cell--number">17</td>
+            <td class="cell--number">0.00</td>
             
           </tr>
         
@@ -395,15 +417,15 @@
   <h2>
     <span class="group_name">Models</span>
     (<span class="covered_percent">
-      <span class="green">
-  100.0%
+      <span class="red">
+  0.0%
 </span>
 
      </span>
      covered at
      <span class="covered_strength">
-       <span class="green">
-         2.0
+       <span class="red">
+         0.0
        </span>
     </span> hits/line
     )
@@ -416,11 +438,11 @@
   </div>
 
   <div class="t-line-summary">
-    <b>7</b> relevant lines,
-    <span class="green"><b>7</b> lines covered</span> and
-    <span class="red"><b>0</b> lines missed. </span>
-    (<span class="green">
-  100.0%
+    <b>80</b> relevant lines,
+    <span class="green"><b>0</b> lines covered</span> and
+    <span class="red"><b>80</b> lines missed. </span>
+    (<span class="red">
+  0.0%
 </span>
 )
   </div>
@@ -444,35 +466,35 @@
       <tbody>
         
           <tr class="t-file">
-            <td class="strong t-file__name"><a href="#629329696806eae67547c0677925d8db16ef9fc6" class="src_link" title="app/models/course.rb">app/models/course.rb</a></td>
-            <td class="green strong cell--number t-file__coverage">100.00 %</td>
-            <td class="cell--number">2</td>
-            <td class="cell--number">1</td>
-            <td class="cell--number">1</td>
+            <td class="strong t-file__name"><a href="#9d3ff519738463e3bb46be0b7efa77740535d5b1" class="src_link" title="app/models/course.rb">app/models/course.rb</a></td>
+            <td class="red strong cell--number t-file__coverage">0.00 %</td>
+            <td class="cell--number">8</td>
+            <td class="cell--number">7</td>
             <td class="cell--number">0</td>
-            <td class="cell--number">2.00</td>
+            <td class="cell--number">7</td>
+            <td class="cell--number">0.00</td>
             
           </tr>
         
           <tr class="t-file">
-            <td class="strong t-file__name"><a href="#e4846f04f45ac85d4983bf7dc2c15f4b0291021b" class="src_link" title="app/models/course_enrollment.rb">app/models/course_enrollment.rb</a></td>
-            <td class="green strong cell--number t-file__coverage">100.00 %</td>
-            <td class="cell--number">3</td>
-            <td class="cell--number">1</td>
-            <td class="cell--number">1</td>
+            <td class="strong t-file__name"><a href="#a2d12c77b82c0cf0284c7e65d14c09fd9cff8ba1" class="src_link" title="app/models/course_enrollment.rb">app/models/course_enrollment.rb</a></td>
+            <td class="red strong cell--number t-file__coverage">0.00 %</td>
+            <td class="cell--number">16</td>
+            <td class="cell--number">10</td>
             <td class="cell--number">0</td>
-            <td class="cell--number">2.00</td>
+            <td class="cell--number">10</td>
+            <td class="cell--number">0.00</td>
             
           </tr>
         
           <tr class="t-file">
-            <td class="strong t-file__name"><a href="#ca2020b5e24a96ea344f0073a6de8e548c27df52" class="src_link" title="app/models/user.rb">app/models/user.rb</a></td>
-            <td class="green strong cell--number t-file__coverage">100.00 %</td>
-            <td class="cell--number">84</td>
-            <td class="cell--number">5</td>
-            <td class="cell--number">5</td>
+            <td class="strong t-file__name"><a href="#8629f2c6740b7dffe2f96943f7bf2ed9b0c8fc12" class="src_link" title="app/models/user.rb">app/models/user.rb</a></td>
+            <td class="red strong cell--number t-file__coverage">0.00 %</td>
+            <td class="cell--number">90</td>
+            <td class="cell--number">63</td>
             <td class="cell--number">0</td>
-            <td class="cell--number">2.00</td>
+            <td class="cell--number">63</td>
+            <td class="cell--number">0.00</td>
             
           </tr>
         
@@ -551,8 +573,8 @@
      </span>
      covered at
      <span class="covered_strength">
-       <span class="green">
-         2.0
+       <span class="yellow">
+         1.0
        </span>
     </span> hits/line
     )
@@ -593,35 +615,35 @@
       <tbody>
         
           <tr class="t-file">
-            <td class="strong t-file__name"><a href="#f7f5c7eb62e8c6624a08ee3dc4d24d56ce0aa1f6" class="src_link" title="app/helpers/application_helper.rb">app/helpers/application_helper.rb</a></td>
+            <td class="strong t-file__name"><a href="#ec4e574b42a319cf22ff5170a40b1b6df532c7ea" class="src_link" title="app/helpers/application_helper.rb">app/helpers/application_helper.rb</a></td>
             <td class="green strong cell--number t-file__coverage">100.00 %</td>
             <td class="cell--number">2</td>
             <td class="cell--number">1</td>
             <td class="cell--number">1</td>
             <td class="cell--number">0</td>
-            <td class="cell--number">2.00</td>
+            <td class="cell--number">1.00</td>
             
           </tr>
         
           <tr class="t-file">
-            <td class="strong t-file__name"><a href="#e1de7aee8f784d53d399270b0f56237c86b41a68" class="src_link" title="app/helpers/courses_helper.rb">app/helpers/courses_helper.rb</a></td>
+            <td class="strong t-file__name"><a href="#da31d0761941fd95a8113768c0c44dec0c6ac0ac" class="src_link" title="app/helpers/courses_helper.rb">app/helpers/courses_helper.rb</a></td>
             <td class="green strong cell--number t-file__coverage">100.00 %</td>
             <td class="cell--number">2</td>
             <td class="cell--number">1</td>
             <td class="cell--number">1</td>
             <td class="cell--number">0</td>
-            <td class="cell--number">2.00</td>
+            <td class="cell--number">1.00</td>
             
           </tr>
         
           <tr class="t-file">
-            <td class="strong t-file__name"><a href="#f87ee15cb67ae675ebdacc0dd16177721b16bec9" class="src_link" title="app/helpers/profiles_helper.rb">app/helpers/profiles_helper.rb</a></td>
+            <td class="strong t-file__name"><a href="#07dcd4828ea3814b0c4f945bd68ee77d6b8acbaa" class="src_link" title="app/helpers/profiles_helper.rb">app/helpers/profiles_helper.rb</a></td>
             <td class="green strong cell--number t-file__coverage">100.00 %</td>
             <td class="cell--number">2</td>
             <td class="cell--number">1</td>
             <td class="cell--number">1</td>
             <td class="cell--number">0</td>
-            <td class="cell--number">2.00</td>
+            <td class="cell--number">1.00</td>
             
           </tr>
         
@@ -752,12 +774,12 @@
       <div id="footer">
         Generated by <a href="https://github.com/simplecov-ruby/simplecov">simplecov</a> v0.22.0
         and simplecov-html v0.12.3<br/>
-        using Cucumber Features, RSpec
+        using RSpec
       </div>
 
       <div class="source_files">
       
-        <div class="source_table" id="e0c1b5095e16b738f47e3c6484f2b888c71066ae">
+        <div class="source_table" id="9b67e340390697f68a4eddb4b60158f7ac37e271">
   <div class="header">
     <h3>app/controllers/application_controller.rb</h3>
     <h4>
@@ -784,8 +806,8 @@
     <ol>
       
         <div>
-          <li class="covered" data-hits="2" data-linenumber="1">
-            <span class="hits">2</span>
+          <li class="covered" data-hits="1" data-linenumber="1">
+            <span class="hits">1</span>
             
 
             
@@ -964,12 +986,12 @@
 </div>
 
       
-        <div class="source_table" id="9c6660adaa8ccc3fd384987466f4944f189390f1">
+        <div class="source_table" id="cb4345dc388e4b1199721d3f2a7d06217967519b">
   <div class="header">
-    <h3>app/controllers/courses_controller.rb</h3>
+    <h3>app/controllers/course_enrollments_controller.rb</h3>
     <h4>
-      <span class="yellow">
-  86.96%
+      <span class="red">
+  0.0%
 </span>
 
       lines covered
@@ -979,8 +1001,8 @@
 
     <div class="t-line-summary">
       <b>23</b> relevant lines.
-      <span class="green"><b>20</b> lines covered</span> and
-      <span class="red"><b>3</b> lines missed.</span>
+      <span class="green"><b>0</b> lines covered</span> and
+      <span class="red"><b>23</b> lines missed.</span>
     </div>
 
     
@@ -991,8 +1013,435 @@
     <ol>
       
         <div>
-          <li class="covered" data-hits="2" data-linenumber="1">
-            <span class="hits">2</span>
+          <li class="never" data-hits="" data-linenumber="1">
+            
+            
+
+            
+
+            <code class="ruby"># app/controllers/course_enrollments_controller.rb</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="missed" data-hits="0" data-linenumber="2">
+            
+            
+
+            
+
+            <code class="ruby">class CourseEnrollmentsController &lt; ApplicationController</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="missed" data-hits="0" data-linenumber="3">
+            
+            
+
+            
+
+            <code class="ruby">  before_action :set_course_enrollment, only: [:edit, :update]</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="4">
+            
+            
+
+            
+
+            <code class="ruby"></code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="missed" data-hits="0" data-linenumber="5">
+            
+            
+
+            
+
+            <code class="ruby">  def edit</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="missed" data-hits="0" data-linenumber="6">
+            
+            
+
+            
+
+            <code class="ruby">    @user = User.find_by(uid: params[:user_uid])</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="missed" data-hits="0" data-linenumber="7">
+            
+            
+
+            
+
+            <code class="ruby">    @course_enrollment = @user.course_enrollments.find(params[:id])</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="missed" data-hits="0" data-linenumber="8">
+            
+            
+
+            
+
+            <code class="ruby">  end</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="9">
+            
+            
+
+            
+
+            <code class="ruby">  </code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="10">
+            
+            
+
+            
+
+            <code class="ruby">  </code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="11">
+            
+            
+
+            
+
+            <code class="ruby">  </code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="12">
+            
+            
+
+            
+
+            <code class="ruby"></code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="missed" data-hits="0" data-linenumber="13">
+            
+            
+
+            
+
+            <code class="ruby">  def update</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="missed" data-hits="0" data-linenumber="14">
+            
+            
+
+            
+
+            <code class="ruby">    @course_enrollment = CourseEnrollment.find(params[:id])</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="missed" data-hits="0" data-linenumber="15">
+            
+            
+
+            
+
+            <code class="ruby">    @user = @course_enrollment.user</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="16">
+            
+            
+
+            
+
+            <code class="ruby">    </code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="missed" data-hits="0" data-linenumber="17">
+            
+            
+
+            
+
+            <code class="ruby">    if @course_enrollment.update(course_enrollment_params)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="18">
+            
+            
+
+            
+
+            <code class="ruby">      # Redirect to the profile page with the user&#39;s ID as a query parameter</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="missed" data-hits="0" data-linenumber="19">
+            
+            
+
+            
+
+            <code class="ruby">      redirect_to profiles_path(id: @user.id), notice: &#39;Course enrollment was successfully updated.&#39;</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="missed" data-hits="0" data-linenumber="20">
+            
+            
+
+            
+
+            <code class="ruby">    else</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="missed" data-hits="0" data-linenumber="21">
+            
+            
+
+            
+
+            <code class="ruby">      render :edit</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="missed" data-hits="0" data-linenumber="22">
+            
+            
+
+            
+
+            <code class="ruby">    end</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="missed" data-hits="0" data-linenumber="23">
+            
+            
+
+            
+
+            <code class="ruby">  end</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="24">
+            
+            
+
+            
+
+            <code class="ruby">  </code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="25">
+            
+            
+
+            
+
+            <code class="ruby">  </code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="26">
+            
+            
+
+            
+
+            <code class="ruby">  </code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="missed" data-hits="0" data-linenumber="27">
+            
+            
+
+            
+
+            <code class="ruby">  private</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="28">
+            
+            
+
+            
+
+            <code class="ruby"></code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="missed" data-hits="0" data-linenumber="29">
+            
+            
+
+            
+
+            <code class="ruby">  def set_course_enrollment</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="missed" data-hits="0" data-linenumber="30">
+            
+            
+
+            
+
+            <code class="ruby">    @course_enrollment = CourseEnrollment.find(params[:id])</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="missed" data-hits="0" data-linenumber="31">
+            
+            
+
+            
+
+            <code class="ruby">  end</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="32">
+            
+            
+
+            
+
+            <code class="ruby"></code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="missed" data-hits="0" data-linenumber="33">
+            
+            
+
+            
+
+            <code class="ruby">  def course_enrollment_params</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="missed" data-hits="0" data-linenumber="34">
+            
+            
+
+            
+
+            <code class="ruby">    params.require(:course_enrollment).permit(:grade, :year, :course_id)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="missed" data-hits="0" data-linenumber="35">
+            
+            
+
+            
+
+            <code class="ruby">  end</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="missed" data-hits="0" data-linenumber="36">
+            
+            
+
+            
+
+            <code class="ruby">end</code>
+          </li>
+        </div>
+      
+    </ol>
+  </pre>
+</div>
+
+      
+        <div class="source_table" id="f3a7c4cb908cc1835ca30a9793cf11fe9f4f7b2f">
+  <div class="header">
+    <h3>app/controllers/courses_controller.rb</h3>
+    <h4>
+      <span class="red">
+  34.62%
+</span>
+
+      lines covered
+    </h4>
+
+    
+
+    <div class="t-line-summary">
+      <b>26</b> relevant lines.
+      <span class="green"><b>9</b> lines covered</span> and
+      <span class="red"><b>17</b> lines missed.</span>
+    </div>
+
+    
+
+  </div>
+
+  <pre>
+    <ol>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="1">
+            <span class="hits">1</span>
             
 
             
@@ -1013,8 +1462,8 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="2" data-linenumber="3">
-            <span class="hits">2</span>
+          <li class="covered" data-hits="1" data-linenumber="3">
+            <span class="hits">1</span>
             
 
             
@@ -1079,8 +1528,8 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="2" data-linenumber="9">
-            <span class="hits">2</span>
+          <li class="covered" data-hits="1" data-linenumber="9">
+            <span class="hits">1</span>
             
 
             
@@ -1090,8 +1539,8 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="8" data-linenumber="10">
-            <span class="hits">8</span>
+          <li class="missed" data-hits="0" data-linenumber="10">
+            
             
 
             
@@ -1101,13 +1550,13 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="2" data-linenumber="11">
-            <span class="hits">2</span>
+          <li class="missed" data-hits="0" data-linenumber="11">
+            
             
 
             
 
-            <code class="ruby">      @courses = Course.where(&quot;course_id LIKE ? OR course_title LIKE ?&quot;, &quot;%#{params[:search]}%&quot;, &quot;%#{params[:search]}%&quot;)</code>
+            <code class="ruby">      @courses = Course.where(&quot;course_id LIKE ? OR course_title LIKE ?&quot;, &quot;%#{params[:search]}%&quot;, &quot;%#{params[:search]}%&quot;).paginate(page: params[:page], per_page: 10)</code>
           </li>
         </div>
       
@@ -1123,13 +1572,13 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="6" data-linenumber="13">
-            <span class="hits">6</span>
+          <li class="missed" data-hits="0" data-linenumber="13">
+            
             
 
             
 
-            <code class="ruby">      @courses = Course.all</code>
+            <code class="ruby">      @courses = Course.paginate(page: params[:page], per_page: 10)</code>
           </li>
         </div>
       
@@ -1162,13 +1611,24 @@
 
             
 
+            <code class="ruby">  </code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="17">
+            
+            
+
+            
+
             <code class="ruby"></code>
           </li>
         </div>
       
         <div>
-          <li class="covered" data-hits="2" data-linenumber="17">
-            <span class="hits">2</span>
+          <li class="covered" data-hits="1" data-linenumber="18">
+            <span class="hits">1</span>
             
 
             
@@ -1178,24 +1638,13 @@
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="18">
+          <li class="missed" data-hits="0" data-linenumber="19">
             
             
 
             
 
-            <code class="ruby">    # default: render &#39;new&#39; template</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="never" data-hits="" data-linenumber="19">
-            
-            
-
-            
-
-            <code class="ruby">  end</code>
+            <code class="ruby">    @course = Course.new # Initializes a new Course object for the form</code>
           </li>
         </div>
       
@@ -1206,18 +1655,18 @@
 
             
 
-            <code class="ruby"></code>
+            <code class="ruby">  end</code>
           </li>
         </div>
       
         <div>
-          <li class="covered" data-hits="2" data-linenumber="21">
-            <span class="hits">2</span>
+          <li class="never" data-hits="" data-linenumber="21">
+            
             
 
             
 
-            <code class="ruby">  def create</code>
+            <code class="ruby"></code>
           </li>
         </div>
       
@@ -1228,62 +1677,62 @@
 
             
 
-            <code class="ruby">    @course = Course.create!(course_params)</code>
+            <code class="ruby">  def create</code>
           </li>
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="23">
-            <span class="hits">1</span>
+          <li class="missed" data-hits="0" data-linenumber="23">
+            
             
 
             
 
-            <code class="ruby">    flash[:notice] = &quot;#{@course.course_title} was successfully created.&quot;</code>
+            <code class="ruby">    @course = Course.new(course_params) # Initializes with course_params instead of create! directly</code>
           </li>
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="24">
-            <span class="hits">1</span>
+          <li class="missed" data-hits="0" data-linenumber="24">
+            
             
 
             
 
-            <code class="ruby">    redirect_to courses_path</code>
+            <code class="ruby">    if @course.save</code>
           </li>
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="25">
+          <li class="missed" data-hits="0" data-linenumber="25">
             
             
 
             
 
-            <code class="ruby">  end</code>
+            <code class="ruby">      flash[:notice] = &quot;#{@course.course_title} was successfully created.&quot;</code>
           </li>
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="26">
+          <li class="missed" data-hits="0" data-linenumber="26">
             
             
 
             
 
-            <code class="ruby"></code>
+            <code class="ruby">      redirect_to courses_path</code>
           </li>
         </div>
       
         <div>
-          <li class="covered" data-hits="2" data-linenumber="27">
-            <span class="hits">2</span>
+          <li class="never" data-hits="" data-linenumber="27">
+            
             
 
             
 
-            <code class="ruby">  def edit</code>
+            <code class="ruby">    else</code>
           </li>
         </div>
       
@@ -1294,7 +1743,7 @@
 
             
 
-            <code class="ruby">    @course = Course.find params[:id]</code>
+            <code class="ruby">      render :new # Render the new form again if the course fails to save</code>
           </li>
         </div>
       
@@ -1305,7 +1754,7 @@
 
             
 
-            <code class="ruby">  end</code>
+            <code class="ruby">    end</code>
           </li>
         </div>
       
@@ -1316,18 +1765,18 @@
 
             
 
-            <code class="ruby"></code>
+            <code class="ruby">  end</code>
           </li>
         </div>
       
         <div>
-          <li class="covered" data-hits="2" data-linenumber="31">
-            <span class="hits">2</span>
+          <li class="never" data-hits="" data-linenumber="31">
+            
             
 
             
 
-            <code class="ruby">  def update</code>
+            <code class="ruby"></code>
           </li>
         </div>
       
@@ -1338,45 +1787,23 @@
 
             
 
+            <code class="ruby">  def edit</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="missed" data-hits="0" data-linenumber="33">
+            
+            
+
+            
+
             <code class="ruby">    @course = Course.find params[:id]</code>
           </li>
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="33">
-            <span class="hits">1</span>
-            
-
-            
-
-            <code class="ruby">    @course.update_attributes!(course_params)</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="covered" data-hits="1" data-linenumber="34">
-            <span class="hits">1</span>
-            
-
-            
-
-            <code class="ruby">    flash[:notice] = &quot;#{@course.course_title} was successfully updated.&quot;</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="covered" data-hits="1" data-linenumber="35">
-            <span class="hits">1</span>
-            
-
-            
-
-            <code class="ruby">    redirect_to course_path(@course)</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="never" data-hits="" data-linenumber="36">
+          <li class="never" data-hits="" data-linenumber="34">
             
             
 
@@ -1387,7 +1814,7 @@
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="37">
+          <li class="never" data-hits="" data-linenumber="35">
             
             
 
@@ -1398,35 +1825,57 @@
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="38">
-            
-            
-
+          <li class="covered" data-hits="1" data-linenumber="36">
+            <span class="hits">1</span>
             
 
-            <code class="ruby">  # def destroy</code>
+            
+
+            <code class="ruby">  def update</code>
           </li>
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="39">
+          <li class="missed" data-hits="0" data-linenumber="37">
             
             
 
             
 
-            <code class="ruby">  #   @course = Course.find(params[:id])</code>
+            <code class="ruby">    @course = Course.find params[:id]</code>
           </li>
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="40">
+          <li class="missed" data-hits="0" data-linenumber="38">
             
             
 
             
 
-            <code class="ruby">  #   @course.destroy</code>
+            <code class="ruby">    @course.update_attributes!(course_params)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="missed" data-hits="0" data-linenumber="39">
+            
+            
+
+            
+
+            <code class="ruby">    flash[:notice] = &quot;#{@course.course_title} was successfully updated.&quot;</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="missed" data-hits="0" data-linenumber="40">
+            
+            
+
+            
+
+            <code class="ruby">    redirect_to course_path(@course)</code>
           </li>
         </div>
       
@@ -1437,7 +1886,7 @@
 
             
 
-            <code class="ruby">  #   flash[:notice] = &quot;Course &#39;#{@course.course_title}&#39; deleted.&quot;</code>
+            <code class="ruby">  end</code>
           </li>
         </div>
       
@@ -1448,7 +1897,7 @@
 
             
 
-            <code class="ruby">  #   redirect_to courses_path</code>
+            <code class="ruby"></code>
           </li>
         </div>
       
@@ -1459,7 +1908,7 @@
 
             
 
-            <code class="ruby">  # end</code>
+            <code class="ruby">  # def destroy</code>
           </li>
         </div>
       
@@ -1470,18 +1919,18 @@
 
             
 
-            <code class="ruby"></code>
+            <code class="ruby">  #   @course = Course.find(params[:id])</code>
           </li>
         </div>
       
         <div>
-          <li class="covered" data-hits="2" data-linenumber="45">
-            <span class="hits">2</span>
+          <li class="never" data-hits="" data-linenumber="45">
+            
             
 
             
 
-            <code class="ruby">  private</code>
+            <code class="ruby">  #   @course.destroy</code>
           </li>
         </div>
       
@@ -1492,7 +1941,7 @@
 
             
 
-            <code class="ruby">  # Making &quot;internal&quot; methods private is not required, but is a common practice.</code>
+            <code class="ruby">  #   flash[:notice] = &quot;Course &#39;#{@course.course_title}&#39; deleted.&quot;</code>
           </li>
         </div>
       
@@ -1503,40 +1952,40 @@
 
             
 
-            <code class="ruby">  # This helps make clear which methods respond to requests, and which ones do not.</code>
+            <code class="ruby">  #   redirect_to courses_path</code>
           </li>
         </div>
       
         <div>
-          <li class="covered" data-hits="2" data-linenumber="48">
-            <span class="hits">2</span>
+          <li class="never" data-hits="" data-linenumber="48">
+            
             
 
             
 
-            <code class="ruby">  def course_params</code>
+            <code class="ruby">  # end</code>
           </li>
         </div>
       
         <div>
-          <li class="covered" data-hits="2" data-linenumber="49">
-            <span class="hits">2</span>
+          <li class="never" data-hits="" data-linenumber="49">
+            
             
 
             
 
-            <code class="ruby">    params.require(:course).permit(</code>
+            <code class="ruby"></code>
           </li>
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="50">
-            
-            
-
+          <li class="covered" data-hits="1" data-linenumber="50">
+            <span class="hits">1</span>
             
 
-            <code class="ruby">      :course_id,</code>
+            
+
+            <code class="ruby">  private</code>
           </li>
         </div>
       
@@ -1547,7 +1996,7 @@
 
             
 
-            <code class="ruby">      :course_title,</code>
+            <code class="ruby">  # Making &quot;internal&quot; methods private is not required, but is a common practice.</code>
           </li>
         </div>
       
@@ -1558,29 +2007,29 @@
 
             
 
-            <code class="ruby">      :offering_term,</code>
+            <code class="ruby">  # This helps make clear which methods respond to requests, and which ones do not.</code>
           </li>
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="53">
-            
-            
-
+          <li class="covered" data-hits="1" data-linenumber="53">
+            <span class="hits">1</span>
             
 
-            <code class="ruby">      :midterm,</code>
+            
+
+            <code class="ruby">  def course_params</code>
           </li>
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="54">
+          <li class="missed" data-hits="0" data-linenumber="54">
             
             
 
             
 
-            <code class="ruby">      :project,</code>
+            <code class="ruby">    params.require(:course).permit(</code>
           </li>
         </div>
       
@@ -1591,7 +2040,7 @@
 
             
 
-            <code class="ruby">      :instructor,</code>
+            <code class="ruby">      :course_id,</code>
           </li>
         </div>
       
@@ -1602,7 +2051,7 @@
 
             
 
-            <code class="ruby">      :time,</code>
+            <code class="ruby">      :course_title,</code>
           </li>
         </div>
       
@@ -1613,7 +2062,7 @@
 
             
 
-            <code class="ruby">      :days,</code>
+            <code class="ruby">      :offering_term,</code>
           </li>
         </div>
       
@@ -1624,7 +2073,7 @@
 
             
 
-            <code class="ruby">      :website</code>
+            <code class="ruby">      :midterm,</code>
           </li>
         </div>
       
@@ -1635,7 +2084,7 @@
 
             
 
-            <code class="ruby">    )</code>
+            <code class="ruby">      :project,</code>
           </li>
         </div>
       
@@ -1646,12 +2095,67 @@
 
             
 
-            <code class="ruby">  end</code>
+            <code class="ruby">      :instructor,</code>
           </li>
         </div>
       
         <div>
           <li class="never" data-hits="" data-linenumber="61">
+            
+            
+
+            
+
+            <code class="ruby">      :time,</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="62">
+            
+            
+
+            
+
+            <code class="ruby">      :days,</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="63">
+            
+            
+
+            
+
+            <code class="ruby">      :website</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="64">
+            
+            
+
+            
+
+            <code class="ruby">    )</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="65">
+            
+            
+
+            
+
+            <code class="ruby">  end</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="66">
             
             
 
@@ -1666,12 +2170,12 @@
 </div>
 
       
-        <div class="source_table" id="6f1b5279b0c4938e7bd7cc0a2fbcacb105c78aca">
+        <div class="source_table" id="3fdfd3863f67ff8d312f8d44eea78fc855b7c626">
   <div class="header">
     <h3>app/controllers/profiles_controller.rb</h3>
     <h4>
-      <span class="green">
-  100.0%
+      <span class="red">
+  33.33%
 </span>
 
       lines covered
@@ -1681,8 +2185,8 @@
 
     <div class="t-line-summary">
       <b>6</b> relevant lines.
-      <span class="green"><b>6</b> lines covered</span> and
-      <span class="red"><b>0</b> lines missed.</span>
+      <span class="green"><b>2</b> lines covered</span> and
+      <span class="red"><b>4</b> lines missed.</span>
     </div>
 
     
@@ -1693,8 +2197,8 @@
     <ol>
       
         <div>
-          <li class="covered" data-hits="2" data-linenumber="1">
-            <span class="hits">2</span>
+          <li class="covered" data-hits="1" data-linenumber="1">
+            <span class="hits">1</span>
             
 
             
@@ -1704,8 +2208,8 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="2" data-linenumber="2">
-            <span class="hits">2</span>
+          <li class="covered" data-hits="1" data-linenumber="2">
+            <span class="hits">1</span>
             
 
             
@@ -1715,8 +2219,8 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="5" data-linenumber="3">
-            <span class="hits">5</span>
+          <li class="missed" data-hits="0" data-linenumber="3">
+            
             
 
             
@@ -1726,8 +2230,8 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="4" data-linenumber="4">
-            <span class="hits">4</span>
+          <li class="missed" data-hits="0" data-linenumber="4">
+            
             
 
             
@@ -1737,8 +2241,8 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="4" data-linenumber="5">
-            <span class="hits">4</span>
+          <li class="missed" data-hits="0" data-linenumber="5">
+            
             
 
             
@@ -1759,8 +2263,8 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="7">
-            <span class="hits">1</span>
+          <li class="missed" data-hits="0" data-linenumber="7">
+            
             
 
             
@@ -1807,12 +2311,12 @@
 </div>
 
       
-        <div class="source_table" id="c59d8b60ff71ebb5ba059ce26d900511a955142a">
+        <div class="source_table" id="dfeb1f8b0e0a9b7679c077d6a679cf6f32451f20">
   <div class="header">
     <h3>app/controllers/registrations_controller.rb</h3>
     <h4>
-      <span class="green">
-  91.67%
+      <span class="red">
+  41.67%
 </span>
 
       lines covered
@@ -1822,8 +2326,8 @@
 
     <div class="t-line-summary">
       <b>12</b> relevant lines.
-      <span class="green"><b>11</b> lines covered</span> and
-      <span class="red"><b>1</b> lines missed.</span>
+      <span class="green"><b>5</b> lines covered</span> and
+      <span class="red"><b>7</b> lines missed.</span>
     </div>
 
     
@@ -1834,8 +2338,8 @@
     <ol>
       
         <div>
-          <li class="covered" data-hits="2" data-linenumber="1">
-            <span class="hits">2</span>
+          <li class="covered" data-hits="1" data-linenumber="1">
+            <span class="hits">1</span>
             
 
             
@@ -1856,8 +2360,8 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="2" data-linenumber="3">
-            <span class="hits">2</span>
+          <li class="covered" data-hits="1" data-linenumber="3">
+            <span class="hits">1</span>
             
 
             
@@ -1867,8 +2371,8 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="3" data-linenumber="4">
-            <span class="hits">3</span>
+          <li class="missed" data-hits="0" data-linenumber="4">
+            
             
 
             
@@ -1900,8 +2404,8 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="2" data-linenumber="7">
-            <span class="hits">2</span>
+          <li class="covered" data-hits="1" data-linenumber="7">
+            <span class="hits">1</span>
             
 
             
@@ -1911,8 +2415,8 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="3" data-linenumber="8">
-            <span class="hits">3</span>
+          <li class="missed" data-hits="0" data-linenumber="8">
+            
             
 
             
@@ -1922,8 +2426,8 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="3" data-linenumber="9">
-            <span class="hits">3</span>
+          <li class="missed" data-hits="0" data-linenumber="9">
+            
             
 
             
@@ -1933,8 +2437,8 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="3" data-linenumber="10">
-            <span class="hits">3</span>
+          <li class="missed" data-hits="0" data-linenumber="10">
+            
             
 
             
@@ -1944,8 +2448,8 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="3" data-linenumber="11">
-            <span class="hits">3</span>
+          <li class="missed" data-hits="0" data-linenumber="11">
+            
             
 
             
@@ -2021,8 +2525,8 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="2" data-linenumber="18">
-            <span class="hits">2</span>
+          <li class="covered" data-hits="1" data-linenumber="18">
+            <span class="hits">1</span>
             
 
             
@@ -2032,8 +2536,8 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="2" data-linenumber="19">
-            <span class="hits">2</span>
+          <li class="covered" data-hits="1" data-linenumber="19">
+            <span class="hits">1</span>
             
 
             
@@ -2043,8 +2547,8 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="3" data-linenumber="20">
-            <span class="hits">3</span>
+          <li class="missed" data-hits="0" data-linenumber="20">
+            
             
 
             
@@ -2091,12 +2595,12 @@
 </div>
 
       
-        <div class="source_table" id="8a03b46a192596fe8e87fc3f6fb5357bb4ac9eaa">
+        <div class="source_table" id="f02436f4aa017832fa52a2eba2176efc39158f5f">
   <div class="header">
     <h3>app/controllers/sessions_controller.rb</h3>
     <h4>
-      <span class="green">
-  100.0%
+      <span class="red">
+  33.33%
 </span>
 
       lines covered
@@ -2106,8 +2610,8 @@
 
     <div class="t-line-summary">
       <b>12</b> relevant lines.
-      <span class="green"><b>12</b> lines covered</span> and
-      <span class="red"><b>0</b> lines missed.</span>
+      <span class="green"><b>4</b> lines covered</span> and
+      <span class="red"><b>8</b> lines missed.</span>
     </div>
 
     
@@ -2118,8 +2622,8 @@
     <ol>
       
         <div>
-          <li class="covered" data-hits="2" data-linenumber="1">
-            <span class="hits">2</span>
+          <li class="covered" data-hits="1" data-linenumber="1">
+            <span class="hits">1</span>
             
 
             
@@ -2140,8 +2644,8 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="2" data-linenumber="3">
-            <span class="hits">2</span>
+          <li class="covered" data-hits="1" data-linenumber="3">
+            <span class="hits">1</span>
             
 
             
@@ -2173,8 +2677,8 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="2" data-linenumber="6">
-            <span class="hits">2</span>
+          <li class="covered" data-hits="1" data-linenumber="6">
+            <span class="hits">1</span>
             
 
             
@@ -2184,8 +2688,8 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="7" data-linenumber="7">
-            <span class="hits">7</span>
+          <li class="missed" data-hits="0" data-linenumber="7">
+            
             
 
             
@@ -2195,8 +2699,8 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="7" data-linenumber="8">
-            <span class="hits">7</span>
+          <li class="missed" data-hits="0" data-linenumber="8">
+            
             
 
             
@@ -2206,8 +2710,8 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="4" data-linenumber="9">
-            <span class="hits">4</span>
+          <li class="missed" data-hits="0" data-linenumber="9">
+            
             
 
             
@@ -2217,8 +2721,8 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="4" data-linenumber="10">
-            <span class="hits">4</span>
+          <li class="missed" data-hits="0" data-linenumber="10">
+            
             
 
             
@@ -2250,8 +2754,8 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="3" data-linenumber="13">
-            <span class="hits">3</span>
+          <li class="missed" data-hits="0" data-linenumber="13">
+            
             
 
             
@@ -2261,8 +2765,8 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="3" data-linenumber="14">
-            <span class="hits">3</span>
+          <li class="missed" data-hits="0" data-linenumber="14">
+            
             
 
             
@@ -2305,8 +2809,8 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="2" data-linenumber="18">
-            <span class="hits">2</span>
+          <li class="covered" data-hits="1" data-linenumber="18">
+            <span class="hits">1</span>
             
 
             
@@ -2316,8 +2820,8 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="2" data-linenumber="19">
-            <span class="hits">2</span>
+          <li class="missed" data-hits="0" data-linenumber="19">
+            
             
 
             
@@ -2327,8 +2831,8 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="2" data-linenumber="20">
-            <span class="hits">2</span>
+          <li class="missed" data-hits="0" data-linenumber="20">
+            
             
 
             
@@ -2375,12 +2879,12 @@
 </div>
 
       
-        <div class="source_table" id="77f5c6a680a4c114dd14882fec3e4d9e9a59ac2d">
+        <div class="source_table" id="e8e446a0e7e12fc62478782ecaa5cf7e6cea22b2">
   <div class="header">
-    <h3>app/controllers/user_controller.rb</h3>
+    <h3>app/controllers/users_controller.rb</h3>
     <h4>
-      <span class="green">
-  100.0%
+      <span class="red">
+  0.0%
 </span>
 
       lines covered
@@ -2389,9 +2893,9 @@
     
 
     <div class="t-line-summary">
-      <b>4</b> relevant lines.
-      <span class="green"><b>4</b> lines covered</span> and
-      <span class="red"><b>0</b> lines missed.</span>
+      <b>17</b> relevant lines.
+      <span class="green"><b>0</b> lines covered</span> and
+      <span class="red"><b>17</b> lines missed.</span>
     </div>
 
     
@@ -2402,13 +2906,13 @@
     <ol>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="1">
-            <span class="hits">1</span>
+          <li class="missed" data-hits="0" data-linenumber="1">
+            
             
 
             
 
-            <code class="ruby">class UserController &lt; ApplicationController</code>
+            <code class="ruby">class UsersController &lt; ApplicationController</code>
           </li>
         </div>
       
@@ -2435,8 +2939,8 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="4">
-            <span class="hits">1</span>
+          <li class="missed" data-hits="0" data-linenumber="4">
+            
             
 
             
@@ -2446,8 +2950,8 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="2" data-linenumber="5">
-            <span class="hits">2</span>
+          <li class="missed" data-hits="0" data-linenumber="5">
+            
             
 
             
@@ -2457,8 +2961,8 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="6">
-            <span class="hits">1</span>
+          <li class="missed" data-hits="0" data-linenumber="6">
+            
             
 
             
@@ -2468,7 +2972,7 @@
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="7">
+          <li class="missed" data-hits="0" data-linenumber="7">
             
             
 
@@ -2479,7 +2983,7 @@
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="8">
+          <li class="missed" data-hits="0" data-linenumber="8">
             
             
 
@@ -2501,46 +3005,46 @@
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="10">
+          <li class="missed" data-hits="0" data-linenumber="10">
             
             
 
             
 
-            <code class="ruby">  # GET /users/:id/recommendations</code>
+            <code class="ruby">  def recommendations</code>
           </li>
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="11">
+          <li class="missed" data-hits="0" data-linenumber="11">
             
             
 
             
 
-            <code class="ruby">  # def recommendations</code>
+            <code class="ruby">    @user = User.find(params[:id])</code>
           </li>
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="12">
+          <li class="missed" data-hits="0" data-linenumber="12">
             
             
 
             
 
-            <code class="ruby">  #   @recommended_courses = @user.recommend_courses</code>
+            <code class="ruby">    top_n_courses = params[:recommendation_count] || 5</code>
           </li>
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="13">
+          <li class="missed" data-hits="0" data-linenumber="13">
             
             
 
             
 
-            <code class="ruby">  # end</code>
+            <code class="ruby">    @recommended_courses_with_gpa = @user.recommend_courses(top_n_courses) # or however many courses you want to recommend</code>
           </li>
         </div>
       
@@ -2556,24 +3060,24 @@
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="15">
+          <li class="missed" data-hits="0" data-linenumber="15">
             
             
 
             
 
-            <code class="ruby">  # private</code>
+            <code class="ruby">    render &#39;recommendations&#39;</code>
           </li>
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="16">
+          <li class="missed" data-hits="0" data-linenumber="16">
             
             
 
             
 
-            <code class="ruby"></code>
+            <code class="ruby">  end</code>
           </li>
         </div>
       
@@ -2584,18 +3088,18 @@
 
             
 
-            <code class="ruby">  # def set_user</code>
+            <code class="ruby"></code>
           </li>
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="18">
+          <li class="missed" data-hits="0" data-linenumber="18">
             
             
 
             
 
-            <code class="ruby">  #   @user = User.find(params[:id])</code>
+            <code class="ruby">  private</code>
           </li>
         </div>
       
@@ -2606,12 +3110,45 @@
 
             
 
-            <code class="ruby">  # end</code>
+            <code class="ruby"></code>
           </li>
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="20">
+          <li class="missed" data-hits="0" data-linenumber="20">
+            
+            
+
+            
+
+            <code class="ruby">  def set_user</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="missed" data-hits="0" data-linenumber="21">
+            
+            
+
+            
+
+            <code class="ruby">    @user = User.find(params[:id])</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="missed" data-hits="0" data-linenumber="22">
+            
+            
+
+            
+
+            <code class="ruby">  end</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="missed" data-hits="0" data-linenumber="23">
             
             
 
@@ -2626,7 +3163,7 @@
 </div>
 
       
-        <div class="source_table" id="f7f5c7eb62e8c6624a08ee3dc4d24d56ce0aa1f6">
+        <div class="source_table" id="ec4e574b42a319cf22ff5170a40b1b6df532c7ea">
   <div class="header">
     <h3>app/helpers/application_helper.rb</h3>
     <h4>
@@ -2653,8 +3190,8 @@
     <ol>
       
         <div>
-          <li class="covered" data-hits="2" data-linenumber="1">
-            <span class="hits">2</span>
+          <li class="covered" data-hits="1" data-linenumber="1">
+            <span class="hits">1</span>
             
 
             
@@ -2679,7 +3216,7 @@
 </div>
 
       
-        <div class="source_table" id="e1de7aee8f784d53d399270b0f56237c86b41a68">
+        <div class="source_table" id="da31d0761941fd95a8113768c0c44dec0c6ac0ac">
   <div class="header">
     <h3>app/helpers/courses_helper.rb</h3>
     <h4>
@@ -2706,8 +3243,8 @@
     <ol>
       
         <div>
-          <li class="covered" data-hits="2" data-linenumber="1">
-            <span class="hits">2</span>
+          <li class="covered" data-hits="1" data-linenumber="1">
+            <span class="hits">1</span>
             
 
             
@@ -2732,7 +3269,7 @@
 </div>
 
       
-        <div class="source_table" id="f87ee15cb67ae675ebdacc0dd16177721b16bec9">
+        <div class="source_table" id="07dcd4828ea3814b0c4f945bd68ee77d6b8acbaa">
   <div class="header">
     <h3>app/helpers/profiles_helper.rb</h3>
     <h4>
@@ -2759,8 +3296,8 @@
     <ol>
       
         <div>
-          <li class="covered" data-hits="2" data-linenumber="1">
-            <span class="hits">2</span>
+          <li class="covered" data-hits="1" data-linenumber="1">
+            <span class="hits">1</span>
             
 
             
@@ -2785,12 +3322,12 @@
 </div>
 
       
-        <div class="source_table" id="629329696806eae67547c0677925d8db16ef9fc6">
+        <div class="source_table" id="9d3ff519738463e3bb46be0b7efa77740535d5b1">
   <div class="header">
     <h3>app/models/course.rb</h3>
     <h4>
-      <span class="green">
-  100.0%
+      <span class="red">
+  0.0%
 </span>
 
       lines covered
@@ -2799,9 +3336,9 @@
     
 
     <div class="t-line-summary">
-      <b>1</b> relevant lines.
-      <span class="green"><b>1</b> lines covered</span> and
-      <span class="red"><b>0</b> lines missed.</span>
+      <b>7</b> relevant lines.
+      <span class="green"><b>0</b> lines covered</span> and
+      <span class="red"><b>7</b> lines missed.</span>
     </div>
 
     
@@ -2812,8 +3349,8 @@
     <ol>
       
         <div>
-          <li class="covered" data-hits="2" data-linenumber="1">
-            <span class="hits">2</span>
+          <li class="missed" data-hits="0" data-linenumber="1">
+            
             
 
             
@@ -2823,13 +3360,79 @@
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="2">
+          <li class="missed" data-hits="0" data-linenumber="2">
             
             
 
             
 
-            <code class="ruby">end</code>
+            <code class="ruby">    has_many :course_enrollments</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="missed" data-hits="0" data-linenumber="3">
+            
+            
+
+            
+
+            <code class="ruby">    has_many :users, through: :course_enrollments</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="missed" data-hits="0" data-linenumber="4">
+            
+            
+
+            
+
+            <code class="ruby">    validates :course_id, presence: true, uniqueness: true</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="missed" data-hits="0" data-linenumber="5">
+            
+            
+
+            
+
+            <code class="ruby">    validates :course_title, presence: true</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="missed" data-hits="0" data-linenumber="6">
+            
+            
+
+            
+
+            <code class="ruby">    validates :instructor, presence: true</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="missed" data-hits="0" data-linenumber="7">
+            
+            
+
+            
+
+            <code class="ruby">  end</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="8">
+            
+            
+
+            
+
+            <code class="ruby">  </code>
           </li>
         </div>
       
@@ -2838,12 +3441,12 @@
 </div>
 
       
-        <div class="source_table" id="e4846f04f45ac85d4983bf7dc2c15f4b0291021b">
+        <div class="source_table" id="a2d12c77b82c0cf0284c7e65d14c09fd9cff8ba1">
   <div class="header">
     <h3>app/models/course_enrollment.rb</h3>
     <h4>
-      <span class="green">
-  100.0%
+      <span class="red">
+  0.0%
 </span>
 
       lines covered
@@ -2852,9 +3455,9 @@
     
 
     <div class="t-line-summary">
-      <b>1</b> relevant lines.
-      <span class="green"><b>1</b> lines covered</span> and
-      <span class="red"><b>0</b> lines missed.</span>
+      <b>10</b> relevant lines.
+      <span class="green"><b>0</b> lines covered</span> and
+      <span class="red"><b>10</b> lines missed.</span>
     </div>
 
     
@@ -2865,8 +3468,8 @@
     <ol>
       
         <div>
-          <li class="covered" data-hits="2" data-linenumber="1">
-            <span class="hits">2</span>
+          <li class="missed" data-hits="0" data-linenumber="1">
+            
             
 
             
@@ -2882,12 +3485,155 @@
 
             
 
-            <code class="ruby">  # Your model associations and validations go here</code>
+            <code class="ruby">  # belongs_to :user, foreign_key: &#39;uid&#39;</code>
           </li>
         </div>
       
         <div>
           <li class="never" data-hits="" data-linenumber="3">
+            
+            
+
+            
+
+            <code class="ruby">  # belongs_to :course, foreign_key: &#39;course_id&#39;</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="missed" data-hits="0" data-linenumber="4">
+            
+            
+
+            
+
+            <code class="ruby">  belongs_to :user, foreign_key: &#39;uid&#39;</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="missed" data-hits="0" data-linenumber="5">
+            
+            
+
+            
+
+            <code class="ruby">  belongs_to :course, foreign_key: &#39;course_id&#39;, primary_key: &#39;course_id&#39;</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="6">
+            
+            
+
+            
+
+            <code class="ruby"></code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="7">
+            
+            
+
+            
+
+            <code class="ruby"></code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="missed" data-hits="0" data-linenumber="8">
+            
+            
+
+            
+
+            <code class="ruby">  validates :course, presence: true</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="missed" data-hits="0" data-linenumber="9">
+            
+            
+
+            
+
+            <code class="ruby">  validates :year, presence: true</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="missed" data-hits="0" data-linenumber="10">
+            
+            
+
+            
+
+            <code class="ruby">  validates :grade, presence: true</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="11">
+            
+            
+
+            
+
+            <code class="ruby"></code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="12">
+            
+            
+
+            
+
+            <code class="ruby">  # Optionally, you can create a method to get the course number directly</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="missed" data-hits="0" data-linenumber="13">
+            
+            
+
+            
+
+            <code class="ruby">  def course_id</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="missed" data-hits="0" data-linenumber="14">
+            
+            
+
+            
+
+            <code class="ruby">    course.course_id</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="missed" data-hits="0" data-linenumber="15">
+            
+            
+
+            
+
+            <code class="ruby">  end</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="missed" data-hits="0" data-linenumber="16">
             
             
 
@@ -2902,12 +3648,12 @@
 </div>
 
       
-        <div class="source_table" id="ca2020b5e24a96ea344f0073a6de8e548c27df52">
+        <div class="source_table" id="8629f2c6740b7dffe2f96943f7bf2ed9b0c8fc12">
   <div class="header">
     <h3>app/models/user.rb</h3>
     <h4>
-      <span class="green">
-  100.0%
+      <span class="red">
+  0.0%
 </span>
 
       lines covered
@@ -2916,9 +3662,9 @@
     
 
     <div class="t-line-summary">
-      <b>5</b> relevant lines.
-      <span class="green"><b>5</b> lines covered</span> and
-      <span class="red"><b>0</b> lines missed.</span>
+      <b>63</b> relevant lines.
+      <span class="green"><b>0</b> lines covered</span> and
+      <span class="red"><b>63</b> lines missed.</span>
     </div>
 
     
@@ -2929,8 +3675,8 @@
     <ol>
       
         <div>
-          <li class="covered" data-hits="2" data-linenumber="1">
-            <span class="hits">2</span>
+          <li class="missed" data-hits="0" data-linenumber="1">
+            
             
 
             
@@ -2951,8 +3697,8 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="2" data-linenumber="3">
-            <span class="hits">2</span>
+          <li class="missed" data-hits="0" data-linenumber="3">
+            
             
 
             
@@ -2962,8 +3708,8 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="2" data-linenumber="4">
-            <span class="hits">2</span>
+          <li class="missed" data-hits="0" data-linenumber="4">
+            
             
 
             
@@ -2973,46 +3719,46 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="2" data-linenumber="5">
-            <span class="hits">2</span>
+          <li class="never" data-hits="" data-linenumber="5">
+            
             
 
             
 
-            <code class="ruby">  has_many :course_enrollments</code>
+            <code class="ruby">  # has_many :course_enrollments</code>
           </li>
         </div>
       
         <div>
-          <li class="covered" data-hits="2" data-linenumber="6">
-            <span class="hits">2</span>
+          <li class="missed" data-hits="0" data-linenumber="6">
+            
+            
+
+            
+
+            <code class="ruby">  self.primary_key = &#39;uid&#39;</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="missed" data-hits="0" data-linenumber="7">
+            
+            
+
+            
+
+            <code class="ruby">  has_many :course_enrollments, foreign_key: &#39;uid&#39;</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="missed" data-hits="0" data-linenumber="8">
+            
             
 
             
 
             <code class="ruby">  has_many :courses, through: :course_enrollments</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="never" data-hits="" data-linenumber="7">
-            
-            
-
-            
-
-            <code class="ruby"></code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="never" data-hits="" data-linenumber="8">
-            
-            
-
-            
-
-            <code class="ruby">    # def self.from_omniauth(auth)</code>
           </li>
         </div>
       
@@ -3023,7 +3769,7 @@
 
             
 
-            <code class="ruby">    #     User.find_or_create_by!(uid: auth[:uid]) do |u|</code>
+            <code class="ruby"></code>
           </li>
         </div>
       
@@ -3034,128 +3780,128 @@
 
             
 
-            <code class="ruby">    #       u.provider = auth[:provider]</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="never" data-hits="" data-linenumber="11">
-            
-            
-
-            
-
-            <code class="ruby">    #       u.uid = auth[:uid]</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="never" data-hits="" data-linenumber="12">
-            
-            
-
-            
-
-            <code class="ruby">    #       u.oauth_token = auth[:credentials][:token]</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="never" data-hits="" data-linenumber="13">
-            
-            
-
-            
-
-            <code class="ruby">    #       u.oauth_expires_at = Time.at(auth[:credentials][:expires_at])</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="never" data-hits="" data-linenumber="14">
-            
-            
-
-            
-
-            <code class="ruby">    #       u.email = auth[:info][:email]</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="never" data-hits="" data-linenumber="15">
-            
-            
-
-            
-
-            <code class="ruby">    #       u.major = auth[:info][:major]</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="never" data-hits="" data-linenumber="16">
-            
-            
-
-            
-
-            <code class="ruby">    #       u.first_name = auth[:info][:first_name]</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="never" data-hits="" data-linenumber="17">
-            
-            
-
-            
-
-            <code class="ruby">    #       u.last_name = auth[:info][:last_name]</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="never" data-hits="" data-linenumber="18">
-            
-            
-
-            
-
-            <code class="ruby">    #       u.profile_pic = auth[:info][:image]</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="never" data-hits="" data-linenumber="19">
-            
-            
-
-            
-
-            <code class="ruby">    #     end</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="never" data-hits="" data-linenumber="20">
-            
-            
-
-            
-
-            <code class="ruby">    # end</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="never" data-hits="" data-linenumber="21">
-            
-            
-
-            
-
             <code class="ruby"></code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="missed" data-hits="0" data-linenumber="11">
+            
+            
+
+            
+
+            <code class="ruby">  def cosine_similarity(vec1, vec2)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="missed" data-hits="0" data-linenumber="12">
+            
+            
+
+            
+
+            <code class="ruby">    raise &#39;Vectors must be of same length&#39; if vec1.size != vec2.size</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="missed" data-hits="0" data-linenumber="13">
+            
+            
+
+            
+
+            <code class="ruby">    dot_product = vec1.zip(vec2).reduce(0) { |sum, (v1, v2)| sum + v1 * v2 }</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="missed" data-hits="0" data-linenumber="14">
+            
+            
+
+            
+
+            <code class="ruby">    magnitude1 = Math.sqrt(vec1.reduce(0) { |sum, v| sum + v**2 })</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="missed" data-hits="0" data-linenumber="15">
+            
+            
+
+            
+
+            <code class="ruby">    magnitude2 = Math.sqrt(vec2.reduce(0) { |sum, v| sum + v**2 })</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="missed" data-hits="0" data-linenumber="16">
+            
+            
+
+            
+
+            <code class="ruby">    if magnitude1 == 0 || magnitude2 == 0</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="missed" data-hits="0" data-linenumber="17">
+            
+            
+
+            
+
+            <code class="ruby">        0</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="missed" data-hits="0" data-linenumber="18">
+            
+            
+
+            
+
+            <code class="ruby">    else</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="missed" data-hits="0" data-linenumber="19">
+            
+            
+
+            
+
+            <code class="ruby">        dot_product / (magnitude1 * magnitude2)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="missed" data-hits="0" data-linenumber="20">
+            
+            
+
+            
+
+            <code class="ruby">    end</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="missed" data-hits="0" data-linenumber="21">
+            
+            
+
+            
+
+            <code class="ruby">  end</code>
           </li>
         </div>
       
@@ -3166,18 +3912,18 @@
 
             
 
-            <code class="ruby">    # def self.get_user_info(uid)</code>
+            <code class="ruby"></code>
           </li>
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="23">
+          <li class="missed" data-hits="0" data-linenumber="23">
             
             
 
             
 
-            <code class="ruby">    #     user = User.where(uid: uid).first</code>
+            <code class="ruby">  def recommend_courses(top_n_courses = 5)</code>
           </li>
         </div>
       
@@ -3188,18 +3934,18 @@
 
             
 
-            <code class="ruby">    #     if user.nil?</code>
+            <code class="ruby">    # Get all course IDs</code>
           </li>
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="25">
+          <li class="missed" data-hits="0" data-linenumber="25">
             
             
 
             
 
-            <code class="ruby">    #       nil</code>
+            <code class="ruby">    all_course_ids = Course.pluck(:id)</code>
           </li>
         </div>
       
@@ -3210,7 +3956,7 @@
 
             
 
-            <code class="ruby">    #     else</code>
+            <code class="ruby">    </code>
           </li>
         </div>
       
@@ -3221,29 +3967,29 @@
 
             
 
-            <code class="ruby">    #       {</code>
+            <code class="ruby">    # Vector representing the courses the current user is enrolled in</code>
           </li>
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="28">
+          <li class="missed" data-hits="0" data-linenumber="28">
             
             
 
             
 
-            <code class="ruby">    #         :uid =&gt; user[:uid],</code>
+            <code class="ruby">    my_course_ids = self.courses.pluck(:id)</code>
           </li>
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="29">
+          <li class="missed" data-hits="0" data-linenumber="29">
             
             
 
             
 
-            <code class="ruby">    #         :email =&gt; user[:email],</code>
+            <code class="ruby">    my_courses_vector = all_course_ids.map { |id| my_course_ids.include?(id) ? 1 : 0 }</code>
           </li>
         </div>
       
@@ -3254,7 +4000,7 @@
 
             
 
-            <code class="ruby">    #         :first_name =&gt; user[:first_name],</code>
+            <code class="ruby">    </code>
           </li>
         </div>
       
@@ -3265,18 +4011,18 @@
 
             
 
-            <code class="ruby">    #         :last_name =&gt; user[:last_name],</code>
+            <code class="ruby">    # Get all other users excluding the current user</code>
           </li>
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="32">
+          <li class="missed" data-hits="0" data-linenumber="32">
             
             
 
             
 
-            <code class="ruby">    #         :department =&gt; user[:department],</code>
+            <code class="ruby">    other_users = User.where.not(id: self.id)</code>
           </li>
         </div>
       
@@ -3287,7 +4033,7 @@
 
             
 
-            <code class="ruby">    #         :profile_pic =&gt; user[:profile_pic]</code>
+            <code class="ruby">    </code>
           </li>
         </div>
       
@@ -3298,51 +4044,51 @@
 
             
 
-            <code class="ruby">    #       }</code>
+            <code class="ruby">    # Calculate the cosine similarity between the current user and all other users</code>
           </li>
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="35">
+          <li class="missed" data-hits="0" data-linenumber="35">
             
             
 
             
 
-            <code class="ruby">    #     end</code>
+            <code class="ruby">    similarities = other_users.each_with_object({}) do |user, memo|</code>
           </li>
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="36">
+          <li class="missed" data-hits="0" data-linenumber="36">
             
             
 
             
 
-            <code class="ruby">    # end</code>
+            <code class="ruby">      other_user_courses_vector = all_course_ids.map { |id| user.courses.pluck(:id).include?(id) ? 1 : 0 }</code>
           </li>
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="37">
+          <li class="missed" data-hits="0" data-linenumber="37">
             
             
 
             
 
-            <code class="ruby">    #</code>
+            <code class="ruby">      memo[user.id] = cosine_similarity(my_courses_vector, other_user_courses_vector)</code>
           </li>
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="38">
+          <li class="missed" data-hits="0" data-linenumber="38">
             
             
 
             
 
-            <code class="ruby">    # def self.get_email(uid)</code>
+            <code class="ruby">    end</code>
           </li>
         </div>
       
@@ -3353,7 +4099,7 @@
 
             
 
-            <code class="ruby">    #     user = User.where(uid: uid).first</code>
+            <code class="ruby">    </code>
           </li>
         </div>
       
@@ -3364,18 +4110,18 @@
 
             
 
-            <code class="ruby">    #     if user.nil?</code>
+            <code class="ruby">    # Sort the users by similarity and take the top 5</code>
           </li>
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="41">
+          <li class="missed" data-hits="0" data-linenumber="41">
             
             
 
             
 
-            <code class="ruby">    #       nil</code>
+            <code class="ruby">    top_users = similarities.sort_by { |_uid, similarity| -similarity }.map(&amp;:first).first(5)</code>
           </li>
         </div>
       
@@ -3386,7 +4132,7 @@
 
             
 
-            <code class="ruby">    #     end</code>
+            <code class="ruby">    </code>
           </li>
         </div>
       
@@ -3397,84 +4143,84 @@
 
             
 
-            <code class="ruby">    #     user[:email]</code>
+            <code class="ruby">    # Get the top N recommended course IDs</code>
           </li>
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="44">
+          <li class="missed" data-hits="0" data-linenumber="44">
             
             
 
             
 
-            <code class="ruby">    # end</code>
+            <code class="ruby">    recommended_course_ids = CourseEnrollment</code>
           </li>
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="45">
+          <li class="missed" data-hits="0" data-linenumber="45">
             
             
 
             
 
-            <code class="ruby"></code>
+            <code class="ruby">                            .where(uid: top_users)</code>
           </li>
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="46">
+          <li class="missed" data-hits="0" data-linenumber="46">
             
             
 
             
 
-            <code class="ruby"></code>
+            <code class="ruby">                            .where.not(course_id: my_course_ids)</code>
           </li>
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="47">
+          <li class="missed" data-hits="0" data-linenumber="47">
             
             
 
             
 
-            <code class="ruby">  # def cosine_similarity(vec1, vec2)</code>
+            <code class="ruby">                            .group(:course_id)</code>
           </li>
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="48">
+          <li class="missed" data-hits="0" data-linenumber="48">
             
             
 
             
 
-            <code class="ruby">  #   raise &#39;Vectors must be of same length&#39; if vec1.size != vec2.size</code>
+            <code class="ruby">                            .order(&#39;COUNT(uid) DESC&#39;)</code>
           </li>
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="49">
+          <li class="missed" data-hits="0" data-linenumber="49">
             
             
 
             
 
-            <code class="ruby">  #   dot_product = vec1.zip(vec2).reduce(0) { |sum, (v1, v2)| sum + v1 * v2 }</code>
+            <code class="ruby">                            .limit(top_n_courses)</code>
           </li>
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="50">
+          <li class="missed" data-hits="0" data-linenumber="50">
             
             
 
             
 
-            <code class="ruby">  #   magnitude1 = Math.sqrt(vec1.reduce(0) { |sum, v| sum + v**2 })</code>
+            <code class="ruby">                            .pluck(:course_id)</code>
           </li>
         </div>
       
@@ -3485,7 +4231,7 @@
 
             
 
-            <code class="ruby">  #   magnitude2 = Math.sqrt(vec2.reduce(0) { |sum, v| sum + v**2 })</code>
+            <code class="ruby"></code>
           </li>
         </div>
       
@@ -3496,7 +4242,7 @@
 
             
 
-            <code class="ruby">  #   if magnitude1 == 0 || magnitude2 == 0</code>
+            <code class="ruby">  </code>
           </li>
         </div>
       
@@ -3507,95 +4253,95 @@
 
             
 
-            <code class="ruby">  #       0</code>
+            <code class="ruby">    # Calculate the average GPA for each recommended course based on the top 5 similar users&#39; grades</code>
           </li>
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="54">
+          <li class="missed" data-hits="0" data-linenumber="54">
             
             
 
             
 
-            <code class="ruby">  #   else</code>
+            <code class="ruby">    recommended_courses_with_gpa = recommended_course_ids.map do |course_id|</code>
           </li>
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="55">
+          <li class="missed" data-hits="0" data-linenumber="55">
             
             
 
             
 
-            <code class="ruby">  #       dot_product / (magnitude1 * magnitude2)</code>
+            <code class="ruby">      enrollments = CourseEnrollment.where(course: course_id, user: top_users)</code>
           </li>
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="56">
+          <li class="missed" data-hits="0" data-linenumber="56">
             
             
 
             
 
-            <code class="ruby">  #   end</code>
+            <code class="ruby">      total_gpa = enrollments.reduce(0) do |sum, enrollment|</code>
           </li>
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="57">
+          <li class="missed" data-hits="0" data-linenumber="57">
             
             
 
             
 
-            <code class="ruby">  # end</code>
+            <code class="ruby">        sum + grade_to_gpa(enrollment.grade)</code>
           </li>
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="58">
+          <li class="missed" data-hits="0" data-linenumber="58">
             
             
 
             
 
-            <code class="ruby"></code>
+            <code class="ruby">      end</code>
           </li>
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="59">
+          <li class="missed" data-hits="0" data-linenumber="59">
             
             
 
             
 
-            <code class="ruby">  # def recommend_courses(top_n_students: 5, top_n_courses: 5)</code>
+            <code class="ruby">      average_gpa = enrollments.size &gt; 0 ? total_gpa / enrollments.size : 0</code>
           </li>
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="60">
+          <li class="missed" data-hits="0" data-linenumber="60">
             
             
 
             
 
-            <code class="ruby">  #     all_course_ids = Course.pluck(:id)</code>
+            <code class="ruby">      { course_id: course_id, average_gpa: average_gpa }</code>
           </li>
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="61">
+          <li class="missed" data-hits="0" data-linenumber="61">
             
             
 
             
 
-            <code class="ruby">  #     my_courses_vector = all_course_ids.map { |id| self.courses.exists?(id) ? 1 : 0 }</code>
+            <code class="ruby">    end</code>
           </li>
         </div>
       
@@ -3606,7 +4352,7 @@
 
             
 
-            <code class="ruby">  #     other_users = User.where.not(id: self.id)</code>
+            <code class="ruby">  </code>
           </li>
         </div>
       
@@ -3617,18 +4363,18 @@
 
             
 
-            <code class="ruby"></code>
+            <code class="ruby">    # Sort the recommended courses by their average GPA in descending order</code>
           </li>
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="64">
+          <li class="missed" data-hits="0" data-linenumber="64">
             
             
 
             
 
-            <code class="ruby"></code>
+            <code class="ruby">    recommended_courses_sorted_by_gpa = recommended_courses_with_gpa.sort_by { |c| -c[:average_gpa] }</code>
           </li>
         </div>
       
@@ -3639,7 +4385,7 @@
 
             
 
-            <code class="ruby">  #     similarities = other_users.each_with_object({}) do |user, memo|</code>
+            <code class="ruby">    </code>
           </li>
         </div>
       
@@ -3650,29 +4396,29 @@
 
             
 
-            <code class="ruby"></code>
+            <code class="ruby">    # Return the courses with their calculated average GPA</code>
           </li>
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="67">
+          <li class="missed" data-hits="0" data-linenumber="67">
             
             
 
             
 
-            <code class="ruby">  #         other_user_courses_vector = all_course_ids.map { |id| user.courses.exists?(id) ? 1 : 0 }</code>
+            <code class="ruby">    recommended_courses_sorted_by_gpa</code>
           </li>
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="68">
+          <li class="missed" data-hits="0" data-linenumber="68">
             
             
 
             
 
-            <code class="ruby">    </code>
+            <code class="ruby">  end</code>
           </li>
         </div>
       
@@ -3683,166 +4429,232 @@
 
             
 
-            <code class="ruby">  #         memo[user.id] = cosine_similarity(my_courses_vector, other_user_courses_vector)</code>
+            <code class="ruby">  </code>
           </li>
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="70">
+          <li class="missed" data-hits="0" data-linenumber="70">
             
             
 
             
 
-            <code class="ruby">  #     end</code>
+            <code class="ruby">  private</code>
           </li>
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="71">
+          <li class="missed" data-hits="0" data-linenumber="71">
             
             
 
             
 
-            <code class="ruby"></code>
+            <code class="ruby">  GRADE_TO_GPA = {</code>
           </li>
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="72">
+          <li class="missed" data-hits="0" data-linenumber="72">
             
             
 
             
 
-            <code class="ruby">  #     top_users = similarities.sort_by { |_uid, similarity| -similarity }.map(&amp;:first).first(top_n_students)</code>
+            <code class="ruby">    &quot;A+&quot;: 4.33,</code>
           </li>
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="73">
+          <li class="missed" data-hits="0" data-linenumber="73">
             
             
 
             
 
-            <code class="ruby"></code>
+            <code class="ruby">    &quot;A&quot;: 4.0,</code>
           </li>
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="74">
+          <li class="missed" data-hits="0" data-linenumber="74">
             
             
 
             
 
-            <code class="ruby">  #     recommended_course_ids = CourseEnrollment</code>
+            <code class="ruby">    &quot;A-&quot;: 3.7,</code>
           </li>
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="75">
+          <li class="missed" data-hits="0" data-linenumber="75">
             
             
 
             
 
-            <code class="ruby">  #                             .where(uid: top_users)</code>
+            <code class="ruby">    &quot;B+&quot;: 3.3,</code>
           </li>
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="76">
+          <li class="missed" data-hits="0" data-linenumber="76">
             
             
 
             
 
-            <code class="ruby">  #                             .where.not(course_id: my_courses)</code>
+            <code class="ruby">    &quot;B&quot;: 3.0,</code>
           </li>
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="77">
+          <li class="missed" data-hits="0" data-linenumber="77">
             
             
 
             
 
-            <code class="ruby">  #                             .group(:course_id)</code>
+            <code class="ruby">    &quot;B-&quot;: 2.7,</code>
           </li>
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="78">
+          <li class="missed" data-hits="0" data-linenumber="78">
             
             
 
             
 
-            <code class="ruby">  #                             .order(&#39;COUNT(uid) DESC&#39;)</code>
+            <code class="ruby">    &quot;C+&quot;: 2.3,</code>
           </li>
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="79">
+          <li class="missed" data-hits="0" data-linenumber="79">
             
             
 
             
 
-            <code class="ruby">  #                             .limit(top_n_courses)</code>
+            <code class="ruby">    &quot;C&quot;: 2.0,</code>
           </li>
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="80">
+          <li class="missed" data-hits="0" data-linenumber="80">
             
             
 
             
 
-            <code class="ruby">  #                             .pluck(:course_id)</code>
+            <code class="ruby">    &quot;C-&quot;: 1.7,</code>
           </li>
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="81">
+          <li class="missed" data-hits="0" data-linenumber="81">
             
             
 
             
 
-            <code class="ruby"></code>
+            <code class="ruby">    &quot;D+&quot;: 1.3,</code>
           </li>
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="82">
+          <li class="missed" data-hits="0" data-linenumber="82">
             
             
 
             
 
-            <code class="ruby">  #     Course.where(id: recommended_course_ids)</code>
+            <code class="ruby">    &quot;D&quot;: 1.0</code>
           </li>
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="83">
+          <li class="missed" data-hits="0" data-linenumber="83">
             
             
 
             
 
-            <code class="ruby">  # end</code>
+            <code class="ruby">}</code>
           </li>
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="84">
+          <li class="missed" data-hits="0" data-linenumber="84">
+            
+            
+
+            
+
+            <code class="ruby">def grade_to_gpa(grade)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="85">
+            
+            
+
+            
+
+            <code class="ruby">  # Ensure that grades are treated as strings and then converted to symbols</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="missed" data-hits="0" data-linenumber="86">
+            
+            
+
+            
+
+            <code class="ruby">  GRADE_TO_GPA[grade.upcase.strip.to_sym] || 0</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="missed" data-hits="0" data-linenumber="87">
+            
+            
+
+            
+
+            <code class="ruby">end</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="88">
+            
+            
+
+            
+
+            <code class="ruby">  </code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="89">
+            
+            
+
+            
+
+            <code class="ruby">  </code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="missed" data-hits="0" data-linenumber="90">
             
             
 

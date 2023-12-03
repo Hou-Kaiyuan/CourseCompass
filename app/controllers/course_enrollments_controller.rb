@@ -22,7 +22,24 @@ class CourseEnrollmentsController < ApplicationController
     end
   end
   
+  def new
+    # Assuming that you have defined a method to set the user based on the session or params
+    @user = User.find_by(uid: params[:user_uid])
+    @course_enrollment = @user.course_enrollments.new
+  end
   
+  def create
+    @course_enrollment = CourseEnrollment.new(course_enrollment_params)
+    @course_enrollment.user = User.find_by(uid: params[:user_uid])
+  
+    if @course_enrollment.save
+      redirect_to profiles_path(id: @course_enrollment.user.uid), notice: 'Course enrollment was successfully created.'
+    else
+      redirect_to root_path, notice: "Create course enrollment failed."
+    end
+  end
+  
+
   
   private
 
