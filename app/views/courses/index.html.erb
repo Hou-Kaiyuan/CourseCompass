@@ -2,19 +2,18 @@
 <div class="courses-index">
   <h2 class="text-center my-4">All Courses</h2>
 
-  <div class="row mb-4">
-    <div class="col-lg-8">
-      <%= form_tag courses_path, method: :get, class: 'form-inline justify-content-start mb-2 mb-lg-0' do %>
-        <div class="form-group mr-2">
-          <%= text_field_tag :search, params[:search], placeholder: 'Search for courses', class: 'form-control' %>
-        </div>
-        <%= submit_tag 'Search', class: 'btn btn-outline-secondary' %>
-      <% end %>
-    </div>
-    <div class="col-lg-4 text-lg-right">
-      <%= link_to 'Add New Course', new_course_path, class: 'btn btn-success' %>
-    </div>
+  <div class="row mb-4 align-items-center">
+  <div class="col-lg-8 d-flex">
+    <%= form_tag courses_path, method: :get, class: 'form-inline d-flex flex-grow-1 mr-2' do %>
+      <%= text_field_tag :search, params[:search], placeholder: 'Search for courses', class: 'form-control flex-grow-1 mr-2' %>
+      <%= submit_tag 'Search', class: 'btn btn-outline-secondary' %>
+    <% end %>
   </div>
+  <div class="col-lg-4 d-flex justify-content-lg-end">
+    <%= link_to 'Add New Course', new_course_path, class: 'btn btn-success' %>
+  </div>
+</div>
+
 
   <div class="table-responsive">
     <table class="table table-hover">
@@ -39,12 +38,15 @@
     </table>
   </div>
 
-  <div class="pagination-wrapper">
-    <%= will_paginate @courses, renderer: WillPaginate::ActionView::LinkRenderer, outer_window: 0, inner_window: 2, class: 'pagination justify-content-center' %>
+  <div class="pagination-wrapper d-flex justify-content-center">
+    <%= will_paginate @courses, renderer: WillPaginate::ActionView::LinkRenderer, outer_window: 0, inner_window: 2 %>
   </div>
 </div>
 
 <style>
+.pagination-wrapper {
+  margin-top: 20px; /* Add some space above the pagination */
+}
 /* Pagination Custom Styles */
 .pagination {
   display: inline-block;
@@ -116,5 +118,4 @@
   border-color: #ddd;
   cursor: not-allowed;
 }
-
 </style>

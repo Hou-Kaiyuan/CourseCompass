@@ -15,6 +15,105 @@
  */
 
 
-.navbar {
+/* .navbar {
     background-color: red;
+} */
+
+/* Custom form styling */
+/* Ensure you have this in your CSS file */
+/* Import an artistic font from Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+
+.navbar-brand-container {
+    text-align: center;
+    background: url('https://www.college.columbia.edu/cct/sites/default/files/styles/100_width/public/Archive_Winter19/CCT_Winter19_Page_09_Image_0001.jpg?itok=pZjrfBua') no-repeat center center;
+    background-size: cover;
+    padding: 20px 0; /* Increase padding for visual space */
 }
+
+.navbar-brand {
+    font-family: 'Great Vibes', cursive; /* Use the imported font */
+    font-size: 4em; /* Increase size for prominence */
+    color: #ffd700; /* Gold color for an elegant look */
+    margin: 0;
+    padding: 20px 0;
+    text-shadow: 2px 2px 4px #000000; /* Shadow for better readability */
+}
+
+.navbar-custom {
+    background-color: #002b7f; /* Deep blue background for contrast */
+    padding: 10px 0;
+}
+
+.navbar-nav .nav-link {
+    font-size: 1.2em;
+    color: #ffffff; /* White color for contrast */
+    transition: color 0.3s ease;
+    padding: 8px 15px; /* Add more space around links */
+}
+
+.navbar-nav .nav-link:hover, .navbar-nav .nav-link:focus {
+    color: #ffd700; /* Gold color when hovered or focused */
+    background-color: rgba(255,255,255,0.2); /* Slight background highlight */
+}
+
+.navbar-nav .active {
+    color: #ffd700; /* Maintain gold color for active link */
+    border-bottom: 3px solid #ffd700; /* Thicker underline for active link */
+}
+
+.navbar-nav.mr-auto {
+    flex-grow: 1;
+  }
+  
+  .navbar-nav {
+    align-items: center;
+  }
+  
+  .navbar-custom .navbar-nav .nav-item .nav-link {
+    padding: 0.5rem 1rem; /* Add padding to nav links for better spacing */
+  }
+  
+  .navbar-custom {
+    justify-content: flex-end;
+  }
+  
+  /* Ensure the brand is centered on all viewports */
+  .navbar-brand-container .navbar-brand {
+    display: block;
+    width: 100%;
+    text-align: center;
+  }
+
+  
+/* Further customizations for mobile devices */
+@media (max-width: 991px) {
+    .navbar-brand-container {
+        text-align: left;
+        background-size: cover;
+        padding: 10px;
+    }
+
+    .navbar-custom {
+        background-color: transparent; /* Optional: make navbar transparent on small screens */
+    }
+    
+    .navbar-toggler {
+        border-color: #ffd700; /* Gold color for the toggle icon */
+    }
+    
+    .navbar-toggler-icon {
+        background-image: url('data:image/svg+xml;charset=utf8,%3Csvg viewBox=\'0 0 30 30\' xmlns=\'http://www.w3.org/2000/svg\'%3E%3Cpath stroke=\'rgba(255,215,0,0.7)\' stroke-width=\'2\' stroke-linecap=\'round\' stroke-miterlimit=\'10\' d=\'M4 7h22M4 15h22M4 23h22\'/%3E%3C/svg%3E');
+    }
+}
+
+.footer {
+    background-color: #002b7f; /* Match the navbar color */
+    color: #ffffff; /* White text for readability */
+    padding: 10px 0;
+}
+
+.footer .text-muted {
+    color: #cccccc; /* Slightly lighter color for muted text */
+}
+

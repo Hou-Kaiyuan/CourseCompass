@@ -1,50 +1,91 @@
-<h1>Add New Course</h1>
+<div class="container mt-5">
+  <h1 class="text-center mb-4">Add New Course</h1>
 
-<%= form_for(@course, local: true) do |form| %>
-  <div class="form-group">
-    <%= form.label :course_id, 'Course Number' %><span class="text-danger">*</span>
-    <%= form.text_field :course_id, class: 'form-control', required: true %>
+  <%= form_for(@course, local: true, html: { class: 'needs-validation', novalidate: true }) do |form| %>
+    <div class="form-row">
+      <div class="col-md-6 mb-3">
+        <%= form.label :course_id, 'Course Number' %><span class="text-danger">*</span>
+        <%= form.text_field :course_id, class: 'form-control', placeholder: 'e.g., COMS4512', required: true %>
+        <div class="invalid-feedback">
+          Course number is required.
+        </div>
+      </div>
+
+      <div class="col-md-6 mb-3">
+        <%= form.label :course_title, 'Course Title' %><span class="text-danger">*</span>
+        <%= form.text_field :course_title, class: 'form-control', placeholder: 'e.g., SaaS', required: true %>
+        <div class="invalid-feedback">
+          Course title is required.
+        </div>
+      </div>
+    </div>
+
+    <div class="form-row">
+      <div class="col-md-4 mb-3">
+        <%= form.label :offering_term, 'Offering Term' %>
+        <%= form.text_field :offering_term, class: 'form-control', placeholder: 'e.g., Fall 2023' %>
+      </div>
+
+      <div class="col-md-4 mb-3">
+        <%= form.label :instructor, 'Instructor' %><span class="text-danger">*</span>
+        <%= form.text_field :instructor, class: 'form-control', placeholder: 'e.g., Jane Doe', required: true %>
+        <div class="invalid-feedback">
+          Instructor name is required.
+        </div>
+      </div>
+
+      <div class="col-md-4 mb-3">
+        <%= form.label :website, 'Course Website' %>
+        <%= form.text_field :website, class: 'form-control', placeholder: 'e.g., http://coursewebsite.com' %>
+      </div>
+    </div>
+
+    <div class="form-group">
+    <div class="custom-control custom-checkbox mb-3">
+    <%= form.check_box :midterm, class: 'custom-control-input', id: 'midtermCheckbox' %>
+    <%= form.label :midterm, 'Midterm Exam', class: 'custom-control-label', for: 'midtermCheckbox' %>
   </div>
-
-  <div class="form-group">
-    <%= form.label :course_title, 'Course Title' %><span class="text-danger">*</span>
-    <%= form.text_field :course_title, class: 'form-control', required: true %>
+  
+  <div class="custom-control custom-checkbox mb-3">
+    <%= form.check_box :project, class: 'custom-control-input', id: 'projectCheckbox' %>
+    <%= form.label :project, 'Project', class: 'custom-control-label', for: 'projectCheckbox' %>
   </div>
+  
+    </div>
 
-  <div class="form-group">
-    <%= form.label :offering_term, 'Offering Term' %>
-    <%= form.text_field :offering_term, class: 'form-control', placeholder: 'Fall 2023' %>
-  </div>
+    <div class="form-row">
+      <div class="col-md-6 mb-3">
+        <%= form.label :days, 'Days' %>
+        <%= form.text_field :days, class: 'form-control', placeholder: 'e.g., MW' %>
+      </div>
 
-  <div class="form-group">
-    <%= form.label :midterm, 'Midterm Exam' %>
-    <%= form.check_box :midterm %>
-  </div>
+      <div class="col-md-6 mb-3">
+        <%= form.label :time, 'Time' %>
+        <%= form.text_field :time, class: 'form-control', placeholder: 'e.g., 8:40 AM - 9:55 AM' %>
+      </div>
+    </div>
 
-  <div class="form-group">
-    <%= form.label :project, 'Project' %>
-    <%= form.check_box :project %>
-  </div>
+    <%= form.submit 'Create Course', class: 'btn btn-success btn-lg btn-block' %>
+  <% end %>
+</div>
 
-  <div class="form-group">
-    <%= form.label :instructor, 'Instructor' %><span class="text-danger">*</span>
-    <%= form.text_field :instructor, class: 'form-control', required: true %>
-  </div>
 
-  <div class="form-group">
-    <%= form.label :website, 'Course Website' %>
-    <%= form.text_field :website, class: 'form-control' %>
-  </div>
-
-  <div class="form-group">
-    <%= form.label :days, 'Days' %>
-    <%= form.text_field :days, class: 'form-control', placeholder: 'MW' %>
-  </div>
-
-  <div class="form-group">
-    <%= form.label :time, 'Time' %>
-    <%= form.text_field :time, class: 'form-control', placeholder: '8:40 AM - 9:55 AM' %>
-  </div>
-
-  <%= form.submit 'Create Course', class: 'btn btn-primary' %>
-<% end %>
+<script>
+(function() {
+  'use strict';
+  window.addEventListener('load', function() {
+    // Fetch all the forms we want to apply custom Bootstrap validation styles to
+    var forms = document.getElementsByClassName('needs-validation');
+    // Loop over them and prevent submission
+    var validation = Array.prototype.filter.call(forms, function(form) {
+      form.addEventListener('submit', function(event) {
+        if (form.checkValidity() === false) {
+          event.preventDefault();
+          event.stopPropagation();
+        }
+        form.classList.add('was-validated');
+      }, false);
+    });
+  }, false);
+})();
+</script>
