@@ -1,52 +1,84 @@
 <!-- app/views/courses/show.html.erb -->
-<h2>Details about <em><%= @course.course_title %></em></h2>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title><%= @course.course_title %></title>
+  <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
 
-<ul id="details">
-  <li>
-    Course Number:
-    <%= @course.course_id %>
-  </li>
-  <li>
-    Offering Term:
-    <%= @course.offering_term %>
-  </li>
-  <li>
-    Midterm:
-    <%= @course.midterm == 1 ? 'Yes' : 'No' %>
-  </li>
-  <li>
-    Project:
-    <%= @course.project == 1 ? 'Yes' : 'No' %>
-  </li>
-  <li>
-    Instructor:
-    <%= @course.instructor %>
-  </li>
-  <li>
-    Time:
-    <%= @course.time %>
-  </li>
-  <li>
-    Days:
-    <%= @course.days %>
-  </li>
-  <li>
-    Website:
-    <%= link_to @course.website, @course.website %>
-  </li>
-</ul>
+<div class="container mt-5">
+  <h2 class="mb-4 edit-btn"><%= @course.course_title %></h2>
+  <ul class="list-head">
+    <li class="list-item">
+    <span>
+      Course Number:
+      <%= @course.course_id %>
+    </span>
+    </li>
+    <li class="list-item">
+    <span>
+      Offering Term:
+      <%= @course.offering_term %>
+    </span>
+    </li>
+    <li class="list-item">
+    <span>
+      Midterm:
+      <%= @course.midterm == 1 ? 'Yes' : 'No' %>
+    </span>
+    </li>
+    <li class="list-item">
+    <span>
+      Project:
+      <%= @course.project == 1 ? 'Yes' : 'No' %>
+    </span>
+    </li>
+    <li class="list-item">
+    <span>
+      Instructor:
+      <%= @course.instructor %>
+    </span>
+    </li>
+    <li class="list-item">
+        <span>
+          Time:
+          <%= @course.time %>
+        </span>
+    </li>
+    <li class="list-item">
+    <span>
+      Days:
+      <%= @course.days %>
+    </span>
+    </li>
+    <li class="list-item">
+    <span>
+      Website:
+      <%= link_to @course.website, @course.website %>
+    </span>
+    </li>
+  </ul>
 
-<h3>Description:</h3>
-<p id="description">
-  <%= "Course descriptions go here" %>
-</p>
+  <h3 class="mt-4">Description:</h3>
+  <p class="lead" id="description">
+    <%= "Course descriptions go here" %>
+  </p>
 
-<div class="row">
-  <% if session[:uid].present? %>
-    <%= link_to 'Add to Enrolled Courses', add_to_enrolled_course_path(@course), class: 'btn btn-success col-3' %>
-  <% end %>
+  <div class="row mt-4">
+    <% if session[:uid].present? %>
+      <%= link_to 'Add to Enrolled Courses', add_to_enrolled_course_path(@course), class: 'btn btn-success col-md-3 view-course-btn' %>
+    <% end %>
 
-  <%= link_to 'Edit', edit_course_path(@course), class: 'btn btn-primary col-3' %>
-  <%= link_to 'Delete', course_path(@course), 'data-method' => 'delete', 'data-confirm' => 'Are you sure?', class: 'btn btn-danger col-3' %>
-  <%= link_to 'Back to course list', courses_path, class: 'btn btn-primary col-3' %>
+    <%= link_to 'Edit', edit_course_path(@course), class: 'btn btn-primary col-md-3 view-course-btn' %>
+    <%= link_to 'Delete', course_path(@course), 'data-method' => 'delete', 'data-confirm' => 'Are you sure?', class: 'btn btn-danger col-md-3 view-course-btn' %>
+    <%= link_to 'Back to course list', courses_path, class: 'btn btn-primary col-md-3 view-course-btn' %>
+  </div>
 </div>
+
+</body>
+</html>
