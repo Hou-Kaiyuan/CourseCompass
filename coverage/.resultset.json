@@ -396,25 +396,25 @@
   },
   "RSpec": {
     "coverage": {
-      "/Users/orrav/Documents/projects/CourseCompass/app/helpers/application_helper.rb": {
+      "/Users/kev/Desktop/Comp Sci Projects/COMSW4152 Projects/CourseCompass/app/helpers/application_helper.rb": {
         "lines": [
           1,
           null
         ]
       },
-      "/Users/orrav/Documents/projects/CourseCompass/app/helpers/courses_helper.rb": {
+      "/Users/kev/Desktop/Comp Sci Projects/COMSW4152 Projects/CourseCompass/app/helpers/courses_helper.rb": {
         "lines": [
           1,
           null
         ]
       },
-      "/Users/orrav/Documents/projects/CourseCompass/app/helpers/profiles_helper.rb": {
+      "/Users/kev/Desktop/Comp Sci Projects/COMSW4152 Projects/CourseCompass/app/helpers/profiles_helper.rb": {
         "lines": [
           1,
           null
         ]
       },
-      "/Users/orrav/Documents/projects/CourseCompass/app/controllers/courses_controller.rb": {
+      "/Users/kev/Desktop/Comp Sci Projects/COMSW4152 Projects/CourseCompass/app/controllers/courses_controller.rb": {
         "lines": [
           1,
           null,
@@ -440,10 +440,10 @@
           1,
           1,
           1,
-          0,
-          0,
-          null,
           1,
+          1,
+          null,
+          0,
           null,
           null,
           null,
@@ -484,7 +484,7 @@
           null
         ]
       },
-      "/Users/orrav/Documents/projects/CourseCompass/app/controllers/application_controller.rb": {
+      "/Users/kev/Desktop/Comp Sci Projects/COMSW4152 Projects/CourseCompass/app/controllers/application_controller.rb": {
         "lines": [
           1,
           null,
@@ -504,12 +504,14 @@
           null
         ]
       },
-      "/Users/orrav/Documents/projects/CourseCompass/app/controllers/profiles_controller.rb": {
+      "/Users/kev/Desktop/Comp Sci Projects/COMSW4152 Projects/CourseCompass/app/controllers/profiles_controller.rb": {
         "lines": [
           1,
           1,
-          1,
-          0,
+          4,
+          4,
+          3,
+          3,
           0,
           null,
           1,
@@ -518,7 +520,7 @@
           null
         ]
       },
-      "/Users/orrav/Documents/projects/CourseCompass/app/controllers/registrations_controller.rb": {
+      "/Users/kev/Desktop/Comp Sci Projects/COMSW4152 Projects/CourseCompass/app/controllers/registrations_controller.rb": {
         "lines": [
           1,
           null,
@@ -532,7 +534,6 @@
           2,
           2,
           null,
-          null,
           0,
           null,
           null,
@@ -545,7 +546,7 @@
           null
         ]
       },
-      "/Users/orrav/Documents/projects/CourseCompass/app/controllers/sessions_controller.rb": {
+      "/Users/kev/Desktop/Comp Sci Projects/COMSW4152 Projects/CourseCompass/app/controllers/sessions_controller.rb": {
         "lines": [
           1,
           null,
@@ -572,7 +573,7 @@
           null
         ]
       },
-      "/Users/orrav/Documents/projects/CourseCompass/app/controllers/users_controller.rb": {
+      "/Users/kev/Desktop/Comp Sci Projects/COMSW4152 Projects/CourseCompass/app/controllers/users_controller.rb": {
         "lines": [
           1,
           null,
@@ -580,6 +581,8 @@
           1,
           2,
           1,
+          1,
+          1,
           null,
           null,
           null,
@@ -599,7 +602,7 @@
           null
         ]
       },
-      "/Users/orrav/Documents/projects/CourseCompass/app/models/course.rb": {
+      "/Users/kev/Desktop/Comp Sci Projects/COMSW4152 Projects/CourseCompass/app/models/course.rb": {
         "lines": [
           1,
           1,
@@ -611,7 +614,7 @@
           null
         ]
       },
-      "/Users/orrav/Documents/projects/CourseCompass/app/models/user.rb": {
+      "/Users/kev/Desktop/Comp Sci Projects/COMSW4152 Projects/CourseCompass/app/models/user.rb": {
         "lines": [
           1,
           null,
@@ -695,11 +698,9 @@
           null
         ]
       },
-      "/Users/orrav/Documents/projects/CourseCompass/app/models/course_enrollment.rb": {
+      "/Users/kev/Desktop/Comp Sci Projects/COMSW4152 Projects/CourseCompass/app/models/course_enrollment.rb": {
         "lines": [
           1,
-          null,
-          null,
           1,
           1,
           null,
@@ -714,7 +715,7 @@
           null
         ]
       },
-      "/Users/orrav/Documents/projects/CourseCompass/app/controllers/course_enrollments_controller.rb": {
+      "/Users/kev/Desktop/Comp Sci Projects/COMSW4152 Projects/CourseCompass/app/controllers/course_enrollments_controller.rb": {
         "lines": [
           null,
           0,
@@ -772,6 +773,6 @@
         }
       }
     },
-    "timestamp": 1702869176
+    "timestamp": 1702886583
   }
 }

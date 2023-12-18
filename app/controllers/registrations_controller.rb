@@ -9,7 +9,6 @@ class RegistrationsController < ApplicationController
         if @user.save
             session[:uid] = @user.id
             redirect_to courses_path(id: @user.id), notice: "Account Successfully Created!"
-            # redirect_to user_index_path(id: @user.id), notice: "Account Successfully Created!"
         else
             render :new
         end
@@ -17,7 +16,7 @@ class RegistrationsController < ApplicationController
 
     private
     def user_params
-        params.require(:user).permit(:first_name, :last_name, :email, :password, :password_confirmation)
+        params.require(:user).permit(:uid, :id, :first_name, :last_name, :email, :password, :password_confirmation, :profile_pic, :major)
     end
   end
   

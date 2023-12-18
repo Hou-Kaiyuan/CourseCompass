@@ -3,7 +3,9 @@ class UsersController < ApplicationController
 
   def index
     if session[:uid]
-      @user = User.find_by(id: session[:uid])
+      puts("session[:uid] in users_controller = #{session[:uid]}")
+      @user = User.find_by(uid: session[:uid])
+      puts("user in users_controller = #{@user.inspect}")
     end
   end
 

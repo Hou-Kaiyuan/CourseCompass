@@ -35,32 +35,32 @@ RSpec.describe CoursesController, type: :controller do
           expect(response).to have_http_status(:ok)
         end
     end
-      
+
 
     describe "creates" do
         it "course with valid parameters" do
-          get :create, {:course => {:course_title => "Adv Computer Networks", :offering_term => "Fall 2023", :course_id => "COMS E 6998-024",
-                        :midterm => 0, :project => 1, :instructor => "Katz-Bassett, Ethan",
-                        :website => "http://www.columbia.edu/cu/bulletin/uwb/subj/COMS/E6998-20233-024/"}}
+          get :create, {:course => {:course_title => "Creative Embedded Systems", :offering_term => "Spring 2024", :course_id => "BC 3930-001",
+                        :midterm => 0, :project => 1, :instructor => "Santolucito, Mark",
+                        :website => "https://doc.sis.columbia.edu/#subj/COMS/BC3930-20241-001/"}}
           expect(response).to redirect_to courses_path
-          expect(flash[:notice]).to match(/Adv Computer Networks was successfully created./)
-          Course.find_by(:course_title => "Adv Computer Networks").destroy
+          expect(flash[:notice]).to match(/Creative Embedded Systems was successfully created./)
+          Course.find_by(:course_title => "Creative Embedded Systems").destroy
         end
       end
 
 
-      describe "updates" do
-        it "course's valid attributes" do
-          course = Course.create(:course_id => "COMS W 4735-001", :course_title => "Computational Aspects of Robotics", :offering_term => "Fall 2023",
-                                 :midterm => 1, :project => 1, :instructor => "Allen, Peter K",
-                                 :website => "http://www.columbia.edu/cu/bulletin/uwb/subj/COMS/W4735-20233-001/")
-          get :update, {:id => course.id, :course =>
-            {:time => "11:40 AM - 12:55 PM"}
-          }
-          
-          expect(response).to redirect_to course_path(course)
-          expect(flash[:notice]).to match(/Computational Aspects of Robotics was successfully updated./)
-          course.destroy
-        end
+    describe "updates" do
+      it "course's valid attributes" do
+        course = Course.create(:course_id => "COMS W 4735-001", :course_title => "Computational Aspects of Robotics", :offering_term => "Fall 2023",
+                               :midterm => 1, :project => 1, :instructor => "Allen, Peter K",
+                               :website => "http://www.columbia.edu/cu/bulletin/uwb/subj/COMS/W4735-20233-001/")
+        get :update, {:id => course.id, :course =>
+          {:time => "11:40 AM - 12:55 PM"}
+        }
+
+        expect(response).to redirect_to course_path(course)
+        expect(flash[:notice]).to match(/Computational Aspects of Robotics was successfully updated./)
+        course.destroy
       end
+    end
 end

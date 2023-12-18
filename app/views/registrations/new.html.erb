@@ -1,13 +1,16 @@
 <h1>Sign Up</h1>
 
 <%= form_tag model: @user, url: signup_path do |form| %>
+  <%= hidden_field :user, :profile_pic, :value => 'https://static.vecteezy.com/system/resources/previews/002/318/271/non_2x/user-profile-icon-free-vector.jpg' %>
+
   <% if @user.errors.any? %>
     <div class="alert alert-danger">
-    <% @user.errors.full_messages.each do |message| %>
-      <div> <%= message %> </div> 
-    <% end %>
+      <% @user.errors.full_messages.each do |message| %>
+        <div> <%= message %> </div>
+      <% end %>
     </div>
   <% end %>
+
   <%= label :user, :first_name, 'First Name', :class => 'col-form-label' %>
   <%= text_field :user, :first_name, :class => 'form-control' %>
   <%= label :user, :last_name, 'Last Name', :class => 'col-form-label' %>
@@ -21,4 +24,3 @@
   <br/>
   <%= submit_tag 'Register', :class => 'btn btn-primary' %>
 <% end %>
-

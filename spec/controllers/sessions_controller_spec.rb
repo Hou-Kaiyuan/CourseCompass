@@ -3,19 +3,19 @@ require 'rails_helper'
 RSpec.describe SessionsController, type: :controller do
   describe 'POST sessions#create' do
     # Arrange
-    let(:user) { User.create({email: 'test1@columbia.edu', password: '1234', password_confirmation: '1234'}) }
+    let(:user) { User.create({uid: '12344',email: 'test1@columbia.edu', password: '1234', password_confirmation: '1234'}) }
 
     context 'with valid credentials' do
       it 'logs in the user' do
         # Act
-        post :create, user: { email: user.email, password: user.password }
+        post :create, user: { uid: user.uid, email: user.email, password: user.password }
         # Assert
         expect(session[:uid]).to eq(user.id)
       end
 
       it 'redirects to the user page' do
         # Act
-        post :create, user: { email: user.email, password: user.password }
+        post :create, user: { uid: user.uid, email: user.email, password: user.password }
         # Assert
         expect(response).to redirect_to(courses_path(id: user.id))
       end

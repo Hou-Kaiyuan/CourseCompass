@@ -3,12 +3,12 @@ require 'rails_helper'
 RSpec.describe RegistrationsController, type: :controller do
   describe 'POST registrations#create' do
   # Arrange
-  new_user =  {email: 'test@columbia.edu', password: '1234', first_name: 'aa', last_name: 'aa'}
+  new_user =  {uid: '1244', email: 'test@columbia.edu', password: '1234', first_name: 'aa', last_name: 'aa'}
 
     context 'with valid credentials' do
       it 'logs in the user' do
         # Act
-        post :create, user: { email: new_user[:email], password: new_user[:password], password_confirmation: new_user[:password], first_name: new_user[:first_name], last_name: new_user[:last_name]}
+        post :create, user: {uid: new_user[:uid], email: new_user[:email], password: new_user[:password], password_confirmation: new_user[:password], first_name: new_user[:first_name], last_name: new_user[:last_name]}
         user = User.find_by(email: new_user[:email])
         # Assert
         expect(session[:uid]).to eq(user.id)
@@ -16,7 +16,7 @@ RSpec.describe RegistrationsController, type: :controller do
 
       it 'redirects to the user page' do
         # Act
-        post :create, user: { email: new_user[:email], password: new_user[:password], password_confirmation: new_user[:password], first_name: new_user[:first_name], last_name: new_user[:last_name]}
+        post :create, user: {uid: new_user[:uid], email: new_user[:email], password: new_user[:password], password_confirmation: new_user[:password], first_name: new_user[:first_name], last_name: new_user[:last_name]}
         user = User.find_by(email: new_user[:email])
         # Assert
         expect(response).to redirect_to(courses_path(id: user.id))

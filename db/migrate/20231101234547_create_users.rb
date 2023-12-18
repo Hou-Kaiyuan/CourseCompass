@@ -10,7 +10,7 @@ class CreateUsers < ActiveRecord::Migration
       t.string :major
       t.string :first_name
       t.string :last_name
-      t.string :profile_pic
+      t.string :profile_pic, default: 'https://static.vecteezy.com/system/resources/previews/002/318/271/non_2x/user-profile-icon-free-vector.jpg'
 
       t.timestamps
     end

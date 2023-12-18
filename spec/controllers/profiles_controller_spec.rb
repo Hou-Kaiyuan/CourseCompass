@@ -6,7 +6,7 @@ RSpec.describe ProfilesController, type: :controller do
       before do
         # Create a user with the necessary attributes
         @user = User.create!(
-          uid: "12345",
+          id: "12344",
           provider: "example_provider",
           oauth_token: "example_token",
           oauth_expires_at: 1.day.from_now,
@@ -18,12 +18,16 @@ RSpec.describe ProfilesController, type: :controller do
           password: "abc123"
         )
 
+        if Course.where(:course_id => "COMS E 6998-025").empty?
+          @course1 = Course.create(:course_title => "Adv Computer Networks", :offering_term => "Fall 2023", :course_id => "COMS E 6998-025",
+                        :midterm => 0, :project => 1, :instructor => "Katz-Bassett, Ethan",
+                        :website => "http://www.columbia.edu/cu/bulletin/uwb/subj/COMS/E6998-20233-024/")
+        end
+
         # Create course enrollments associated with the user
         @enrollments = [
-          CourseEnrollment.create!(user: @user.id, course: "Course 1", year: 2021, grade: "A"),
-          CourseEnrollment.create!(user: @user.id, course: "Course 2", year: 2022, grade: "B")
+          CourseEnrollment.create!(user: @user, course: @course1, year: 2021, grade: "A"),
         ]
-
         session[:uid] = @user.id
       end
 

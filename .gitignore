@@ -9,3 +9,6 @@ log/
 tmp/
 vendor/bundle
 .DS_Store
+coverage/.resultset.json
+coverage/index.html
+log/development.log
