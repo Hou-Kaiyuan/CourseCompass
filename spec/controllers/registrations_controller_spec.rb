@@ -22,6 +22,14 @@ RSpec.describe RegistrationsController, type: :controller do
         expect(response).to redirect_to(courses_path(id: user.id))
       end
     end
+
+    context 'with invalid credentials' do
+      it 'renders the new template' do
+        allow_any_instance_of(User).to receive(:save).and_return(false)
+        post :create, user: {uid: new_user[:uid], email: new_user[:email], password: new_user[:password], password_confirmation: new_user[:password], first_name: new_user[:first_name], last_name: new_user[:last_name]}
+        expect(response).to render_template(:new)
+      end
+    end
   end
 
   describe 'GET registrations#new' do

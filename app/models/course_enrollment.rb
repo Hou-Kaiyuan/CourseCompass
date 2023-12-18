@@ -7,7 +7,4 @@ class CourseEnrollment < ActiveRecord::Base
   validates :year, presence: true
   validates :grade, presence: true
 
-  # def course_id
-  #   course.course_id
-  # end
 end

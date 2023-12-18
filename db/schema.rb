@@ -45,7 +45,7 @@ ActiveRecord::Schema.define(version: 20231113175628) do
     t.string   "major"
     t.string   "first_name"
     t.string   "last_name"
-    t.string   "profile_pic", default: "https://static.vecteezy.com/system/resources/previews/002/318/271/non_2x/user-profile-icon-free-vector.jpg"
+    t.string   "profile_pic",      default: "https://static.vecteezy.com/system/resources/previews/002/318/271/non_2x/user-profile-icon-free-vector.jpg"
     t.datetime "created_at"
     t.datetime "updated_at"
     t.string   "password_digest"

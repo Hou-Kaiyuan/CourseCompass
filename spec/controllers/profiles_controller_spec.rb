@@ -6,7 +6,7 @@ RSpec.describe ProfilesController, type: :controller do
       before do
         # Create a user with the necessary attributes
         @user = User.create!(
-          id: "12344",
+          uid: "12304",
           provider: "example_provider",
           oauth_token: "example_token",
           oauth_expires_at: 1.day.from_now,

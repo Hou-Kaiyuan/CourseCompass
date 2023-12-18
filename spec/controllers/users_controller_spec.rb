@@ -1,6 +1,35 @@
 require 'rails_helper'
 
 RSpec.describe UsersController, type: :controller do
+  describe "GET recommendations" do
+    it "assigns @user and @recommended_courses_with_gpa and renders the recommendations template" do
+      # Create a user
+      @user = User.create!(
+        uid: "12345",
+        provider: "google_oauth2",
+        oauth_token: "0",
+        oauth_expires_at: Time.at(9999999999),
+        email: "testuser@example.com",
+        major: Faker::Educator.subject,
+        first_name: "Test",
+        last_name: "User1234567890",
+        profile_pic: "https://static.vecteezy.com/system/resources/previews/002/318/271/non_2x/user-profile-icon-free-vector.jpg",
+        password: "1234567890",
+        )
+
+      # Set session UID
+      session[:uid] = @user.id
+
+      # Make a request to recommendations endpoint
+      get :recommendations, id: @user.id, recommendation_count: 5
+
+      # Expectations
+      expect(assigns(:user)).to eq(@user)
+      expect(response).to render_template(:recommendations)
+      expect(response).to have_http_status(:ok)
+    end
+  end
+
   describe "GET index" do
     context "when a user is logged in" do
       it "assigns @user based on session uid and renders the index template" do

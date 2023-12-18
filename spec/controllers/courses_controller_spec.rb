@@ -25,6 +25,45 @@ RSpec.describe CoursesController, type: :controller do
         Course.delete_all
     end
 
+    describe "GET show" do
+      it "assigns @course and renders the show template" do
+        course = Course.first
+        get :show, id: course.id
+        expect(assigns(:course)).to eq(course)
+        expect(response).to render_template(:show)
+        expect(response).to have_http_status(:ok)
+      end
+    end
+
+    describe "GET new" do
+      it "assigns a new course to @course and renders the new template" do
+        get :new
+        expect(assigns(:course)).to be_a_new(Course)
+        expect(response).to render_template(:new)
+        expect(response).to have_http_status(:ok)
+      end
+    end
+
+    describe "POST create" do
+      context "with invalid parameters" do
+        it "renders the new template" do
+          post :create, course: { invalid_param: 'value' }
+          expect(response).to render_template(:new)
+          expect(flash[:alert]).to match(/Course creation was unsuccessful. Please try again.*/)
+        end
+      end
+    end
+
+    describe "GET edit" do
+      it "assigns @course and renders the edit template" do
+        course = Course.first
+        get :edit, id: course.id
+
+        expect(assigns(:course)).to eq(course)
+        expect(response).to render_template(:edit)
+        expect(response).to have_http_status(:ok)
+      end
+    end
 
     describe "GET index" do
         it "assigns @courses and renders the index template" do
@@ -33,6 +72,14 @@ RSpec.describe CoursesController, type: :controller do
           expect(assigns(:courses)).to match_array(Course.all)
           expect(response).to render_template(:index)
           expect(response).to have_http_status(:ok)
+        end
+
+        context "with search parameter" do
+          it "assigns filtered @courses and renders the index template" do
+            get :index, search: 'engineering'
+            expect(response).to render_template(:index)
+            expect(response).to have_http_status(:ok)
+          end
         end
     end
 

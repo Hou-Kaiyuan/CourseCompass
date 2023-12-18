@@ -25,7 +25,8 @@ class CoursesController < ApplicationController
       flash[:notice] = "#{@course.course_title} was successfully created."
       redirect_to courses_path
     else
-      render :new 
+      flash[:alert] = "Course creation was unsuccessful. Please try again."
+      render :new
     end
   end
 
