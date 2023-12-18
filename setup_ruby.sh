@@ -11,9 +11,3 @@ curl -fsSL https://github.com/rbenv/rbenv-installer/raw/main/bin/rbenv-doctor | 
 
 # Install Ruby 2.6.6
 rbenv install --verbose 2.6.6
-export PATH="$HOME/.rbenv/bin:$PATH"
-eval "$(rbenv init -)"
-rbenv global 2.6.6
-
-# Check that ruby version is 2.6.6
-ruby -v

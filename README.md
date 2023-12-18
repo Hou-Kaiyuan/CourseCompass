@@ -48,6 +48,13 @@ cd CourseCompass
 For Linux environments (tested on Codio Empty Stack), run the following script:
 ```bash
 bash setup_ruby.sh
+
+export PATH="$HOME/.rbenv/bin:$PATH"
+eval "$(rbenv init -)"
+rbenv global 2.6.6
+
+# Check that ruby version is 2.6.6
+ruby -v
 ```
 Alternatively, follow the manual installation steps in the script.
 
