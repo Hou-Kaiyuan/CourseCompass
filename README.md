@@ -57,30 +57,12 @@ Member 4 UNI:  km3628
 ```
 
 ## Install Ruby
-
-#### MacOS
-
-```bash
-# Install rbenv
-brew install rbenv
-echo 'export PATH="$HOME/.rbenv/shims:$PATH"' >> ~/.zshrc
-brew install ruby-build
-brew install v8
-# Check rbenv installation -- make sure everything is OK
-curl -fsSL https://github.com/rbenv/rbenv-installer/raw/main/bin/rbenv-doctor | bash
-
-# Install Ruby 2.6.6
-rbenv install --verbose 2.6.6 (Apple Silicon: RUBY_CFLAGS="-w" rbenv install 2.6.6)
-rbenv global 2.6.6
-
-# Check that ruby version is 2.6.6
-ruby -v
-```
-
-#### Linux
+#### Linux (tested on Coide Empty Stack)
 
 ```bash
 # Install rbenv
+sudo apt upgrade
+sudo apt update
 sudo apt install rbenv
 echo 'export PATH="$HOME/.rbenv/shims:$PATH"' >> ~/.bashrc
 mkdir -p "$(rbenv root)"/plugins
@@ -91,6 +73,8 @@ curl -fsSL https://github.com/rbenv/rbenv-installer/raw/main/bin/rbenv-doctor | 
 
 # Install Ruby 2.6.6
 rbenv install --verbose 2.6.6
+export PATH="$HOME/.rbenv/bin:$PATH"
+eval "$(rbenv init -)"
 rbenv global 2.6.6
 
 # Check that ruby version is 2.6.6
