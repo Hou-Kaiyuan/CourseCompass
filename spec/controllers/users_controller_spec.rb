@@ -1,6 +1,6 @@
 require 'rails_helper'
 
-RSpec.describe UserController, type: :controller do
+RSpec.describe UsersController, type: :controller do
   describe "GET index" do
     context "when a user is logged in" do
       it "assigns @user based on session uid and renders the index template" do
