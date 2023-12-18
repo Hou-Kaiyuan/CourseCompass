@@ -3,7 +3,7 @@ class CourseEnrollmentsController < ApplicationController
   before_action :set_course_enrollment, only: [:edit, :update]
 
   def edit
-    @user = User.find_by(uid: params[:user_uid])
+    @user = User.find_by(uid: params[:id])
     @course_enrollment = @user.course_enrollments.find(params[:id])
   end
   
@@ -22,13 +22,13 @@ class CourseEnrollmentsController < ApplicationController
   end
   
   def new
-    @user = User.find_by(uid: params[:user_uid])
+    @user = User.find_by(uid: params[:id])
     @course_enrollment = @user.course_enrollments.new
   end
   
   def create
     @course_enrollment = CourseEnrollment.new(course_enrollment_params)
-    @course_enrollment.user = User.find_by(uid: params[:user_uid])
+    @course_enrollment.user = User.find_by(uid: params[:id])
   
     if @course_enrollment.save
       render :new

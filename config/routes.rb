@@ -7,7 +7,6 @@ CourseCompass::Application.routes.draw do
     resources :course_enrollments, only: [:new, :create, :edit, :update]
   end
   
-
   # The rest of your existing routes
   get "signup", to: "registrations#new"
   post "signup", to: "registrations#create"

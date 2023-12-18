@@ -7,9 +7,11 @@ class RegistrationsController < ApplicationController
     def create
         @user = User.new(user_params)
         if @user.save
+            @user.update(uid: @user.id)
+            @user.save
             session[:uid] = @user.id
-            redirect_to courses_path(id: @user.id), notice: "Account Successfully Created!"
-            # redirect_to user_index_path(id: @user.id), notice: "Account Successfully Created!"
+            # redirect_to courses_path(id: @user.id), notice: "Account Successfully Created!"
+            redirect_to users_path(id: @user.id), notice: "Account Successfully Created!"
         else
             render :new
         end
