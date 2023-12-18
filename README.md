@@ -12,6 +12,12 @@ CourseCompass provides Columbia Students a more personalize course recommendatio
 #### Heroku Demo Deployment (Iteration 2)
 [heroku-iter2](https://course-compass-iter2-ea6d54216710.herokuapp.com)
 
+
+## Demo Day: All feature included
+##### Heroku Demo Deployment (Demo Day)
+[heroku-demo](https://course-compass-demo-fbf53d190587.herokuapp.com)
+
+
 ## Coverage Report
 The current test coverage is 94.12%. Detailed reports can be found in `coverage/index.html`. 
 Just in case if there are issues setting up Ruby locally.
@@ -22,13 +28,18 @@ Just in case if there are issues setting up Ruby locally.
 To log in to the Heroku app:
 
 1. Use a dummy user email in the format: `test{x}@columbia.edu`
-   - `{x}` can range from 1 to 5.
+   - `{x}` can range from 1 to 100.
    - For example, `test1@columbia.edu`.
 2. The password is the same as the user number (e.g., for `test1@columbia.edu`, the password is `1`).
+
+
+### Course Browsing
+Everyone can browse available courses and their information on the course page
 
 ### Profile and Course History
 After logging in, user information and course history will be available on the profile page.
 
+User can add/edit the course he/she took. And get recommendations.
 
 
 
