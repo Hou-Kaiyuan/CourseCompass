@@ -45,7 +45,7 @@ cd CourseCompass
 ```
 
 ### Installing Ruby on Linux
-For Linux environments (tested on CodeEnvy Stack), run the following script:
+For Linux environments (tested on Codio Empty Stack), run the following script:
 ```bash
 bash setup_ruby.sh
 ```
