@@ -33,8 +33,8 @@ class User < ActiveRecord::Base
 
 
     recommended_courses_with_gpa = recommended_course_ids.map do |course_id|
-      # enrollments = CourseEnrollment.where(course: course_id, user: top_users)
-      total_gpa = CourseEnrollment.where(course: course_id, user: top_users).reduce(0) do |sum, enrollment|
+      enrollments = CourseEnrollment.where(course: course_id, user: top_users)
+      total_gpa = enrollments.reduce(0) do |sum, enrollment|
         sum + grade_to_gpa(enrollment.grade)
       end
       average_gpa = enrollments.size > 0 ? total_gpa / enrollments.size : 0
