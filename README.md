@@ -14,7 +14,11 @@ Added login functionality, user info page, and course enrollments.
 
 ### Demo Day
 Final iteration with all features included.
-- [Heroku Demo - Final](https://course-compass-demo-fbf53d190587.herokuapp.com)
+- [Heroku Demo - Demo Day](https://course-compass-demo-fbf53d190587.herokuapp.com)
+
+### Final 
+Final iteration with all tests included, bug fixed.
+- [Heroku Demo - Final](https://course-compass-final-0cfa67aed3b0.herokuapp.com/)
 
 ## Features
 
@@ -25,7 +29,7 @@ Final iteration with all features included.
 
 ## Coverage Report
 
-The current test coverage is at **90.97%**. Detailed reports are available in `coverage/index.html`.
+The current test coverage is at **90.34%**. Detailed reports are available in `coverage/index.html`.
 
 ## Team Members
 
