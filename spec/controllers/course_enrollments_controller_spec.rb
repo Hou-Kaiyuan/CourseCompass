@@ -5,7 +5,7 @@ RSpec.describe CourseEnrollmentsController, type: :controller do
     context "when user is logged in" do
       before do
         @user = User.create!(
-          uid: "12304",
+          uid: "1",
           provider: "example_provider",
           oauth_token: "example_token",
           oauth_expires_at: 1.day.from_now,
@@ -29,12 +29,12 @@ RSpec.describe CourseEnrollmentsController, type: :controller do
       end
 
       it "returns http success" do
-        get :edit, user_uid: session[:uid], id: @enrollment.id
+        get :edit, user_uid: session[:uid], id: @enrollment.uid
         expect(response).to have_http_status(:success)
       end
 
       it "sets the user and course enrollment" do
-        get :edit, user_uid: session[:uid], id: @enrollment.id
+        get :edit, user_uid: session[:uid], id: @enrollment.uid
         expect(assigns(:user)).to eq(@user)
         expect(assigns(:course_enrollment)).to eq(@enrollment)
       end
@@ -46,7 +46,7 @@ RSpec.describe CourseEnrollmentsController, type: :controller do
       before do
         # Create a user with the necessary attributes
         @user = User.create!(
-          uid: "12304",
+          uid: "1",
           provider: "example_provider",
           oauth_token: "example_token",
           oauth_expires_at: 1.day.from_now,
@@ -71,7 +71,7 @@ RSpec.describe CourseEnrollmentsController, type: :controller do
       end
 
       it "updates the course enrollment" do
-        patch :update, id: @enrollment.id, user_uid: session[:uid], course_enrollment: { grade: "B" }
+        patch :update, id: @enrollment.uid, user_uid: session[:uid], course_enrollment: { grade: "B" }
         expect(response).to redirect_to(profiles_path(id: @user.id))
         expect(flash[:notice]).to eq("Course enrollment was successfully updated.")
         @enrollment.reload
@@ -79,7 +79,7 @@ RSpec.describe CourseEnrollmentsController, type: :controller do
       end
 
       it "renders edit on failure" do
-        patch :update, id: @enrollment.id, user_uid: session[:uid], course_enrollment: { grade: "Invalid" }
+        patch :update, id: @enrollment.uid, user_uid: session[:uid], course_enrollment: { grade: "Invalid" }
         expect(response).to redirect_to(profiles_path(id: @user.id))
       end
     end
@@ -90,7 +90,7 @@ RSpec.describe CourseEnrollmentsController, type: :controller do
       before do
         # Create a user with the necessary attributes
         @user = User.create!(
-          uid: "12304",
+          uid: "1",
           provider: "example_provider",
           oauth_token: "example_token",
           oauth_expires_at: 1.day.from_now,
@@ -123,7 +123,7 @@ RSpec.describe CourseEnrollmentsController, type: :controller do
       before do
         # Create a user with the necessary attributes
         @user = User.create!(
-          uid: "12304",
+          uid: "1",
           provider: "example_provider",
           oauth_token: "example_token",
           oauth_expires_at: 1.day.from_now,
