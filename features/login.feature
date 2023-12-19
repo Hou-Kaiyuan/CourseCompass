@@ -1,10 +1,10 @@
-Feature: Login
+Feature: Login and Logout
 
-  The website will support user login functionality.
-  If the user is not logged in, the webpage will redirect the user to the login page, on all pages except log in page.
+  The website will support user login and logout functionality.
+  If the user is not logged in, the webpage will redirect the user to the login page on all pages except the login page.
   Only Columbia accounts will be permitted to log in.
 
- Background:
+  Background:
     Given database is seeded
 
   Scenario: Successful login
@@ -32,3 +32,12 @@ Feature: Login
     And I fill in "Password Confirmation" with "newpassword"
     And I press "Register"
     Then I should see "Account Successfully Created!"
+
+  Scenario: Logout
+    When I go to the login page
+    And I fill in "Email" with "test2@columbia.edu"
+    And I fill in "Password" with "2"
+    And I press "Log In"
+    Then I should be on the courses page
+    When I follow "Log Out"
+    Then I should see "Logged Out"
