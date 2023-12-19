@@ -25,7 +25,7 @@ Final iteration with all features included.
 
 ## Coverage Report
 
-The current test coverage is at **94.12%**. Detailed reports are available in `coverage/index.html`.
+The current test coverage is at **90.97%**. Detailed reports are available in `coverage/index.html`.
 
 ## Team Members
 
